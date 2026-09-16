@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "templates": [
+    {
+      "id": "heirloom-pearl-diamond-medallion",
+      "display_name": "Heirloom Pearl Diamond Medallion",
+      "geographies": ["focal", "block"],
+      "required_motifs": ["framed-diamond", "pearl-chain", "sakura-rosette"],
+      "optional_motifs": ["echoed-heart", "flourish-scroll", "leaf-sprig"],
+      "hierarchy_layers": ["outer frame", "inner mat", "pearl diamond", "center rosette", "point motifs", "corner support"],
+      "density_band": "medium-to-dense",
+      "symmetry": "radial-4",
+      "reject_if": ["no focal center", "unframed pearls", "corner motifs unrelated to diamond"]
+    },
+    {
+      "id": "layered-scroll-border-with-corners",
+      "display_name": "Layered Scroll Border With Corner Turns",
+      "geographies": ["border", "corner"],
+      "required_motifs": ["layered-border-frame", "flourish-scroll", "pearl-chain"],
+      "optional_motifs": ["sakura-rosette", "leaf-sprig", "echoed-heart"],
+      "hierarchy_layers": ["outer rail", "inner rail", "primary spine", "accent motif", "pearl lane", "corner turn"],
+      "density_band": "medium-to-dense",
+      "symmetry": "directional-repeat-with-corner-turn",
+      "reject_if": ["cropped block border", "no corner turn", "naked connector"]
+    },
+    {
+      "id": "quiet-sashing-chain",
+      "display_name": "Quiet Sashing Chain",
+      "geographies": ["sashing", "narrow-border"],
+      "required_motifs": ["quiet-rail"],
+      "optional_motifs": ["leaf-sprig", "echoed-heart", "pearl-chain"],
+      "hierarchy_layers": ["rail", "small alternating motif", "tiny accent"],
+      "density_band": "open-to-medium",
+      "symmetry": "linear-repeat",
+      "reject_if": ["too ornate", "motifs exceed strip", "start and end off baseline"]
+    },
+    {
+      "id": "feathered-setting-triangle",
+      "display_name": "Feathered Setting Triangle",
+      "geographies": ["triangle", "corner-triangle"],
+      "required_motifs": ["feather-plume"],
+      "optional_motifs": ["leaf-sprig", "clamshell-arc", "pearl-chain", "sakura-rosette"],
+      "hierarchy_layers": ["broad edge", "diagonal spine", "tapering plumes", "point echo", "optional edge fill"],
+      "density_band": "medium",
+      "symmetry": "diagonal-flow",
+      "reject_if": ["square motif squeezed into triangle", "awkward point fill", "density mismatch"]
+    },
+    {
+      "id": "rosette-corner-turn",
+      "display_name": "Rosette Corner Turn",
+      "geographies": ["corner", "border-corner"],
+      "required_motifs": ["sakura-rosette", "flourish-scroll"],
+      "optional_motifs": ["pearl-chain", "leaf-sprig", "echoed-heart"],
+      "hierarchy_layers": ["entry axis", "turn rosette", "pearl transition", "exit axis"],
+      "density_band": "medium-to-dense",
+      "symmetry": "quarter-turn",
+      "reject_if": ["pasted-on corner", "miter-only turn", "unrelated exit"]
+    },
+    {
+      "id": "alternate-floral-block",
+      "display_name": "Alternate Floral Block",
+      "geographies": ["block", "alternate-block"],
+      "required_motifs": ["sakura-rosette"],
+      "optional_motifs": ["flower-echo", "pearl-chain", "leaf-sprig", "echoed-heart"],
+      "hierarchy_layers": ["soft frame", "small center", "echo halo", "corner accents"],
+      "density_band": "medium",
+      "symmetry": "radial-2-or-4",
+      "reject_if": ["contains full focal library", "no center-frame relationship"]
+    },
+    {
+      "id": "whole-quilt-coordinate-layout",
+      "display_name": "Whole-Quilt Coordinate Layout",
+      "geographies": ["focal", "border", "corner", "block", "triangle", "sashing"],
+      "required_motifs": ["layered-border-frame", "framed-diamond", "pearl-chain"],
+      "optional_motifs": ["sakura-rosette", "echoed-heart", "leaf-sprig", "flourish-scroll", "feather-plume", "clamshell-arc"],
+      "hierarchy_layers": ["outer border", "corner turns", "inner frame", "focal medallion", "support blocks", "triangle fills", "sashing"],
+      "density_band": "medium-to-dense",
+      "symmetry": "whole-quilt-balanced",
+      "reject_if": ["unrelated pieces", "all motifs everywhere", "major density spread"]
+    }
+  ]
+}

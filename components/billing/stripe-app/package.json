@@ -1,0 +1,23 @@
+{
+  "name": "20fates-table-closeout",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "check": "npm run typecheck && npm test",
+    "start": "stripe apps start",
+    "test": "node --test src/billing.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@stripe/ui-extension-sdk": "9.2.0-alpha.13",
+    "stripe": "17.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.89",
+    "typescript": "7.0.2"
+  }
+}

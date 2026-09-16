@@ -1,0 +1,4 @@
+interface:
+  display_name: "DM Session Producer"
+  short_description: "Run ongoing D&D campaign operations"
+  default_prompt: "Use $dm-session-producer to close out or lightly prepare this ongoing campaign without crossing into module production."

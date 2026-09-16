@@ -1,0 +1,225 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://20fates.local/schemas/construction-graph.v1.3.json",
+  "title": "20Fates Composition and Construction Graph v1.3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["graph_version", "graph_id", "brief_id", "status", "frozen_at", "asset_sufficiency", "blockout_review", "aesthetic_contract", "beauty_proof_review", "composition", "assets", "assemblies", "nodes", "edges", "requirements"],
+  "properties": {
+    "graph_version": {"const": "1.3"},
+    "graph_id": {"type": "string", "minLength": 1},
+    "brief_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["draft", "frozen", "superseded"]},
+    "frozen_at": {"type": "string", "format": "date-time"},
+    "asset_sufficiency": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "audit_path", "audit_sha256", "unresolved_gaps", "asset_production_lane_status"],
+      "properties": {
+        "status": {"enum": ["pending", "blocked", "pass"]},
+        "audit_path": {"type": "string", "minLength": 1},
+        "audit_sha256": {"$ref": "#/$defs/sha256"},
+        "unresolved_gaps": {"type": "integer", "minimum": 0},
+        "asset_production_lane_status": {"enum": ["not-required", "open", "completed"]}
+      }
+    },
+    "blockout_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "artifact_path", "artifact_sha256", "report_path", "report_sha256", "reviewer_context", "supplied_context", "corrections_used"],
+      "properties": {
+        "status": {"enum": ["pending", "pass", "fail"]},
+        "artifact_path": {"type": "string", "minLength": 1},
+        "artifact_sha256": {"$ref": "#/$defs/sha256"},
+        "report_path": {"type": "string", "minLength": 1},
+        "report_sha256": {"$ref": "#/$defs/sha256"},
+        "reviewer_context": {"enum": ["fresh-unprimed"]},
+        "supplied_context": {"const": ["unlabeled construction blockout", "grid scale only"]},
+        "corrections_used": {"type": "integer", "minimum": 0}
+      }
+    },
+    "aesthetic_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["emotional_thesis", "hierarchy", "palette_value_opposition", "physical_medium", "mark_language", "asymmetry_rhythm", "causal_relationships", "state_transformation", "accepted_visual_anchors"],
+      "properties": {
+        "emotional_thesis": {"type": "string", "minLength": 1},
+        "hierarchy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["hero", "supports", "quiet_areas"],
+          "properties": {
+            "hero": {"type": "string", "minLength": 1},
+            "supports": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+            "quiet_areas": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+          }
+        },
+        "palette_value_opposition": {"type": "string", "minLength": 1},
+        "physical_medium": {"type": "string", "minLength": 1},
+        "mark_language": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "asymmetry_rhythm": {"type": "string", "minLength": 1},
+        "causal_relationships": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "state_transformation": {"type": "string", "minLength": 1, "description": "Record static-map sufficiency unless Ben explicitly requested fictional variants; then name only the requested visible behavior."},
+        "accepted_visual_anchors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["path", "sha256", "role"],
+            "properties": {
+              "path": {"type": "string", "minLength": 1},
+              "sha256": {"$ref": "#/$defs/sha256"},
+              "role": {"type": "string", "minLength": 1}
+            }
+          }
+        }
+      }
+    },
+    "beauty_proof_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "proof_path", "proof_sha256", "report_path", "report_sha256", "reviewer_context", "supplied_context", "corrections_used", "finish_authorized"],
+      "properties": {
+        "status": {"enum": ["pending", "pass", "fail"]},
+        "proof_path": {"type": "string", "minLength": 1},
+        "proof_sha256": {"$ref": "#/$defs/sha256"},
+        "report_path": {"type": "string", "minLength": 1},
+        "report_sha256": {"$ref": "#/$defs/sha256"},
+        "reviewer_context": {"const": "fresh-unprimed-aesthetic"},
+        "supplied_context": {"const": ["unlabeled color/value/composition proof", "equal-scale exact accepted visual anchors"]},
+        "corrections_used": {"type": "integer", "minimum": 0},
+        "finish_authorized": {"type": "boolean"}
+      }
+    },
+    "composition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary_subject", "supporting_masses", "quiet_areas", "thumbnail_order", "desaturated_read"],
+      "properties": {
+        "primary_subject": {"type": "string"},
+        "supporting_masses": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "quiet_areas": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["id", "geometry", "purpose"], "properties": {"id": {"type": "string"}, "geometry": {"type": ["object", "array"]}, "purpose": {"type": "string"}}, "additionalProperties": true}},
+        "thumbnail_order": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "desaturated_read": {"type": "string", "minLength": 1}
+      }
+    },
+    "assets": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/asset"}},
+    "assemblies": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/assembly"}},
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "label", "kind", "importance", "nameable", "geometry", "tactical_role", "source"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "label": {"type": "string"},
+          "kind": {"enum": ["route", "elevation", "transition", "structure", "major_object", "hazard", "quiet_field", "boundary"]},
+          "importance": {"enum": ["primary", "secondary", "tertiary", "ambient"]},
+          "nameable": {"type": "boolean"},
+          "geometry": {"type": ["object", "array"]},
+          "tactical_role": {"type": "string"},
+          "source": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["mode"],
+            "properties": {
+              "mode": {"enum": ["asset", "assembly", "authored_terrain"]},
+              "asset_id": {"type": "string"},
+              "assembly_id": {"type": "string"},
+              "construction_note": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["from", "to", "relation", "physical", "join_ids", "visible_evidence"],
+        "properties": {
+          "from": {"type": "string"},
+          "to": {"type": "string"},
+          "relation": {"enum": ["connects", "supports", "repairs", "controls", "contains", "marks"]},
+          "physical": {"type": "boolean"},
+          "join_ids": {"type": "array", "items": {"type": "string"}},
+          "visible_evidence": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "requirements": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["id", "shall", "verification"], "properties": {"id": {"type": "string"}, "shall": {"type": "string"}, "verification": {"type": "string"}}, "additionalProperties": false}}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"},
+    "socket": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "required_for_freeze", "plane", "elevation", "material", "mates"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "required_for_freeze": {"type": "boolean"},
+        "plane": {"type": "string", "minLength": 1},
+        "elevation": {"type": "string", "minLength": 1},
+        "material": {"type": "string", "minLength": 1},
+        "mates": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "path", "sha256", "audit_asset_id", "construction_class", "projection", "alpha_model", "base_model", "shadow_model", "allowed_operations", "sockets", "scale_range", "occlusion_profile"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "audit_asset_id": {"type": "string", "minLength": 1},
+        "construction_class": {"enum": ["terrain", "connectable_architecture", "transition", "standalone_prop"]},
+        "projection": {"type": "string", "minLength": 1},
+        "alpha_model": {"enum": ["opaque", "transparent", "partial"]},
+        "base_model": {"enum": ["none", "integrated_terrain", "self_contained", "plinth", "enclosing_silhouette"]},
+        "shadow_model": {"enum": ["none", "shadowless", "live_shared", "integrated_shared", "baked_ambient", "baked_directional"]},
+        "allowed_operations": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "sockets": {"type": "array", "items": {"$ref": "#/$defs/socket"}},
+        "scale_range": {"type": "object", "additionalProperties": false, "required": ["minimum", "maximum"], "properties": {"minimum": {"type": "number", "exclusiveMinimum": 0}, "maximum": {"type": "number", "exclusiveMinimum": 0}}},
+        "occlusion_profile": {"type": "string", "minLength": 1}
+      }
+    },
+    "endpoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["asset_id", "socket_id"],
+      "properties": {"asset_id": {"type": "string", "minLength": 1}, "socket_id": {"type": "string", "minLength": 1}}
+    },
+    "join": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "from", "to", "joint_owner", "plane", "elevation", "material", "seam", "occlusion"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "from": {"$ref": "#/$defs/endpoint"},
+        "to": {"$ref": "#/$defs/endpoint"},
+        "joint_owner": {"type": "string", "minLength": 1},
+        "plane": {"type": "string", "minLength": 1},
+        "elevation": {"type": "string", "minLength": 1},
+        "material": {"type": "string", "minLength": 1},
+        "seam": {"type": "string", "minLength": 1},
+        "occlusion": {"type": "string", "minLength": 1}
+      }
+    },
+    "assembly": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "components", "joins"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "components": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+        "joins": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/join"}}
+      }
+    }
+  }
+}

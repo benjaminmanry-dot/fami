@@ -1,0 +1,24 @@
+LILITH • OFFLINE CHARACTER SHEET
+
+INSTALL ONCE
+
+1. In Chrome, open: chrome://extensions
+2. Turn on “Developer mode” in the top-right corner.
+3. Click “Load unpacked.”
+4. Choose this entire extension folder.
+5. Pin “Lilith • Roll20 Character Console” from Chrome’s extensions menu.
+
+USE AT THE TABLE
+
+1. Open your Roll20 game and open the Text Chat panel.
+2. Click the Lilith extension icon. Her character sheet opens in its own tab.
+3. Choose Normal, Advantage, or Disadvantage. Turn on “Whisper to GM” when needed.
+4. Click any roll button. Roll20 evaluates the dice and posts the result to chat.
+
+If a roll does not arrive, refresh the Roll20 game tab once and make sure Text Chat is open.
+
+SAVES AND BACKUPS
+
+The sheet saves automatically inside Chrome on this computer. Use “Export backup” after level-ups and important inventory changes. Keep the exported JSON file somewhere safe.
+
+Core stats, saves, skills, resources, attack formulas, coins, and visible inventory were transcribed from the supplied Roll20 sheet. Four custom Cubeling features retain concise reference notes because their full campaign rule text was not visible in the source image.

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://20fates.local/schemas/release-manifest.v1.3.json",
+  "title": "20Fates Release Manifest v1.3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manifest_version", "release_id", "status", "root", "brief", "construction_graph", "artifacts", "verification", "lineage_inputs", "rejected_candidates", "metrics", "decision", "cadence"],
+  "properties": {
+    "manifest_version": {"const": "1.3"},
+    "release_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["candidate", "accepted", "rejected", "superseded", "benchmark-only"]},
+    "root": {"type": "string"},
+    "brief": {"$ref": "#/$defs/fileRecord"},
+    "construction_graph": {"$ref": "#/$defs/fileRecord"},
+    "artifacts": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/artifact"}},
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tactical", "lineage", "native_scale", "cold_authorship", "beauty"],
+      "properties": {
+        "tactical": {"$ref": "#/$defs/check"},
+        "lineage": {"$ref": "#/$defs/check"},
+        "native_scale": {"$ref": "#/$defs/check"},
+        "cold_authorship": {"$ref": "#/$defs/check"},
+        "beauty": {"$ref": "#/$defs/check"}
+      }
+    },
+    "lineage_inputs": {"type": "array", "items": {"$ref": "#/$defs/input"}},
+    "rejected_candidates": {"type": "array", "items": {"$ref": "#/$defs/rejected"}},
+    "metrics": {"$ref": "#/$defs/fileRecord"},
+    "decision": {"type": "object", "required": ["requested", "status"], "properties": {"requested": {"enum": ["ACCEPT or REJECT"]}, "status": {"enum": ["pending", "accepted", "rejected"]}}, "additionalProperties": true},
+    "owner_quality_disposition": {"$ref": "#/$defs/ownerQualityDisposition"},
+    "cadence": {"type": "object", "required": ["maturity_claimed", "unrelated_consecutive_proofs"], "properties": {"maturity_claimed": {"type": "boolean"}, "unrelated_consecutive_proofs": {"type": "integer", "minimum": 0}}, "additionalProperties": true}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"},
+    "fileRecord": {"type": "object", "required": ["path", "sha256"], "properties": {"path": {"type": "string"}, "sha256": {"$ref": "#/$defs/sha256"}}, "additionalProperties": true},
+    "artifact": {"allOf": [{"$ref": "#/$defs/fileRecord"}, {"type": "object", "required": ["role", "release_artifact", "release_eligible", "disposition"], "properties": {"role": {"type": "string"}, "release_artifact": {"type": "boolean"}, "release_eligible": {"type": "boolean"}, "disposition": {"enum": ["candidate", "accepted", "rejected", "superseded", "benchmark-only", "evidence-only"]}}}]},
+    "check": {"type": "object", "required": ["status", "evidence_path", "evidence_sha256", "subject_path", "subject_sha256"], "properties": {"status": {"enum": ["pass", "fail", "pending"]}, "evidence_path": {"type": "string"}, "evidence_sha256": {"$ref": "#/$defs/sha256"}, "subject_path": {"type": "string"}, "subject_sha256": {"$ref": "#/$defs/sha256"}}, "additionalProperties": true},
+    "ownerQualityDisposition": {"type": "object", "required": ["finding_id", "severity", "affected_claim", "disposition", "decision_by", "original_review_status", "review", "decision_record"], "properties": {"finding_id": {"type": "string", "minLength": 1}, "severity": {"enum": ["hard_blocker", "soft_advisory", "taste_note"]}, "affected_claim": {"type": "string", "minLength": 1}, "disposition": {"enum": ["accepted_as_plausible", "retained_as_reference", "rejected"]}, "decision_by": {"const": "Ben"}, "original_review_status": {"enum": ["pass", "fail", "pending"]}, "review": {"$ref": "#/$defs/fileRecord"}, "decision_record": {"$ref": "#/$defs/fileRecord"}}, "additionalProperties": false},
+    "input": {"allOf": [{"$ref": "#/$defs/fileRecord"}, {"type": "object", "required": ["classification", "release_eligible", "external"], "properties": {"classification": {"enum": ["admitted-source", "benchmark-only", "tooling", "contract"]}, "release_eligible": {"const": false}, "external": {"type": "boolean"}}}]},
+    "rejected": {"type": "object", "required": ["id", "sha256", "reason", "release_eligible"], "properties": {"id": {"type": "string"}, "sha256": {"$ref": "#/$defs/sha256"}, "reason": {"type": "string"}, "release_eligible": {"const": false}}, "additionalProperties": true}
+  }
+}

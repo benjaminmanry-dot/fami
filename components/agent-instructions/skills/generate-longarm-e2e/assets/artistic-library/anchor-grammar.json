@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "purpose": "Original anchor and connector grammar for converting separated quilting motifs into continuous-line computerized longarm candidates.",
+  "anchors": [
+    {
+      "id": "spine-tangent",
+      "use": "Primary route along a vine, feather spine, scroll stem, or border stem.",
+      "preferred_connectors": ["smooth-vine", "soft-s-curve"],
+      "misuse": "Do not jump from ornament to ornament when a spine should carry the route."
+    },
+    {
+      "id": "frame-tangent",
+      "use": "Entry or exit along a border rail, medallion frame, block frame, or echo line.",
+      "preferred_connectors": ["soft-s-curve", "echo-travel"],
+      "misuse": "Do not cross open negative space when the frame can carry travel."
+    },
+    {
+      "id": "pearl-tangent",
+      "use": "Entry or exit from pearl chains, bead borders, and small circular accent lanes.",
+      "preferred_connectors": ["pearl-chain", "soft-s-curve"],
+      "misuse": "Do not use pearls to hide random spacing or unrelated jumps."
+    },
+    {
+      "id": "corner-turn",
+      "use": "Quarter-turn transition through corner blocks or border corners.",
+      "preferred_connectors": ["corner-vine", "pearl-chain", "echo-travel"],
+      "misuse": "Do not paste a motif into a corner without a designed entry and exit."
+    },
+    {
+      "id": "rail-baseline",
+      "use": "Same-plane entry and exit for sashing, narrow borders, and E2E chaining.",
+      "preferred_connectors": ["soft-s-curve", "quiet-rail"],
+      "misuse": "Do not let a rail wander off baseline unless the design calls for it."
+    },
+    {
+      "id": "diagonal-taper",
+      "use": "Triangle and setting-piece travel along a diagonal or broad-edge taper.",
+      "preferred_connectors": ["smooth-vine", "echo-travel"],
+      "misuse": "Do not crop a square motif into a triangle and connect the leftovers."
+    }
+  ],
+  "layer_connector_rules": [
+    {
+      "layer_contains": ["pearl"],
+      "anchor": "pearl-tangent",
+      "connector": "pearl-chain",
+      "max_plain_travel": 0.12
+    },
+    {
+      "layer_contains": ["border", "scroll", "block-support", "triangle"],
+      "anchor": "spine-tangent",
+      "connector": "smooth-vine",
+      "max_plain_travel": 0.18
+    },
+    {
+      "layer_contains": ["frame", "sashing", "rail"],
+      "anchor": "frame-tangent",
+      "connector": "soft-s-curve",
+      "max_plain_travel": 0.2
+    },
+    {
+      "layer_contains": ["corner"],
+      "anchor": "corner-turn",
+      "connector": "corner-vine",
+      "max_plain_travel": 0.16
+    },
+    {
+      "layer_contains": ["focal", "motif"],
+      "anchor": "spine-tangent",
+      "connector": "smooth-vine",
+      "max_plain_travel": 0.18
+    }
+  ],
+  "compiler_notes": [
+    "Use this grammar to choose designed connector styles, not to excuse long exposed travel.",
+    "Compile components or geographies first; compiling a full art board into one path is a diagnostic unless the quilt truly stitches as one file.",
+    "A generated connector is a candidate stitch path. Human review still decides whether it belongs artistically."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Lilith • Roll20 Character Console",
+  "version": "0.1.0",
+  "description": "An offline-first illustrated character sheet for Lilith that sends rolls to the most recently active Roll20 game tab.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://app.roll20.net/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Open Lilith's character sheet"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://app.roll20.net/*"],
+      "js": ["bridge-protocol.js", "roll20-content.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["http://127.0.0.1:4173/*", "http://localhost:4173/*"],
+      "js": ["bridge-protocol.js", "sheet-bridge.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

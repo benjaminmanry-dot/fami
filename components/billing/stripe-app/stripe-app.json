@@ -1,0 +1,56 @@
+{
+  "$schema": "https://stripe.com/stripe-app.schema.json",
+  "id": "com.20fates.table-closeout",
+  "name": "20Fates Table Closeout",
+  "version": "0.0.9",
+  "icon": "brand_icon.png",
+  "ui_extension": {
+    "views": [
+      {
+        "viewport": "stripe.dashboard.fullpage",
+        "component": "FullPage"
+      },
+      {
+        "viewport": "stripe.dashboard.drawer.default",
+        "component": "DrawerDefaultView"
+      }
+    ],
+    "content_security_policy": {
+      "purpose": ""
+    }
+  },
+  "extensions": null,
+  "permissions": [
+    {
+      "permission": "customer_read",
+      "purpose": "Load 20Fates player billing profiles for a session closeout."
+    },
+    {
+      "permission": "customer_write",
+      "purpose": "Save Ben-approved hourly rates and billing cadences."
+    },
+    {
+      "permission": "product_read",
+      "purpose": "Load active 20Fates campaign tables."
+    },
+    {
+      "permission": "invoice_read",
+      "purpose": "Reopen draft billing records and show Stripe's authoritative status."
+    },
+    {
+      "permission": "invoice_write",
+      "purpose": "Create, finalize, and explicitly attempt Ben-approved invoices after a final review."
+    },
+    {
+      "permission": "payment_method_read",
+      "purpose": "Show the saved payment method type and masked last four digits."
+    },
+    {
+      "permission": "checkout_session_write",
+      "purpose": "Create Stripe-hosted payment-method setup links for players."
+    }
+  ],
+  "distribution_type": "private",
+  "stripe_api_access_type": "platform",
+  "sandbox_install_compatible": true
+}

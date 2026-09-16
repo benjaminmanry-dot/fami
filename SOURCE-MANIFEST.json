@@ -1,0 +1,4321 @@
+{
+  "snapshot_date": "2026-09-16",
+  "kind": "reviewed-source-snapshot-not-private-history",
+  "files": [
+    {
+      "path": ".gitignore",
+      "component": "collection",
+      "origin": "publication-documentation-or-example",
+      "sha256": "4d872194ca7dac34720ed556cb4a67301172da2e3580cf1f4b5505bbc83448fb"
+    },
+    {
+      "path": "AGENTS.md",
+      "component": "collection",
+      "origin": "publication-documentation-or-example",
+      "sha256": "d2c929e4731cd97a07506da5e2828f07be2d2a36283a3c9d258ffc91526a8802"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "component": "collection",
+      "origin": "publication-documentation-or-example",
+      "sha256": "87cc5f5db87124ff1c8c4dad684f7fc08c56e30f729d673dec82ea63ed523185"
+    },
+    {
+      "path": "components/agent-instructions/global/AGENTS.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "ae2b56b1c9cb68849b15a2a4a709a5a7d92c41e31aeb97295738b722ed5fd2dd",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/agent-instructions/procedures/household-loop.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "d7ba0a0a041cd9ec50255edd385b696b310ebe605172a3b733d79692405b2bdf",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/agent-instructions/README.md",
+      "component": "agent-instructions",
+      "origin": "publication-documentation-or-example",
+      "sha256": "1350c1e67c3a4a1c1be1b9fb3bfa3345ac35e7dbd29f586b0b76f3505905e467"
+    },
+    {
+      "path": "components/agent-instructions/scripts/test-workspace-instructions-restore.ps1",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "c7975dfc30719c4234df573be6faf68dafa3f357d71175dea3116d19df2a52d2",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/scripts/test-workspace-memory-restore.ps1",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "146c5ea8b1d1c30c10cf09ddfd535946ed63074f906cfbb72cf8f752d8d8fd4e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/scripts/workspace.ps1",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "51b52f3a26df80a437679f40097f66a48d1c5156cf3f80ea1cbc96b9a4900d29",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/ben-dnd-voice/agents/openai.yaml",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "7bd30fc7c27dbaa4955f96e97d47f90ff96f9b09fd4a9117f8bc8dbb80fd424c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/ben-dnd-voice/references/revision-rubric.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "bca1cd0d93d6cb7a92e4a0924c66e000fa3c8155cbec58b1eca7bbacf534414a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/ben-dnd-voice/references/salience-rubric.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "be9085ca45526a20e2a622e37b9b7d8de945cb140fa7907de8d0912672efa2bf",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/ben-dnd-voice/references/voice-fingerprint.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "073471dab403e2b624ca37f76eb02af2b82885180176cf20dabf94837b48f7c0",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/ben-dnd-voice/SKILL.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "422350a44279023aa5788cb3c78bf38c732d209334916ec63f0deb64310e17ed",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/agents/openai.yaml",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "b4b13ec3c330797e91560a682fb0c1489c1d80362a6f4897124f6f854fa8136e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/references/asset-art-direction.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "035f749b3402e1e26dcd86680ff780ef74ee6c6219c89c0486138a66321f2c16",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/references/ben-table-taste.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "25dff9b3f9e1b24f27bd94c901e511b55d71a2fe630ba9bc58f9a1a837c3fe84",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/references/campaign-management.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "d4a0ffb18613588e17cdbc9016c8e0e806056c066ad47a3a6cecde5fbdcc319e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/references/canon-review-rules.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "1b9a81e70889cba51baf76dc414ccd2f8b636407d8e7c2dade3a4a65ebe000b7",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/references/discord-transcription.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "6b8711d2077417633d6bbbcd74c49e26b870b6d8f613143fe86893622dbd4078",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/references/forgotten-realms-lore.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "2240613800b4bc9b530a70fe7afa0637579c4e942ca6a9f439d2bb9b9dfb7b33",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/references/new-campaign-session-one.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "21147e9d1a6ea5badbb15521d0743027667679aff1ba71e22de56cd92e03c48b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/references/roll20-importer-workflow.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "eb5acb41c44858b14d10f4a42336d584258b64952a1e0ec89e06d3876fa3699b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/references/roll20-output-bundle.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "355e3a974cfb8dfa242f27ac4f3d0f2e21c8dfe81f4a6f8ff5ee30698069f327",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/references/roll20-prep-contract.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "97b42d99dd184af2429fdec2d4ae48a8bb9509f45005b40756358ad348ae7527",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/references/session-pacing.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "32e528cb88b72f57f0e3eb1997cf4cdbec44bb4066dd288266ee40b4dee15ef4",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/references/thrones-style-guide.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "1e292f5f5552f0d166f47c46de2a7c9a613ae0e86f118838ab3177982e0e84b6",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/references/transcript-intake.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "4ae4b0527a297dc710dd16c26983f686b2ea8f36cf4dd6c22df1c369be6b3db9",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/scripts/build_roll20_importer.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "993e17280b542ff57aa6444a58a82e7ff75e60447dadab0abcd5d1759fb4d23d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/scripts/check_campaign.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "5ccc18a06588f25b37391881f1cb9122f8c538794b86250abcb6188d0d0dd73d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/scripts/compile_packet.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "140c0bf86415259fceffc60e543ef102e3deea668aef8f132a82f65700f349b2",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/scripts/new_session.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "6eace529eb2156eba4d254730824cf9b870d873cc4b944ef8d259b9e85776511",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/scripts/roll20_mod_importer_template.js",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "79b76b370a9fd37d8d2cf705c14036b97e8c8cf0389f9ff1f130f8b866c464ab",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/scripts/transcribe_audio_local.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "5966aa7effc821ecc565cd682971512680cd073eb50d1f1eb09ae2c61a3741dc",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/SKILL.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "14ce1db16ab2a4f8c1788def75586af9a029b7b9d535a5bba9792bace6480394",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/templates/adventure_direction_options.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "9ef71587fd3b96acb76a0269cc2da44a2334c1e5673ac61b0314c7db218d4811",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/templates/asset_prompt_list.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "3dcba33f672a853074fac3cb4765fab62e364e000ea870e4a7c89473632f51e5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/templates/campaign_intake.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "ec7d548c8c5a863d3fa10ea5ecb917fa5877e754289fb3ac4e4cc1a906fd881a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/templates/canon_change_suggestions.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "cebaff031da08272b8c0ec5ca3d81a585dbc705a26448327c9c431d61cbd486d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/templates/dm_running_notes.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "dda0a90973a001817f2dcf28f1a27c140cc034008704d7411aaf34b868ff4109",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/templates/forgotten_realms_lore_docket.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "5c4cd4bcb559c2cde8ddfde8b60fdcbf7d79c01f20e36291ad1aa58f2f16e0e7",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/templates/gm_recap.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "b6b90ce27c99196de815587c92afbb6a935274ddca61b6918ef48706a0e536ff",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/templates/player_recap.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "914120d61fc67bbb6379f0e0f24d2e6db7879bb3ee382341a7028d428188c3e5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/templates/prep_pressure_notes.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "d75645228d4639652ef2bac73986bedb34f5ae77d103c2eebc2e59f18fc3d620",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/templates/roll20_checklist.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "9a8b171aa8dc6ebe765463655c840e070d529772fd6772b40ed3ba8c9eba3617",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/templates/roll20_import_manifest.json",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "05a25db12fd7ba2ca6e7c1ae4dd67ca7b65a310fa570384f9bca624388b7dcd3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/templates/roll20_setup_manifest.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "2bbcfb216c01469d86cc8fe2bc54a0de93c12a1040bddf07a9f398e671e8511b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/templates/session_plan.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "d8cfba8f790901f19d7539ef6ca11e150c5942c23dabb66b2a0cd6d7b52e21fb",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/dm-session-producer/templates/transcript_digest.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "6fa1259d46f90ed7572725b3527d1b51031e620acd49ea67e94a4df360d80992",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/agents/openai.yaml",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "cc3ff6f31df27dc59a02674447d59534dc965adae798c4fa0c91f00f0d652869",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/assets/access-request-template.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "2215923d870ccbba2ffc701fae69e350314c22de4154207aa0942f81d69cc385",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/assets/admin-message-template.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "f7ff97171f71c26202e8b4b6392e6c172f7f7ad5e5da7509c2570586e14118df",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/assets/outreach-template.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "9b80a175bc48b44787dd5563112e9d25478710b232ee5da1a0709efc457b5b7c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/references/ben-20fates-tone.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "0b88454ca26b3a746d9f4baa49a774a69222dca871f77ea0f86c8778a3975bc9",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/references/executive-strategy.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "981ef1492b20984ab661dba4751df40568b5e1eed49952e16550ed284455beec",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/references/outreach-playbook.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "f3ec6ed7e53532aa0e359ca238f4db866e770a585775c79f560fbd641405c9fb",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/references/platform-tone-playbook.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "644899373b9f7f7ac367605e75b7863ae9a26c81033cf9cdbf8cb6832c2b0ecf",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/references/search-query-library.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "49b637fede9cb689f1f99455dd9c05ad78d6c2e7605c04608c654181adc22b06",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/references/source-policy-playbook.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "806dad68d85cd996f0aded43b342fe51b12fe1963db53bab341f01ac692cfa61",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/references/source-roi-playbook.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "103fcd772fe6ed5e1f479fcc4cd447e870d7212c2534d568f509fcf56bfae96d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/references/source-specific-operating-playbooks.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "5eac49d1987d09c3a2da5608226ed4937b384c3f55f9bacac35e656fec5bbb00",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/scripts/analyze_source_roi.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "9922fd860606167f5e3400911c11fb407299d591b6c5adfada20f61476b42845",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/scripts/generate_crm_csv.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "d2b3e1bf1776ba56c754b3c151f0b86cc43d2a3e20e8b590ec4ef6e243542130",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/scripts/match_20fates_campaigns.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "ecc9e3416d4f51ef4ffd787b1a7285818eca9f60fa52a6a9b58442de953b7e4b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/scripts/merge_rules_memory.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "03cb13986be3d473fcb0be7b1ccf08183767b547430d36611eaa237ddd96b405",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/scripts/refresh_20fates_offer.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "85cb7f14d7a8f455b8cd90ddef5aecbaaf9bb932cabf6c8c46cb16584c007e6b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/scripts/score_communities.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "89da7ddec46e04cfbb0090a934ca50f2d4064cab64e1a152af6c57999b6276a5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/scripts/score_leads.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "95bd9d3dd8d898170e25a505c3573ca89d73b332f83dcfc39643a7bad1852191",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/scripts/validate_leads.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "d7c09d46a38c0583aa33b0bfea5684cca1c1ff0c604ff7bdf7d0fff48c18229a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/SKILL.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "6073435b5fec8bdbcd4a557b09d955c151727b4c51936f36bbaf81aae504a90a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/tests/fixtures/public-offer-v1.json",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "46420678f278c2d043e7e96c1385fb13a6d9d4459c02337dca321323043a63b9",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/tests/test_acquisition.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "fde20d06beace8ad025d5e39a470dced5525a0caa7b1acf0bf447f216a90abd1",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/find-dnd-clients/tests/test_offer_consumer.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "f40f604c869b2a6d558e8dca86577869942cac9a55bb204d93af93f5810cc8d3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/agents/openai.yaml",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "c441904b5c214a4e7f48b2aee1792db8e0da54029cb86b41f54eccaafd67be99",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/assets/artistic-library/anchor-grammar.json",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "4aaff12393ff9fe00ade8ec78d6ca1c5d5b47f0ef045db343b59f265d2fad07f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/assets/artistic-library/motifs.json",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "f4760ced7e432f7e6f970c58cf19309adf3d4a6749c5734823323221f8822aa1",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/assets/artistic-library/templates.json",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "5e9919afb75ff145efe0db6c696e6dc072f748e4ced02123d32f5830c5cf0580",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/references/artistic-engine.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "59d1cec2381abfacd5f640645328c81186bf94c00a8aa0b0e68c71db19ffab14",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/references/composition-templates.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "c6b0e6176d4177fe728868e56ad0740f83ceba0b6c740adf6b06f339d9f9931c",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/references/coordinate-designs.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "b0d2aefe820cb003068919f873f7fbd58955667000b25930b0f36f5f5f3acd2e",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/references/golden-acceptance-suite.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "96cfbf29958dcae3f4d42762bb116b30df4476d25716059f5e394a9c2a85407d",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/references/hqv-export.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "94d159c4be79a26f4fe67ab8b4567e00699bc52433fcf479dacfff063a2bda80",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/references/professional-art-standard.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "d56ed403ae0bd868537a346b5f95ff42a6367effd63a83fb37f99e45800634fb",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/references/style-and-quality.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "bfcf49d74369846448551d4092e7ca3b47fc9d1e452eda6869ac3ca2c48d6059",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/audit_artboard_quality.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "e74883faecb995674b8ea19bd6b2216faae983c857714046176532ede2a3dda7",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/build_e2e_pattern.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "8bcb7e04a0f1e138a51125d4ca06ae17821b0ee4f7ccff53d28a1dbe82b53266",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/build_heirloom_coordinate.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "1f2dac920089348ec96d0a884dcd736d6e5c874034cb5ae121c2e4e51db24aab",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/build_native_block_component.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "e0fdb35005d0bebd14b272e043991e237a62af9f6a9131daa8c7c0e7794cd3a8",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/build_native_border_repeat.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "7aee9d2a7ebd261fe736ff5fad1bc55d4bedc3613b23eda7dd80878ab2e49104",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/build_native_coordinate_set.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "fdd7ddd7a27e45d67e6012f339c1efe0bf5d41acecd30a1b0442acaf3c2566ab",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/build_native_corner_turn.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "47f78d387bbe8427708d1e628c84fc1ea11c3ca3478f0d74673b6fed002fcaf5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/build_native_focal_medallion.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "f776d563f313052b3c8b6ec9569c59a2c5abd8fdd2e647615cf7c3251e1ef089",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/build_native_sashing_rail.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "af814e96fc86f74d5c36b5cdbda56ee608332b66ac039eec97aed2705805a80c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/build_native_setting_triangle.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "56cb9b14a23cf4da2d37449a7f9b81d91586b5fe17dbb1ba5eb79583565a636c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/build_square_layout.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "0aa5086657d4494da0e159704661d4e860afecf84de742748f4d6abbd6156a3a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/check_coordinate_art_plan.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "d645394f062d23ed077156b37e10fb36957e3d85a755b483a7fafe34753c8ff4",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/check_golden_acceptance.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "2d44acc2cd081367215faaeddb770141e8118ca671ab6f4eea09e22cb52bed22",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/compare_artboard_regression.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "fc40dd62bdb435e518506e3f874a0d1032546bfeb14817666f7238cca8dd13ad",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/compare_native_coordinate_package.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "37ac3ce9ab7620af27e1adbae6a27bcd0f734a496d77a4826e9df1209dfe5019",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/compile_continuous_path.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "cf6dfd38509605b9cd8113d9f4be065d16748bee526b20e992a33f850d0ff67c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/critique_artboard_style.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "57c1815ab167e663225ec45f8c9db40184222ac3ad81c0af87cebced9567a6bb",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/critique_native_coordinate_package.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "c60d8fc712a9a40f7be04b7f89e1b6ffff81208776dad455977b16298929477a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/generate_art_thumbnails.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "6c187450c64fa82228e1db517dc7123c3ade7bb77bbd348deb3985eff3ea086a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/ingest_motif_asset.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "e44b753c21ddfd6e0b600f0de988dacc237846cab1cf6b77ff8106b886194484",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/longarm_geometry.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "4f69197174a385edee6b20d18ba0a777fa5c2cd611b3319aaf65adea600d0c97",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/machine_behavior_qa.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "b511f7b77bc48758bee884090ebb7bb8539c3c3eb8341a833b0372c1f3df9046",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/make_native_package_report.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "ac5c3b537b69e001ec5a4c4718ad83264bbb0de13041fdba1e68b862bd702171",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/plan_coordinate_artwork.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "532fbfe8da0309b0b74d47e534ed0cc117f615cc8a4ef0631e4d8b7801aef2ed",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/plan_coordinate_designs.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "8794b380fbe7e3bd3b051c5be74dc1787fd42a405ed856fd70316eb1f0115853",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/route_continuous_paths.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "d427f0cce87bec8fb3566b68fecdd015b4573c61fdacfd6c283a46f0f8307059",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/scripts/score_art_thumbnails.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "94f20e4e5bf8e864f50c1c58ecee5a90a757a950c36de4fe8512482c0713d38a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/generate-longarm-e2e/SKILL.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "0751ce98e626be70e62984cc58f1ff0253580bd2b9057b86d86997e09076923a",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/agents/openai.yaml",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "84a36c782279e6bb9ac48ab37bf6cecf73cb6d00c55e243cc57bdee36a6577d2",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/references/discovery_policy.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "04ae0ede2784de52c7fb224392606ab0db5769e8e4c260379701fe777e9333bb",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/references/evidence_sources.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "63db1d31c6cc632e4285813330f74f0ad76e6ba27779cfa92af2d8102ef15c79",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/references/harness_policy.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "6e07f9e5329ef8c16238c8e786019e1f87f06bbcb76413764aeff786d2d28dfe",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/references/portfolio_policy.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "dcdb2601ca9bd8e260befd2854e15bf93ebe247f61b9149dfc51c191e8469cd7",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/references/risk_policy.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "582b9e17fe76e4f0d52e59eed9b1b38bca8e105470bf1961bcd960665cef0f50",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/references/robust_testing_policy.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "ddb6eeba3e47a7a1cb842658ca1d4ee22a253d7e6aef940d1a5e73985b0b006f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/references/simulation_integrity_policy.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "259dac3a001f1961e1cff6d85fafc91817c9222fca725943f99669a2cbf39475",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/references/stage_gate_policy.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "226eeabf00a04fbb58c6a3cb6ade8924075253e4822995d24f9d2909decd12b5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/references/validation_policy.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "4eb1163d4a40b5b358ada4ae3bf4da68ba35a6b544edb828eb4a4e1bfaa7cbda",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/schemas/candidate_intake.schema.json",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "e1128ce2ff144cd9a4f699475db81dac6e25254885a0d1122e72af3462c8f923",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/schemas/strategy_card.schema.json",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "efb79f08f87d4a24a62480eece7f4702c17c9d3d4a4559dd37cf64712ad53afb",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/schemas/trial_ledger_entry.schema.json",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "821897050d4b6a0800c60c9772f964ddcd5bd7736bebc2f4a5148ef64e4dc23f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/scripts/audit_research_run.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "80b6a9bab2cda343fb3f6b3be73eb151fcab15dbd92b47d545237ca15a11f734",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/scripts/generate_synthetic_market.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "b55888777d571829659da310d5fcdea94d74da19c2303018dc541629b22f8ab7",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/scripts/run_control_tests.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "639af62ac87455bbdf77db2324c67eac17b814ae4eb34db5608490d52d9f630f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/scripts/scaffold_research_run.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "45c4eeab53f54f7214b36ce11d9df9c8ddd80e2d3aa055334a9ed28da79d2477",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/scripts/score_candidate.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "9ffd5f4f4b84218e3071c472db434e2fe800ad6fd1c12687bb1f162148deb29c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/scripts/update_trial_ledger.py",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "8bafd905b2eb9c71f306a346d4ea419e4d4ab49e932b1bf132442a8b97fc8ffd",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/SKILL.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "c75fca19d854355831fe8f4ea44da14c7f403706c51306b98c2dd54ed367acea",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/agent-instructions/skills/paper-trading-research-lab/templates/report.md",
+      "component": "agent-instructions",
+      "source_commit": "e34dea4e3308bf2b5f07a6fa88e2d91f51242deb",
+      "sha256": "002c7cc992e33722f157e82bc3ab5f391986c9181347039a8070cbbc8d152d1e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/lib/asr.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "57e2236ae9ea7116691cd6a17dc3c0a68bcaef9683bfb4e00fb946c02ad636a0",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/lib/classifier.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "7cef6c3bf8a64fe8ec5c09c73ee0562f2377f3860070bed3eaa3b7ce167d2d59",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/lib/director.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "934e179407672bc19449e2a1d17f7acaa42726843c4ff3e3ff54cdcb7de185a3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/lib/discord-manager.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "26a9c0cec92e9d9641b3eddc865678d68a5d3d8859fdb880d631036953088941",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/lib/familiar-discord-manager.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "d57e3db44d3381c5c89ace969fed8ffdaa841c94eae3ae513a4cbf088329b05b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/lib/library.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "79bd2f4c51aa9d4875fb9dfeace5b4d408736f17ce23d74170ad12acfcd306aa",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/lib/pcm-mixer.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "1b3676ecb65c4c3d2058466663ae4e943f2ddde3db28c8af4eb9d35f23dd3a5e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/lib/scenes.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "1a6472723f7df018bbc571b765c470386b6927613845a5b0d90872ad481cf840",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/package-lock.json",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "d2d444c536d4b3b856e046d596f5dba3573fb28f6bd26b2b93328a78dda59708",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/package.json",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "e0790e38455ba1e1c122d957d3f80394a8764c260a2bb8cb106ff2060b498882",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/public/app.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "d31c966b2ecacf54486b441eb0860da1d54a37ea1c49448ac233f905065fbfb3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/public/index.html",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "f05e7af4aa213d1a10109b3a31a4fe9cf78526da13c089d6777496ba796b2672",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/public/styles.css",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "951f0cd8fa359f9f9ea68d8d2af5a495e53e54753e06b77fbf00b705f30acd66",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/scripts/make-speech-fixture.ps1",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "8bfeee3c3f9d8c0660cd73c3849d13d574dd14ecb7aef9ad10bab0a405959d86",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/scripts/prepare-asr.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "49641987d51180036d88ff0133257853018cfac89a3a54bf26415d66e70b4e6f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/scripts/setup.ps1",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "53dd31f9634a7bcbab9880e3b78675555d4b3a4f7cd57b46b38694a1e2ff17fc",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/scripts/start.ps1",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "bb25d957241db78395a6b2d6502420f24c35812bddd8ea549def168ceb53db64",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/scripts/verify-asr.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "cb8875d9a4bb15e6318547a86d19423fafeb013b4b2c3223cc0596ddc5c66cef",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/scripts/verify-install.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "a7ce4291d2eb978867f18fd735afb06aaa93e3f09d1e0034759ff6035bdb922f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/server.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "242c9e50b1319d5dcf5cfb0605b62cd641d8e369637a79ec0c9b81cff185d8f5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/Setup Bardsong.cmd",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "713b0b64d08795394c533f0af710f0441c41c3f82b9ee260d371aa5f71ae4795",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/Start Bardsong.cmd",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "622c983ad9ffe861e983f8b48b49af152ec3f4249e0a6daf8570f4ce71dcb1ab",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/test/classifier.test.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "34ef81058a01bda03d06beee9dda0536df2f39ec8ba2d9ab2664c90f65469f0e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/test/director.test.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "ed081ec82b0165851680771c8adfbc558284f8e38488e4e2011c35ebf8ca652f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/test/discord.test.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "4bce056afdd0264098d824a5c4a9964049bc66adcae67a6ccc49539dd6b6a677",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/bardsong/bardsong/test/familiar-discord.test.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "c8c0dadf18f503fdb7662b14d24df5659fa66b27870059cf549915c3d59d25f2",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/test/library.test.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "8587d17c61e95657a4003b62e5c55c86ea278ad1f50d52b7025f185828a04471",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/test/mixer.test.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "4f3237154390ee7b27f8ebfc22a0ea0710c69e4751f5dce6aaa0a0ca87d82e17",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/bardsong/bardsong/test/server.test.js",
+      "component": "bardsong",
+      "source_commit": "232bbf9b2aaa6036f5ee10c0d871ae3033ba63b3",
+      "sha256": "00f9c2dedb744b2f5e87bd8addbc5eae5fa2798a4e2f36a4de75d44fdadc0852",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/billing/scripts/create-stripe-app-icon.ps1",
+      "component": "billing",
+      "source_commit": "7253e034c69a484b91a41feadc2b97518ae424cf",
+      "sha256": "34ddcb21ecdd58edf0ca312c70bcc7b22bf3844321cc55e7a5014deb3a2f0d07",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/billing/stripe-app/package-lock.json",
+      "component": "billing",
+      "source_commit": "7253e034c69a484b91a41feadc2b97518ae424cf",
+      "sha256": "aca83acb527fa316dc5eec11e4f203dbba2dc6b27a8ca4f2e8173ce0d63aa454",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/billing/stripe-app/package.json",
+      "component": "billing",
+      "source_commit": "7253e034c69a484b91a41feadc2b97518ae424cf",
+      "sha256": "62e0f41540ad387ea947da1f03efec87a3fa0bc635cf02be81a8067da67a4a78",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/billing/stripe-app/src/billing.test.ts",
+      "component": "billing",
+      "source_commit": "7253e034c69a484b91a41feadc2b97518ae424cf",
+      "sha256": "62a4ce2bae3ebba094a6bc7242da993d6442c6e99dbccc70ec2c6c69a2aca928",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/billing/stripe-app/src/billing.ts",
+      "component": "billing",
+      "source_commit": "7253e034c69a484b91a41feadc2b97518ae424cf",
+      "sha256": "639dc0b42638fd65ac852a6b31824cc66e4ef47906018cead6dc0349684087f8",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/billing/stripe-app/src/routes.tsx",
+      "component": "billing",
+      "source_commit": "7253e034c69a484b91a41feadc2b97518ae424cf",
+      "sha256": "76f4730e56c7fa544472c464116e1b50fa1ca630d62226c966ba004a0b76661e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/billing/stripe-app/src/views/Closeout.tsx",
+      "component": "billing",
+      "source_commit": "7253e034c69a484b91a41feadc2b97518ae424cf",
+      "sha256": "6a2fb472512b88ab51fcd9b2e1363918215eeb444697ef746f2a2720e2987a75",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/billing/stripe-app/src/views/DrawerDefaultView.tsx",
+      "component": "billing",
+      "source_commit": "7253e034c69a484b91a41feadc2b97518ae424cf",
+      "sha256": "a840c5b5b9044e8effdef343c0cb0734a2381b9149e7f99e2395623a7b04b1fa",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/billing/stripe-app/src/views/FullPage.tsx",
+      "component": "billing",
+      "source_commit": "7253e034c69a484b91a41feadc2b97518ae424cf",
+      "sha256": "d40c8179da275ca31f5a57399594a1e09391ec2887ed7004650e712af1ca22c9",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/billing/stripe-app/stripe-app.json",
+      "component": "billing",
+      "source_commit": "7253e034c69a484b91a41feadc2b97518ae424cf",
+      "sha256": "efc9e9e3f072eb4f6811aee7d9446694c1e79964c7eab32e3ce51ed064d7f5a1",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/billing/stripe-app/tsconfig.json",
+      "component": "billing",
+      "source_commit": "7253e034c69a484b91a41feadc2b97518ae424cf",
+      "sha256": "60b1e423d8742308807250456785914a516f712cf7ce4628c869f9c5aa844c3f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/display.css",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "9117915490744781c2f5ae22686849a4007dc49a367a4de6a80393446b26ff33",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/districts.css",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "bdf685c567e70bdaf19c97191d7897781e0390ca30f50e49e450efc4af8998af",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/icon.svg",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "61ff0b8002afd6d95e05ed5a68098d3c98812901d175bcd051392c1ebcb5ba04",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/index.html",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "5cd5556bd61dbc1bb2a5a44341bafdd76a9775a7a41afdceb212b9e34675ed9d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/js/app.js",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "5abe28dfbad36fd3e91e82a1a9aee504e910c5e8bfbec521babecf7e50ad3b0a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/js/audio.js",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "4ca5f19963acc205014445250e5b8ad7aacd7eaca5ea84c0fbd6a46f47111fff",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/js/engine.js",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "76f9117d2f12c55c7a748fed67bd680c0125526feeb3b45c366a11304d0723d2",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/js/listening-room.js",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "e14027f514c2af1e7cbebb1eb3289be42d33605d0ef06ec6611e68cbfe36d713",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/js/progression.js",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "4e1af60545763ea68b9ac7cd61afe211ee7909eb9ce59e371da18dfd5514a253",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/js/sweep-engine.js",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "1519a6532e3ebec576bf7de9a9f047e0ee63281a48fa7cb9f6cb99e3b7770f81",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/package.json",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "79c863fd315d632f46e660be521b04ce4b7f40c2a4376fcaf0e06395322a0f33",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/server.cjs",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "646e624f7e77458ce6068fdffb46f25de5d77f19ee9dad9d105775d954dd56e6",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/style.css",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "9f94ffc29323f6509ac59b6765c6f58b3e206aee92296ffdc3406244231cf4ba",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/tests/analyze-audio.cjs",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "e56f6d26d95c1f9cfa5afe73b100188a45d371f01b460e60127032c1ed6cdf54",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/tests/audio-proof.html",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "c9ad1eed94b7be151f0784e4639f054d9a333690da5b8bde39248c979dd1938c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/tests/audio-v3.test.cjs",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "b184555f2d3b803dea3e6231dfd74780259caf35ad147b995139a630d95a8a69",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/tests/browser-check.cjs",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "4fc4670092e5e0a4195b9968189b626d66aeaf56adce7a59ace49cb63fe31ff2",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/tests/continuous-play.cjs",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "c80624e942883e2047ef5b1f0771e978f55a4f82451ec550999518fcbff72963",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/tests/engine.test.cjs",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "9c477f548292932ea1765054da5f2905b7607a8df5a8ff39f6b7fbf67ee1986d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/tests/level-one-loop-check.cjs",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "35640c05562968513db225dfe75e57b843a50612cb383087fbb4b72fc5c71577",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/tests/listening-room-check.cjs",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "8f66ae81e6c9069cdf52b641aa4474c9d41438ea10d231734b81ecd6b9a3f95c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/tests/package-audio-check.cjs",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "ea1d1f684ecbf65331da6bb6b46ddfe540d8fbfe2768dcd25b3dceb68cf9b709",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/tests/qa-planner.cjs",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "1fd1424a1a90a74c36103069ea647de70ec650bb397ec10ee44c20a0dc6abc34",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/tests/render-audio-proof.js",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "8b3730dbcdb808ee5d3e0cb17fc411a77505c0bcf0385036fbbce48416fa765b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/tests/render-proof.cjs",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "02d5af2feedbdf5298f5ead500f889c1209595a19eadf5a7c994c6a0e8ccb542",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/clearshift/tests/sweep-engine.test.cjs",
+      "component": "clearshift",
+      "source_commit": "2b5d0ebc976d30c1d73eefc177f61596b8f755a8",
+      "sha256": "76a2cdaa61e2f4a810592f5ab7bd8cc0cc6a4650a6f53c649a4159dd0e0c674a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/everquest-tools/scripts/collect-character-snapshot.ps1",
+      "component": "everquest-tools",
+      "source_commit": "baf40a1d35703336e938a3235cd459a004c70f0b",
+      "sha256": "654980fcbee67d92431c17cd4deb215ef009c0bbd037100dd98fd3b8417104c2",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/config/controller-guard/controls.js",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "4eed11c18a25a14ea9de0474b53929b22bdb62349dac4b228fa235deac07db8c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/config/controller-guard/images.js",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "b3a116918f69dd8a9cf2442da5f87b1da784d47cbbe3b997aa097faa6c45f550",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/config/controller-guard/index.js",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "62cc39956a37db06b3f1d81dd654d6e28e07bfbd4a330e945af11142aa5eaec5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/config/controller-guard/openclaw.plugin.json",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "62b993d4f719235c852ba315bd8fdac101f6a0e0b9f06fb94e571cfddc65e2d7",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/config/controller-guard/package.json",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "4295690903789e60a7c68db51c4bba4a3fe77c8c649352408b7eac2feea8de98",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/config/controller-guard/results.js",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "4720b841f706913168b6c9dd9cb06c192879b0e8f6490fa124d70039e7f7b8f0",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/config/controller-guard/test-controls.mjs",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "573d719757c8b0e93f182bb5c058127212ce029d1fdd9d8ec297ae0dec48a920",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/config/controller-guard/test-images.mjs",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "7e100d013d2b7cbbbd3f49737a7ec6bcdb59be48580e6f1b642a13b03854e794",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/config/controller-guard/test-pc-dispatch.mjs",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "82c54f2871b7bb5e0d652fe88874d56eba0892d1c4412dc29efd015b554281f3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/config/controller-guard/test-results.mjs",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "cad50c104a3afa84e058b4424d3aceeb362d933bb5fb53f5c2258e8ed9d12fc3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/config/controller-guard/test.mjs",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "c3bb512baac2e01a82b49abb1b43dcbde60210e2350e7c54279b19168be8b764",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/config/hermes-fami.yaml",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "cc64da88aad73b82a9154a2a2ea6b607deec98a351ca8c2b793e8ecc0f31f43e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/config/household-loop.policy.example.json",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "9ec81937f62b820649cebff0b45cb79a96be8e2354851aad08b8e4a6383809d0",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/fami-runtime/examples/estate-map.md",
+      "component": "fami-runtime",
+      "origin": "publication-documentation-or-example",
+      "sha256": "083e21d4b7cc44b12959ffc303389ff209417e0168d154da60c0e474beb5a368"
+    },
+    {
+      "path": "components/fami-runtime/README.md",
+      "component": "fami-runtime",
+      "origin": "publication-documentation-or-example",
+      "sha256": "0a43191e3c39df5188d881db01b0681e9df0b153db905abe3d40d5d4ea2b9038"
+    },
+    {
+      "path": "components/fami-runtime/scripts/backup-sqlite.py",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "c5d0ed64e0d1d45d061074737a21daf15c3084ca473503c5731501479867667d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/scripts/gaming_guard.ps1",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "f51034f1b485cc45e7ddfaec9c249533c90c6a7cbb9fffda5c3c3bbe554c092e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/scripts/hermes-acp-proof.py",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "45edb17d33e98f37217fcd381ba7cd29bf8d384c15d67c5cddd7c8840c335108",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/scripts/household_effects.py",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "ac2b3add95a0f668d71cae0a5bcbe6ac0e5e6e254e4415b6a30fd18329992ce9",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/scripts/household_fixture.py",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "704059c061d3d2fe4ab70b215ce999961d99aed895a4a0f4b2e8aecd165b974b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/scripts/household_loop.py",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "f98b1b0f0a92fc7cd7ccb8e0aae13f84d3a93fee460d10cd7e1f1193cd681cc8",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/scripts/open-fami.ps1",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "818a0ac4c5b74dcd8502ede44248f564a4e2cac85c9c3963186484ca3fc0ea55",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/scripts/result_snapshot.py",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "d979eb6785ff8c68f3eb0e0937bb5be96c9f5d32a83f327dcb54ec6fc97f346c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/scripts/test-native-container-interrupt.py",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "d928d3f0a8b94ebea5cfc28c1dea8726839918c266caa953c7b9ded5afa062d2",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/scripts/test-pc-provider-failures.py",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "b39abcc834e3551466fa316855da40019c25c336be7827240201ec29d55ea797",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/scripts/test-result-snapshot.py",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "b5530e0936f409a9d5f3c7bc3b2d9781d73965eafa5ea17b628a04023dfb72a0",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/fami-runtime/tests/household/test_loop.py",
+      "component": "fami-runtime",
+      "source_commit": "3d1a146f8337904de60b2c61f4175108c5161c68",
+      "sha256": "c45a8d8797d5d35c8ffcb2322a14218d1b0ee60f766f26a4ff3aa6b438cc58bf",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/bot.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "77edfe5eccd266de9fba640b92fbe5ba650a69a18770053adc0fd3a097f9c2e0",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/deepseek-responder.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "841756701af2c7e30a96993321b3a7ce17e1579d75225698a04d5ebbd1f026ee",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/list-targets.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "beeb1f0e0e823b8ba4b6ee232fc062edc0622fafc25acb0bce0c9fcda43683b4",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/offline-discord-transport.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "5e37b3875ef84124935c627ee03e7c2d133fc0dc33acc49322187b1bbd0057e8",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/package-lock.json",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "4bcc58e119d827e5482532d94e9fbe5924f98aeff855d3ab2bf78cf5269cae7a",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/familiar/package.json",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "869d7ffedfe88d5ae57795f1bc3436bbddac1718c8617cdd13ae69bbe20ae57d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/player-help.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "7c3e0a05253f5b81019e8bb0e031f36a925116647b08db4a8f196813ba8fe51b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/README.md",
+      "component": "familiar",
+      "origin": "publication-documentation-or-example",
+      "sha256": "98df06ecc3dab5d1b3dcb9d12b4d26c8e36386c6ceb5237f06003d99d1e8b31c"
+    },
+    {
+      "path": "components/familiar/scripts/run-deepseek-audition.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "4f497cd0ff39667a7b01de3e0e647f42c328c5c526736d30244d0f1e5cde713c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/scripts/start-sigil-bardsong.ps1",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "3d168e2969d375a59e9e1d68ab6fa6d065589b5ed4f487418161edffa624bd75",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/scripts/transcribe_audio_local.py",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "35d95e4479932241c4a101e09a024458c7d1202dbbc0b069f72f7ad118b4f476",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/shared-voice-session.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "4cc3bb5bb0af15276b9b358d749dd7af4aa3f1eca772c9752727d091a6c65929",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/tests/auto-record.test.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "776a15fbeefae61b23bc30935dec21427425efa3fdf29c96da285b7eb24ba963",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/familiar/tests/bot-routing.test.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "f6aa5731004c45fd70b0f4d471d2b44c62c11cc96ed1f4d377d048d4c00003e2",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/tests/deepseek-audition.test.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "6977a23f84907711dbae05e39d0eeb0082ff354b156a35550a810ab4515dbfde",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/tests/deterministic-character-interview.test.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "bbfb3c47bfe503fe3cd3d2810c3dada72e35aa101745ea8aa3c6dab432525a60",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/tests/offline-discord-transport.test.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "efa479cb4682c27fb3532a685fb4c538bcfa5206530b611c2d64cbfcf598c0b0",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/tests/player-help.test.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "ea7d8b1ca7b411ab0a3f29ed100eb5b76f52773112acf5b8081abfc57f95009a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/tests/runtime-lock.test.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "2995efefbce3c17958cd70f1fe7288556b61c921edd279498a783322ea72c6a0",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/tests/scribe-capture.test.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "346ad3591f4daeb3b012f619994ea2648fb36ee504e134ad6f02450257239987",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/tests/shared-voice-session.test.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "90b29347f830df261d7670cd40487eb572e0bb53a8954f5ad3909600ed619986",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/tests/vtt-character-bridge.test.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "06a7a15786870f78289e980067196425d47819ebe19340a76c6a461b14944ee3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/transcribe.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "8959ef4c03832da18165fd11fb87ea3e0dee80a053bc1b6e2a890a7e2032c7d2",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/vtt-character-bridge.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "f6b20df49af8ab4aa238b702b735f8f4488ab4c6485112fd052b1e67cc3923c8",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/familiar/vtt-character-data.js",
+      "component": "familiar",
+      "source_commit": "ca49324cc36d0e4da11ff65009c82d4555433be8",
+      "sha256": "c72ecfa2e1aff5a360d1620a5dc9fc8a87d7a2b11e99dae5dbe39263295f0249",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/characters/orc_legionary/heritage/orc_legionary_heritage.gd",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "9b4e0b49999de7c4480eea5df7a10ad9b0a9a8672b91ad9056f7f2262f542dda",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/characters/orc_legionary/heritage/orc_legionary_heritage.tscn",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "c73f2280b8c613305dc9ca1f82f7e07a27c216c9c49fb07cd4405438c2d42bcc",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/characters/orc_legionary/orc_legionary.gd",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "0779eedabfcf8643a33a05d761447417a67c90028b7f1b8692c653ba35eb3fc9",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/characters/orc_legionary/orc_legionary.tscn",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "979780f4ef634e7a9150904b042e0e335940eda17018cf2d99495a4a9b6bee25",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/main.tscn",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "f42251de62b3eee9748ad4a08721fff3a2c98f4693884fc4a762a5c543d76c90",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/project.godot",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "188ea37a41ef4c2b43185d74368cd023922c8b8b6d6eb4d45c7ede96c8295bef",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/src/main.gd",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "5ecc102606253141969d770bbc18c7aa60c52d36cc36d0c54fd3d0c644356180",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/src/player.gd",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "7341e3fd38c54ed11efde96c303f9c934886cd4610440de6ca5666391c81c2c5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/tools/build_orc_legionary.py",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "2f17c9ee7f8e8d737a64a8d5de777ef67cf1833071917c313349241e72e53e53",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/tools/build_orc_legionary_conventional.py",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "dc5f76a7f16af325181ccd32fda7d38f304ed230fec3d9eed90df87f9cb3c870",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/tools/build_orc_legionary_production.py",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "ba594d4938040009deecb7ef7754d7c33a1e0a8265e3e14db74f2cdc6b41957a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/tools/finish_orc_legionary_model.py",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "7cccf9fe3c1b353fa30e58311d55372ab032800e36ba735401b2294e96f3c1fe",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/tools/generate_combat_sfx.py",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "3d24e718dace3ea4c20512f6ab8fc57dc9d83bc1d4bcbc71653ae191c0019edd",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/tools/render_orc_legionary_conventional_proofs.py",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "e3a035eeccb9d599e44170eada2dee9dc21923cd1fe24ef1dd1ed5fe368c9715",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/tools/verify_blockbench_spike.gd",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "2279721c2fc4fdb2e45654882d07d808ef460a4738e61876b014b8fb34d0b909",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/tools/verify_orc_model.gd",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "8082f7d32e5918180b755609ca92a4b6a30003ab4a61bcf2bdabc0801bd9c4dc",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/heirloom/tools/verify_orc_model_conventional.gd",
+      "component": "heirloom",
+      "source_commit": "e739a53473acaae6dd22468ca6b071b75475e774",
+      "sha256": "b18ec19a4760d68e4f28cbfbd91c7e46e5fdb599f94c8f4f7bfbaf711639c6fa",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/.openai/hosting.json",
+      "component": "lilith-console",
+      "origin": "publication-documentation-or-example",
+      "sha256": "2b679ca12019f93ad5250f5fe778229b64117e1d4f8178589ac2787c1a4fa3f9"
+    },
+    {
+      "path": "components/lilith-console/app/chatgpt-auth.ts",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "1407f614cc83d7049fdb08cd713d2516866ba58e24e820f7f4fd9d718b9d3007",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/app/globals.css",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "24dc359af49c941ace988b794815b441844273fbf63ee4c9d021ab3eb7a97862",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/app/layout.tsx",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "dbdb044133f252b41b1acbea1db7486a3941c2bbd73302fe9aaf8e27f1901578",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/app/page.tsx",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "a70d08344e3cb50551f52850f8f68415d1832747d5e0614047f54a58e7ce04b1",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/build/sites-vite-plugin.ts",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "abd6bc3a592961e978ab72fceb8ee7647824d9a2321ee5b5777b2a05d69526cc",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/db/index.ts",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "effa59e46bcbb42dfb7b46911e809a1de0f2c37df1fd935e3dca89023eaf97e4",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/db/schema.ts",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "48b4f7fafee1f2720b8977ba31bc0cf03dedb7ea8826c4bcbc8dfd74f2d8744f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/drizzle/meta/_journal.json",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "5a5f57f8f48fcf1d065725c0f3dab19e590e96e7e1e5bf8ddff17339a0de8d9a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/drizzle.config.ts",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "73d0807c58e541dc3eaf175909fb5acc966faed61f74ff659d9d55027bf3e25b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/eslint.config.mjs",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "275a07c13fc7c83a652efcfa9fb6a207c451a2f5088e6793415ce44281285720",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/examples/d1/app/api/notes/route.ts",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "b0b134b9b0b4a9f5947abbd13fd4425b88b59c64f91db1aacb0cecbc16c38f45",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/examples/d1/db/schema.ts",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "1acd70317bcaf22cb140436fb47754c2144e7c2adfc59a3f427ecb1d816fa0f3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/extension/background.js",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "d0271895a30f316fd24f86374c69bbc0ee7ba57e64fbaf5e1284d3767eefd4b7",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/extension/bridge-protocol.js",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "41432ba9d0f4d532e2dff50ee84e3b187bb04a1621eddffe3c96ee2fa6ff2c47",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/extension/INSTALL.txt",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "e3310c1f9869d39b18b6cd024260ef8acafd94d388b8829755b4ff6f224e9a2c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/extension/lilith.css",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "b071e7cd50c6ea54f18f0001a56846f1f1c4729c0cff082752ad86a5c21c9861",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/extension/lilith.js",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "9437ebeb55fa69866ad9a0f984dae90bf21e05aab28b1475c2d05cd4ef2078ea",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/extension/manifest.json",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "3602eee8f289a37ae5708670d892a80e3ddebfa863cfc779e4642c4752b2ce70",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/extension/roll-serializer.js",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "84a68b68302a75967def1c2e1c31a5074276b61c66195515a9311e058182f322",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/extension/roll20-content.js",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "dd0fb0bbcab0ac23c196d037c111135bd1a0d4689adc08e01352e634c575a800",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/extension/sheet-bridge.js",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "9784d8ef856755fe1b3c2b830f975f95f1daf0413da133c97c2c81107bed2c69",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/extension/sheet.html",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "eecc2d02fc3432a079a3f77e216aec689785226de63b4affe101ebc9409bb3d8",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/next.config.ts",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "a972c4f0ffa6dd714e7909b02d1ac19d2f2fe3d01f191efd2c5054bd6f142ec1",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/package-lock.json",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "d70577da277c108b56dd6820233a7072b78adceae331f91633ac54a8f797e3d5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/package.json",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "227a86af4a30eeabae991fd08414db7a99cc6b2f94124d75fccf5b0a99a2b9eb",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/postcss.config.mjs",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "7b299d3d3b16699ddda397c0b2373b3af4f25f8fc9ccc9b3d9e64ef083bc1c21",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/public/favicon.svg",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "3e8863288c2d43dd33d2a71de317dcf9198f09932ea8d61e0def1b846a865435",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/public/file.svg",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "2b67812c325c199a02536cdbeea0c593a72f707d323b72ee3e08dbab06753bd4",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/public/globe.svg",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "b614b9bf183925957661ac851498fe1d8029fd43a62fbfed86f9e2624a57e7cf",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/public/lilith/index.html",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "b55030eacc34847f032657ff2fe4cba75dcbbbba0bc50ec8cfda15408ce269e3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/public/lilith/lilith.css",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "2801c3cd088edf405c895e09dc0ec00ed1fd65bea0ad572cf8c413b2df2732f7",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/public/lilith/lilith.js",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "d8495c78a9d1d0a72d2e5219c82669fc7fdb093ce921b69b28a93e739b984a8a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/public/lilith/roll-serializer.js",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "14b8e82a1d4b902849111589918ed2417b255fcfeea3064973950561a35a6095",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/public/window.svg",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "644768c4aaeb4767bce293344eeb0c125fb804a94d801440424072202d85e3a1",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/scripts/sync-copies.mjs",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "52c7ef6f779c6d93eace24565df0dc6b79878ad73d33b8148b9db348516d181b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/tests/rendered-html.test.mjs",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "39806abd171d19a25c439793057326cda8e44e1870cb0eef793361be4af75fb1",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/tests/roll-architecture.test.mjs",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "ea0065f8192bc5f1f9e6ebce815d4f8907ca772773d823879765eee6b51e49e0",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/tsconfig.json",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "fbff01604d6cb54694be707f26e7a0eb21a6ef796b888c6a1dab1839fa7c6ccc",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/vite.config.ts",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "5d68239b2f24f42354e8a05cf69b83fd8f3ce34727f2edf2b55283e4f732c77a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/lilith-console/worker/index.ts",
+      "component": "lilith-console",
+      "source_commit": "6be22d805942ca1376c35216729176f813a30b78",
+      "sha256": "6f8983ab616309202039ad672b1a46a835bede1bb77636dc751613c664f969e5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/map-engine/agents/openai.yaml",
+      "component": "map-engine",
+      "source_commit": "a9d2e13f317f600af6f5cbce8377dd0e638185bb",
+      "sha256": "0ea00fecaa42e677788b0bf4d66c9a5af6f1424464cf315b919c4c67abdc405d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/map-engine/references/approved-contract.md",
+      "component": "map-engine",
+      "source_commit": "a9d2e13f317f600af6f5cbce8377dd0e638185bb",
+      "sha256": "e236ffe03c9ff63afea3ec6d4965fff26e8d3f8de641ad428bf4f7fe6b150165",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/map-engine/references/asset-sufficiency.schema.json",
+      "component": "map-engine",
+      "source_commit": "a9d2e13f317f600af6f5cbce8377dd0e638185bb",
+      "sha256": "b2e521263937baac4f5727cb21b4df6f7ddd597f6d84c672e83a34c076976126",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/map-engine/references/cold-composition-review.md",
+      "component": "map-engine",
+      "source_commit": "a9d2e13f317f600af6f5cbce8377dd0e638185bb",
+      "sha256": "31d3e96ea3ae97e92a2a24e4bfd16066e607f7e6f2ee0dc30644319a723d24c8",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/map-engine/references/construction-graph.schema.json",
+      "component": "map-engine",
+      "source_commit": "a9d2e13f317f600af6f5cbce8377dd0e638185bb",
+      "sha256": "ba0c4b7fa623e602a6d04778943bdd7ebc6850b1bccb28849e8ac897a049b058",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/map-engine/references/house-style-profile.v1.json",
+      "component": "map-engine",
+      "source_commit": "a9d2e13f317f600af6f5cbce8377dd0e638185bb",
+      "sha256": "459e095fba190de30f970850fbc7ddb84c24dd86773b8c9d9c890d4d6fadfa6b",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/map-engine/references/map-brief.schema.json",
+      "component": "map-engine",
+      "source_commit": "a9d2e13f317f600af6f5cbce8377dd0e638185bb",
+      "sha256": "e614424fec8fbadf16b40e6756eb835e5875be17a3de0cd2201915e4523bfb6d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/map-engine/references/release-manifest-contract.md",
+      "component": "map-engine",
+      "source_commit": "a9d2e13f317f600af6f5cbce8377dd0e638185bb",
+      "sha256": "8fe321fe684158d3b36da11c41ee5a59a15a464fa218754882f518bfd7985c3d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/map-engine/references/release-manifest.schema.json",
+      "component": "map-engine",
+      "source_commit": "a9d2e13f317f600af6f5cbce8377dd0e638185bb",
+      "sha256": "6dc42f3d0567ee975687a2f04e3b1eedb304934b44fcfef1057eb4bd53fd5343",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/map-engine/references/workflow.md",
+      "component": "map-engine",
+      "source_commit": "a9d2e13f317f600af6f5cbce8377dd0e638185bb",
+      "sha256": "0e656ef506d61a265f6b6a16299ad6559c1f6ab3e4ceff35fa0ce59fa4e7768a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/map-engine/scripts/validate_release.py",
+      "component": "map-engine",
+      "source_commit": "a9d2e13f317f600af6f5cbce8377dd0e638185bb",
+      "sha256": "3a88c761651394103075ba0c5c106fe6891d48bca067b5e344353289ee8d56c4",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/map-engine/SKILL.md",
+      "component": "map-engine",
+      "source_commit": "a9d2e13f317f600af6f5cbce8377dd0e638185bb",
+      "sha256": "c8fd8af7ec6b3ca7e69291c297ffcb691cca83670fcf3695b16f66acb7a90f7a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/map-engine/templates/asset-sufficiency.template.json",
+      "component": "map-engine",
+      "source_commit": "a9d2e13f317f600af6f5cbce8377dd0e638185bb",
+      "sha256": "e13b7c26a558de4ff5b7d70af55c59e269a306d8474d11b73b7fbd19a0ff87db",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/map-engine/templates/construction-graph.template.json",
+      "component": "map-engine",
+      "source_commit": "a9d2e13f317f600af6f5cbce8377dd0e638185bb",
+      "sha256": "e0887a7d14b07ef356c15f397cb086dd99169aa89ab89729dd2907efaa261ff0",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/map-engine/templates/map-brief.template.json",
+      "component": "map-engine",
+      "source_commit": "a9d2e13f317f600af6f5cbce8377dd0e638185bb",
+      "sha256": "6ac587edbcb55ecf5a76077a77d6151dd15a26ceb91cfea445d18615122b6e04",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/.openai/hosting.json",
+      "component": "rookery",
+      "origin": "publication-documentation-or-example",
+      "sha256": "772f0a9bd8b5bcde87615eb3c9b6ad3612956b3ab85ec44527ed1681e707af1d"
+    },
+    {
+      "path": "components/rookery/app/about/page.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "ae71c2d93a5583799d2db958a618ac1382d3fb8060333e81bf7bced9952e42bf",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/app/api/v1/[[...path]]/route.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "0dc9b0fb217f0d0613afe14c4a9978789ee3fb4841dbf81ef3018c4c33ae5441",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/app/chatgpt-auth.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "e19651c2d1db12696883ae3eb79d4f09dce249f7afa1144a62d544e2e18299ca",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/app/connect/page.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "18802151f5fdf64bec2750322c721e52a3a69078cf4ac9833845ae9ccd86a34f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/app/entry/[id]/page.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "fef8a1360e04b1f9b5bd22825f9babf7c422647f484c24607afe454f7489a44b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/app/following/page.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "8101bac3ae3ccc0a2299af7aa62d995b44115fd9ec40c3eb9c4323842a06e7e8",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/app/globals.css",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "e1c2b5cc591cafc13bed1974269998a5ccdeb581e31e563804fe2ef80c5e779c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/app/layout.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "3ac92695f37ee1cba7165e240de16fda455f869b743414295b589d3ba59f92da",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/app/mcp/route.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "7326756921b2cfcb53b50f6a2f2923208362b87d71f04b637366d86b2f8a3fac",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/app/new/page.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "89b198a8a71b2e6194307e0ce9498cea70065fdd8785b81ef254bd5962496ad3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/app/owner/page.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "7cfb55d87ce288364a6072fd9222980b60742f5f0d573eb7c7a01fc47af7972b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/app/page.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "593e12eb1e2f86ecf241f14c9f752f1916cc8b58f03a1a01e799dc6affa503a1",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/build/sites-vite-plugin.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "b7991fb89a9d34fd8a2f062029ae2521aa1774447c21eb3da596daf00d4892a3",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/rookery/cloudflare-env.d.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "2ac980b29c91b8324a0d7864ec329c41e513fe81165aaffbc1220b8e85812759",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/exchange.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "2472af3200a8f5de77b5d5f4a51081d70fcc5be8f37750179513b5daad18b033",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/accordion.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "810fded6b5f4f1d92370c8fa84b130cd9f26f1f37e30b1efcb48330338d91a70",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/alert-dialog.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "1ca7530a1f4727642aa96c619a320bc21488eb3bd6cf00666ef6fa3b1e346de0",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/alert.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "a36704ebac55c71e83302b1557d6bf188bb59552a46ea4e564acb4c913976926",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/aspect-ratio.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "cdcb1701d142b15ad09bd3982493b82c5eb17e6512b8d0719325e6e723850bbd",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/attachment.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "c79fd808704543da1df455bbbdbcac7031979e126bafeadd2d5c97513b426159",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/avatar.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "d37287410ad1f496bcbd788f94245542984e3a124008d9dc72f92afa0f96de27",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/badge.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "9f25d280c75ac367fb5bbeea5f2f0f0fe10be226e364678b065069ec62dfaa06",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/breadcrumb.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "1d179a7717f52c7aaceed5a305a4be38f3fc08c3aaf0f593de718ecb59b25ca1",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/bubble.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "df3ead10c41081e73ef64e60cbff3f4ad7740af9fd2c21784294dee1504cbbc1",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/button-group.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "90f87a3b4398540a58d8fb05559df0939d8073a7550a8af646d86c97145dd00e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/button.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "38447e736fdb7524f96f4adb6eada4ff9e4e68cf9eeb2415c357544ff347e8a3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/calendar.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "0349754fe228253ae94ba9f641d903fdb5917b502bef2087f8f5c6b0a93326ba",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/card.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "d213fee777a9c38c3276b0e6b14707987302b83308baf4656dc1d5ae0610053f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/carousel.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "45c8d7786dcbc4e08ed3506fb8946f1c8abf1fa720b228792fe8430a56f3da6a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/chart.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "f60244582b56d42fb6631f9ac7026f3ea421d8cc31bfdda0e7727cae2a064687",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/checkbox.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "afcdd47885bdfa92997ef8da0fe231ae19b728594f7448eb437f7d7e94fc5b4f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/collapsible.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "c3649a69d53668fcceba2d83c97a3146fc2930a00c30fe281875238384e7bff2",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/combobox.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "63f37425ab8eac82374dcb9d7ac4fec1406ffabd1c64006c59800f295fd43f6c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/command.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "67bc4de1f69b46c405ea1209a40a9b08a2e301aa8d36d3c54ce1b05c3039eb6e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/context-menu.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "0e0f98b6cf175912c541330f3b492476f8fa2712f13f265e8779ad0b93437d16",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/dialog.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "7ba15f4c9dd993977d4d3dc70aef92d3e95548a32e5edc6f268c44921bbc15e8",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/direction.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "cd2c00d9757eea6dcf3242d71de8f397d29291a67fba5c39fb03c4c60746f36c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/drawer.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "9c21e1c99e256689192ab009f461568ea9ea99137b3b0e3010f56b7ee2bbd444",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/dropdown-menu.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "fe670b2a67ac46915410a17cd5e4d529be2424c1b0fd8b8f41c178ac53ff6c3b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/empty.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "1523589e7664f743fc6cddf7daa7b7c030fbac6c5613a80f79478562277eda56",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/field.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "ae5a1b6af5009609b3855acea85cf6cee9dd2698304d61995df458145319be53",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/form.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "27d0cc0e59d9102f5287e857a5bf489e9cdd66f4d53cbfac8d0d967c7f2835b7",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/hover-card.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "ce70a075f5422d9055eff971f1214b820806637d9fbce235df83206d1448cdb3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/input-group.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "dd5a0fc5dd10d7a829041ca19a3b8f040758761f657783dbae632c851ad10044",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/input-otp.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "aa8d62769d9e9a0bf40aec5aa427a3a34be5852a6f61b390aa7aa5fa50ab3b46",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/input.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "44714284bdbafbf7634a4807eff5d6b493b5b5fc1a562a269a874de1eb50ea7c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/item.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "9ff8e5411d0684cb97a717c8c3498e6c11d56c21ce84dbcd6ba15f5167b1038b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/kbd.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "087e34753566167ad99b8c69c6c0a3cfeaabf0d2a579e739ec1dd8d66910da1f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/label.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "43e7cadacf1e0d71c1668dc388271656d2db8c4d45f2144d52d594f9aca31ca5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/marker.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "d94da269dd74ff4410393c57bd57bf965808314ce7cd5710e795a33f8b62240e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/menubar.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "1625b156556efa470d6a767596eb3237ece71fb5a799040f6921a367b1e26bc7",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/message-scroller.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "abb2e962ef1d6952bb1caee7a135b079fedbd3833a1b871cd9079c880bbc0ffa",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/message.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "a4a7f8a104559536a531e198d1a7a239cdd55748da74a0a3e2088f275e153287",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/native-select.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "d62b4479c6419a37ee748b1a6536c51d6676a3a04afdea27619e6481b6cdb442",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/navigation-menu.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "a42f6e39ce4b18d0cadfe91265b9419ddd8b157a9778a5ed754f45e72a902252",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/pagination.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "9d9ba519da639b1993b7df95e8b0d394e8dc2c61fda7320c05ec1c5332ae56fb",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/popover.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "2520e46424ba0ce4407c83c47cb717e1a5e7e51c26449b1eabeaeab779c05e76",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/progress.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "c6f42ff7f284ce9e965b1bad059dd401a951d6254e5070877b129ff8195c7707",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/radio-group.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "45af968f5e426f9268a6623ccc55d67f1a0973742dd01f12917f981690d13a68",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/resizable.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "bfb26b64a3c1d6e0a71bebe06738f209724588deb8ff3048a10f130ca920828a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/scroll-area.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "509e700a8f6a26386a0e61dcacc3f6b4fe42fa31c5444a2b27d9952e772b80fd",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/select.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "f4434ef49e240b581e951cee362cb57e11e8a9bbbe4238395a034ba599ce298c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/separator.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "8cdd3c705eb6b04bbe8fbe87cc5f193de72b17d85f02020f7e4e9bd206c50f59",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/sheet.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "57d5e84b5b1ac6d1769dc53632b52236096140df8f3a4a10e8343bd73d186290",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/sidebar.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "74ecebd633481b76e425e8b40c9cdad7e43c2872cd699d8a56690e889da9620b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/skeleton.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "85957151311e53eb49bdb54f5e2e6d8ff4461b14d887d8073e0cde846d539691",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/slider.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "deb4c937a6036d33236c8defcb6df42ba5886fef32dc1d67763eecfebcff5b69",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/sonner.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "f4d2c855754828ceed89ad6455aa8082f80566d82c3ab79b8db5271c5102b632",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/spinner.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "cbf9073613aed22ffd4ba21219adc1d1b8dce311d4280800f772b5eae587eeff",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/switch.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "21126011e315385b26ba57c494fa18553ac81f85f5814c3c9a79ff864ae66ee5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/table.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "02d16a0d04c4fd2990ef41d9c5963335aa0eec93d41518e18476656113894626",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/tabs.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "3a200c6fa6d683681f066f1e9b3868ef22d3cf9d3d925d7364edae9900484aa3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/textarea.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "d5084a2bc607d9e2322e440d36643610478982bc4ecd4ddf5ee2b805418e1198",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/toggle-group.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "cf2efaaad5b80f1df4636a3e730fe0bfc25e55674fa37414c2f8f1ba02c20708",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/toggle.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "961640a6cfdfd1cdfbc2196f6d4b8bc7a0606347769bc0d0d929bd50b6d86140",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components/ui/tooltip.tsx",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "2ed212576e61f83f86a4ea00d40751181e5889b2bf8d660eede5d0adee46cb76",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/components.json",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "820e913f34219d16b5e7ec5865df9c444bb5b8acf230db4e589d660e4a21743e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/db/index.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "effa59e46bcbb42dfb7b46911e809a1de0f2c37df1fd935e3dca89023eaf97e4",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/db/schema.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "2f7f866a92701c87c27cee797d885e433514e2f8bac675fbeba05ddba9fa9ce2",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/drizzle/0000_third_sentinels.sql",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "57ff8bad82bb5b9fb7d2b65fb8f5fabbe8dbc2a79c05f100a050579351797544",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/drizzle/meta/0000_snapshot.json",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "565814504747c2878dfb1d5a878dd848edd2f7ce3816ff20540895bd8a278f8d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/drizzle/meta/_journal.json",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "9ab62ab0a9bef19d88045c8f61383153df8fc40e41d6d015c42c29a7384fd606",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/drizzle.config.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "73d0807c58e541dc3eaf175909fb5acc966faed61f74ff659d9d55027bf3e25b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/eslint.config.mjs",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "8ca86af56c21d433c46bfebeb8980b64b6d4ffa0dc3cf3d2ec1ad923b983f38c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/examples/d1/db/schema.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "1acd70317bcaf22cb140436fb47754c2144e7c2adfc59a3f427ecb1d816fa0f3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/hooks/use-mobile.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "d2377fbad5ad2bdf7fa896a68c36ac8bf4aa74a974b2061f77b41ae58d623001",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/lib/contracts.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "088f84d859111c679e2b73881bc5d997d869d66d05a0f4dfaf41171c0565c137",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/lib/mcp.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "36b1decdf22131fd63e99853622b4889183e0bcd5454037fb2b7d99acd97d5e3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/lib/openapi.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "a8cb8fcba648734fa956e3f1414bccfae1d7c7e9ebfe13c1104205c668164fd6",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/lib/operations.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "e303e1b59aceb20ba966d8dbaab9cef336bde05fb6ec5f129e63b273a57b959b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/lib/recovery.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "4202dc214676f1a83d596aaab8679cb3164019e945f5492d3282b9c284604541",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/lib/resources.json",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "7c0e7b21a2ee60c2d19c6ec46f20517ff16b4fa9698de7d30220471eac5ed489",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/lib/seed.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "c89c8f12903451c11e3cd7b56bc77511c45fe484f6c8ebbf143d82ab6b4fe546",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/lib/service.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "96daccf73cbead08fc3c410a301c64519c6d16680b05400856019dabbb968f6a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/lib/utils.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "c2aa0cde88a8b5b5db7718003da1a345bdcce5f31085800b66ff0dddedfb0254",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/next.config.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "a972c4f0ffa6dd714e7909b02d1ac19d2f2fe3d01f191efd2c5054bd6f142ec1",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/package-lock.json",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "2f0ecca4d8fd050ec28b8041f6711599413454d54a7bf17c35966e09b3d2f874",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/package.json",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "c36eca6120b9e8e9320ebccdfe4526552911f05a7ab298df0041be5897be37d5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/postcss.config.mjs",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "7b299d3d3b16699ddda397c0b2373b3af4f25f8fc9ccc9b3d9e64ef083bc1c21",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/public/connection-example.mjs",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "aee54b00e2b1d6f018d0a815c8d083d380d54aedcca275348336053d2d0eda3e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/public/favicon.svg",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "0a6a1165b218353b8c45b300c19d28d646e18fd38697866e67c4e9aedee7fd5f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/public/file.svg",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "81a9ce5ca9bc60870c1d72c0fd5b98b2bc5c8c02b0e04fefeab9efcc11277228",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/public/globe.svg",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "13187c071b4d369df3a7a179f69a927165bf624e1a524ee6c93b7d3be75d6fc8",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/public/SKILL.md",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "7712a71377b0366d53ce1e1c53d78399c7da42c09f53ea37bd4cbab791527026",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/public/window.svg",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "d3cd4bf0c1123258fcc266409856e28c93d4fc1cf8476702225e17842900ca63",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/README.md",
+      "component": "rookery",
+      "origin": "publication-documentation-or-example",
+      "sha256": "05e42c51f96e23c4040a04452f7aea2af044338190d806a779e74b4052fb27fb"
+    },
+    {
+      "path": "components/rookery/scripts/check-boundaries.ps1",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "c4a68b421d548b9119bfd02fb35243831e162df34928a271dd045476a986d025",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/scripts/export-backup.ps1",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "81a12413a3267587a15ccd97f541c712efb880e0fdec28f08dbc25db40c3c039",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/scripts/gaming-preflight.mjs",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "bc7bcbfca6e229e5259e30fa9e6e34f8c2c3c9c7388e912aee005942667ca54b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/scripts/install-ci.mjs",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "3e66060fc38d9c5ec372ef917c31cb509d952283f02503fcba6310a464135857",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/scripts/local-preview.mjs",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "d96cfee2a6e6311bbd6b41b91c12122ef8b3cf4089d6346c3d21c98d7b6fa811",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/scripts/owner-request.ps1",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "7e26ed07f2bfd43b6577f13969962efa31cce92f5915a2b51559e46823a5bae4",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/scripts/package-release.ps1",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "2c7c49d1b8fb29743eef304fd4b473ff2306eef6be3431b3abd814e1b414c0da",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/scripts/provision-local.ps1",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "bb626979250f6f9b9e68412c15ad3e968b972a4fb19cf699eccbac6bcd41a076",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/scripts/restore-export.py",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "136b3f5d348e8955084352791ed8ab232069782b3c64e28aa92107e415f51a9a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/scripts/sites-env.mjs",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "4cb12e49c5eec402d920cd98d74ebc3267c9a38b0f63445a619d4271979dd774",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/scripts/test-browser.mjs",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "dda76dc993bfe8f70803184b96a4ba59d7ae4230033de1bade4922b7799ba6d5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/tests/boundaries.mjs",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "6dd3213ee4d7a3e756bfc84b4ff480fab9e7fc06e96025c19c45785c5be7a425",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/tests/browser-journey.mjs",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "2a9a6e6328191880db6703c0e377f8f8481a585b055b302310573933faff73bf",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/tests/connect-without-javascript.mjs",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "2800a2762a3acd4e8a6f649e03315978566ad9cc424dea485e1f1b8722942ed6",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/tests/journey.mjs",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "8ed80e53d41ceece9d3ed26c53b754c70d5f38acd2e6378bb7e3ae29e0456da7",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/tests/limits.mjs",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "2d9823dca834c106f9b0467a3bf976f26fecc986bc5ca7441ee7157984cf616d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/tsconfig.json",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "755d473a6eb4f384deb37066c554995d9af3d3eb1e5b566ee7fbbf80a9dda208",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/vendor/shadcn-tailwind-4.13.0.css",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "f221d959e80b4738fba93b4b4f01472b11cccaf6043ba7f6f9376f6768dad28e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/vendor/shadcn-tailwind-4.13.0.LICENSE.md",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "a14c2d6fb5ba9925cba04633226a3b93e6c5566ca6b550dbfaead7ab3fa93b24",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/rookery/vite.config.ts",
+      "component": "rookery",
+      "source_commit": "02648839cc77f78107a72c48960c53e8dbe620c3",
+      "sha256": "6e6c86803ffb50106b0a4b919a07e9a032956a90a25860209b3c1ca3ecf0bbb5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/agents/openai.yaml",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "8f76ba53eac2645d1af2818e298f4f87091610c8234ef0fb99c876fd509e5032",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/references/ben-grade-gate.md",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "0f124095f40cfd6e234383580fb1ffe06fa628b0f207ca54a4c516da14d7db67",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/references/generator-pipeline.md",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "4f2428a4f647edc0156ceb8e14faee37d2676bbe489b3b8ade7ac0f000827d83",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/references/mechanical-floor.md",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "fb08e617642a453fdd31f11c46e3472cda081dcfea06cb2b01a392fba21165cf",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/references/module-format-standard.md",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "e2013adb8193ac937535b988c29642ded5fbf22c3bb4e3dab666e99319d69a25",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/references/qa-panel.md",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "8111ffa27584315f22e469811379a06cbea785649c65c66b44a9937bb658e117",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/references/realms-grounding.md",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "362a29a50ae952dbbc439690414779968ba8ab40384f090c6d0baf434161a020",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/references/scene-and-check-standard.md",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "51198d8aa8d47a5c9d78bf2c229481606d861a0fd870ed856a113bb7b572c8ef",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/references/structure-patterns.md",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "e61c7e7624d210bb6724aad42a779e7ea2c216b6926d513d20f8c4f5714539f9",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/scripts/build_one_shot_pdf.py",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "209654eee69d85e7da7eb2f4188b8a27351cd6f573843acecdd227a6e3bc3f5f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/SKILL.md",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "2fa095f545e00ae7d50a1598ced31a740adfb7e88fd4fc894bc64e9f7fe3c54c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/templates/one_shot_brief.md",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "0dae0ee1113bdbc8495d39ff49374341b5228d8e8a5c34adc0fadb3b787cea8e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/templates/one_shot_dm_running_notes.md",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "89a3dc46953e969e6985262544a97b54d8dd84dd6e66960862af93053a3f5769",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/templates/one_shot_packet.md",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "5c954f9187440bf190b9c3299d8753f17e35986a143f3c83a4a1f88b1a8b8cd5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/templates/one_shot_quality_review.md",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "33a231b1a6008c809239f23ffc4cc1d3f11d20439d6dfa79b0df1a647299c468",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/story-engine/templates/roll20_setup_manifest.md",
+      "component": "story-engine",
+      "source_commit": "1a271bd875f54e7c11d2a269f157507c3b76e9fc",
+      "sha256": "5a87a7d8f37a623416b80d2861c219bf8abeba541600922b3215e88a87f4c0d2",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/app/api/assistant/route.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "d5213eb9f396e7cab7209f7fa88a5b2a93ce1c6cfd14195d282e5f91055bd91c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/app/api/media/route.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "cc4cec79005fc3b67e92d4eb790d0f969419714a701827fc5f1e5cc5565b8b0e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/app/api/room/route.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "3a8fe959df2ca8a4166096855815540d8a53a716e7a7d365c255db4abb69696c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/app/CharacterBuilder.tsx",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "2e516da400f34f030755162628404207ab292f110910b7e71e8e9d4ef51e387c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/app/CharacterCreator.tsx",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "6d0c5ddf2457a4a196d97c2fb3f7b3fcfc55525f71626dca0f7a7045a34d9a41",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/app/CharacterSheetWindow.tsx",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "62774470eb1452c978f6c1257c06e4eea2a0304aed908970c44800f8692055f0",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/app/GameFamiliar.tsx",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "37829279afd9a59cead4df98ddb6130c171382fc5d48969833f2750672860332",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/app/globals.css",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "12cf4ce3beb95d4a5654548e8062aa7e396dda7201dd55bd0bfd60c71cd4cf7a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/app/layout.tsx",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "7e03af189fff3b1b5097df448cfc7dca94bc791adf8992a1398440e44a75461d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/app/LightingLayer.tsx",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "f5a03121186082a0fe989dd78fba7ecee12ac2d7a129bf1684938655e9c0d95a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/app/MeasurementLayer.tsx",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "b7acc67f1f215eebb3ed03c48391bc0b7680c0fdbf4ebae779e1fc288f5f764b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/app/page.tsx",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "c3972633c2f8faa72b51fa1b08ab28aa6305af0250a992d5ed4764bc89bfb353",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/app/Tabletop.tsx",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "b12bcc1344c3539fd4a6b9e8ac451139f63d012d149da39631ab784d32f14db7",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/app/TokenMaker.tsx",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "616fba32294da22863b80070f7eb6534d62f01800a4bfb401bbbafec900e2d33",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/db/index.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "1a63bee4fa326e1f13c9d1bc1be12334ff2514b18e56efb4bffa3927648c9c69",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/db/schema.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "8b7db84e28e9eb57a5c78ff06163062ab78c0b7a0426a7d82936b68a7acd01bf",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/drizzle/0000_loud_sasquatch.sql",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "4560544ba6485e44ac189a9459a61a60ab1d4978a6b4b5b75323d77359c317a0",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/drizzle/0001_common_reavers.sql",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "a38a3d7849c0af3268a3a9ba45406d62222bdb8f61369aeded95873f54c9323d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/drizzle/0002_young_vapor.sql",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "db62907ee28d122f4a67bc1528b82569ab7712a289b67d803b90b96b59235a90",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/drizzle/meta/0000_snapshot.json",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "11c864098cb0b18cebe6a07c70ac81d398769de30fe5cf78971b7da6e38dcdbb",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/drizzle/meta/0001_snapshot.json",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "745a9b5fe75f80e0171ed5f592330266113e6e505b66469540091324c97aee30",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/drizzle/meta/0002_snapshot.json",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "10d190376bf33f1ffdd7aba98b1d7b0875a89c77c5cef8b56e68ef27d19e4f54",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/drizzle/meta/_journal.json",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "b14af92869bd75062d26b2c5c4e819ec29a64127a316de773f9cabc2e37769eb",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/drizzle.config.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "73d0807c58e541dc3eaf175909fb5acc966faed61f74ff659d9d55027bf3e25b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/eslint.config.mjs",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "954d6b826dc94261735e7c5e4999e88413ce156e92cbee20280c02651b417df5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/lib/assistant.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "cd977240d2fee043e1a150ab37954df7db8d38459661b1cb41d7332898e958ce",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/lib/character-builder.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "59d42bbb5420ea5da132db64ccf0bbd5b132cd4249f7dc6a073422a772466727",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/lib/character-catalogue.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "9f3725bdd64a5b3e95a1966b152c8053ff5f82c45e3ab92043eef89a9aeab06a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/lib/character-creator.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "5ff3e86f20da2cbeb18b1140f55d3cf7318ef82e89ff26560a8f74fcb723b677",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/lib/character-handoff.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "063a9d52384a7a51bccbde4dcc74226c3dfac122489211038c51c5a61887edb2",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/lib/character-sheet.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "f03075a58fa0e42af3487744a0221489af109e680b277884de33bc1d02389109",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/lib/grid-detection.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "34cc4ba093b818a8c7ec18e9a732af1439b635a5242f517546238587dab20246",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/lib/lighting.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "ea78affdd87801b3da6a605b9ab377c284fcffaa38a3b9151895ec35fa009d24",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/lib/map-geometry.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "ae10cc1ef120092e43df2fb620cffb264bb20fe2b5c4308b50b1293dd02a615f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/lib/measurement.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "653b3371a026b4050bebed3e244cdc19316103fcfdb8a15abe520ec118b12ca0",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/lib/public-access.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "688bab7434629a4afdad8f4f120d0a578b09bc05a05dbe5eb745259e37ad1b50",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/lib/room-state.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "d09860621fe401724d608b9e109edc68ebd14b5b1567d20f6a8a768f81b41dcf",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/lib/room-view.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "369c8b8706a3fcd86608d6da92913bf9723913340d0b5c1b0335e1eaa817b69d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/lib/tabletop-gestures.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "d16bc64ca4bc6184ade5d77fb5f1722030af2b8e9c024e741b1c324aad69e206",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/lib/uvtt.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "65739d7d9c8597accb312ba859e89abb70d88da1aa4145be8567b115303d9ed4",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/next.config.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "a972c4f0ffa6dd714e7909b02d1ac19d2f2fe3d01f191efd2c5054bd6f142ec1",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/package-lock.json",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "d31d82a1150c873661ee1bb5d298c2c85e458c3aa6f6e6af659eae073367c361",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/package.json",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "2dc358043c4f17ff8793aea5843197430c8819e088f58e23491e9a91d29e5359",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/postcss.config.mjs",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "7b299d3d3b16699ddda397c0b2373b3af4f25f8fc9ccc9b3d9e64ef083bc1c21",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/scripts/build-assistant-corpus.mjs",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "7e99bb53851d303540d5c0b78b87f1326f5b13dab9ff78fd8cbaefbcd9d8d601",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/scripts/build-character-catalogue.mjs",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "38db50654cb9c0fb5cf5e93935dbb5e8e0f3d03a7a9f8fed453f1d4b93b7febd",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/scripts/prepare-character-handoff.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "8aa39932ba73a7e9020438adc725915bb9e099a4479e14c45f65ea138ef87797",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/tests/character-creator.test.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "ebb4d59dc55f3ae24ffecb5f4a0b6cd7e750f217cd11459dbce0e104f107f4eb",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/tests/character-handoff.test.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "8ffeac1b665111f57483c8a3788d255d479624bce263eeda87c7b9ac462b7e23",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/tests/player-access-security.test.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "fd55446ab49d3d4236594f3a1e8072c4eea47adbdd6f9a4d466b2286065d2ef3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/tests/release-package.test.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "d3a8f5bc5ba1817eec4a1faeb7277df8fc28259deb251eb03815ffe32b889480",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/tests/room-state.test.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "79cdba9b19b3df567b91dc26e3032f419f25c7ccd776e85f86c4648848c5c5e2",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/tsconfig.json",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "6f14a0ab51d03ff28f430c277f0f8d0a1f0fc1e2eb5b4bdd44c2b0e532626a72",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/vite.config.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "e7777f1307e7ab82ce81c1b4e5140c4fa57b78e27527fc747254a3515fd4129b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/worker/index.ts",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "6f8983ab616309202039ad672b1a46a835bede1bb77636dc751613c664f969e5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/vtt/wrangler.local.jsonc",
+      "component": "vtt",
+      "source_commit": "bf4c27f9b78803032312d9e52a7c35709ef7ed67",
+      "sha256": "8ed9a63b68f44f1ad64e3e9274764f8565dc8ed3dcb01a75a2629ce79c6f5940",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/404.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "530df95459bd3fc56f8d7b918b5e3b66577ac7205567b1b0911e545780042433",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/about/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "b4b228c7f65f1438cf27fa152f06665e3ec37df8674c21f5669e49242cbdbefb",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/attendance-policy/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "f79caefef1d67e217069e7f46816bd71ce171b80163f9514efe5ad980faade4d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/austin/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "0d071a7cbd9b23126f471c8619aaf9cef57be796b4716ac7c4a5624e89b35118",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/billing/setup-complete/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "98877cd6230647fc32c213a20cb6235ed841e62b0ace5b4cffc98ff1b195c10a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/billing/terms/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "d25b6f6a46ed3160b9361bbb96e7cd20688bce91a352ba79b9513f4ae34a4d74",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/avylan/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "0ec6fce3ab731b6e059511509d4838cfd734f1aa37a372f391a558299f9088e7",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/city-of-shade/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "0e5e8226ae4daedcd62bc42458185fcf2e55541e1c2e9025feaf2dd370d2a6a1",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/eberron-black-lanterns/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "6c2d06bb069d12a998170b91cd250f13733def936aa94a6b7886835245fac2de",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/epic-quests/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "d27e4eab901008962c90ec99113226ee0e787bd237cd0e1bdc180d10d78da67a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/fortune-wheel/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "4160d8cd6635b4c554bee99ba11bc925c66422890c882dbe15ac6570f15179a5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "d534c82491aa54a77d5ecba6a3fd9e13309cbc9ba7d857eea49d90bba519438e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/keep-on-the-borderlands/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "5e3773eb483f85a9b03b15e21b63d054cf454f96d2aed840ab654ec3aac833c3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/out-of-the-abyss/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "7e613663b8559c387f0075391070e44d19a6724ad6e51e57c3bfcee273912bf5",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/private/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "bf132e776608d18f1b2fc3d6e6be8cc2cd0c330f665ee763d42cdd005aa90101",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/sigil/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "6161e29d5dc9c58f15b9afd07e65fd51584f6563d81a6ff36620aa80c033d67a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/solo/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "e998a828f8082f446da596da054e9745a1fced685b626e9d8efb33394018efac",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/thrones-of-the-djinni-lords/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "814b1112e7dccce0eaf1af93cac49649f44dee2040e5db803a46ba7d76e1c220",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/vecna-eve-of-ruin/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "d93fae4100d5164fe47621ec2d658b48ced92f9601f5496338d733d5f786611b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/waterdeep/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "c7adaf8315b83930828f32c7a2da0b5218185fe0b13702d47f8098829dc76885",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/waterdeep-dragonheist-dotmm/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "e5137d3f05b30cbd35f1a8fc79f39852fea728910fca44628d601ca2f8a54d31",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/campaigns/witchlight/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "97a7f4f26d79aa95e02481fcd52875102c0070ed78700f3694bf1e5482bb797c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/capture-emergency-v1.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "89d4b82383e2887ea1167573a703f2afcde74f9b55cb538b09631166940e5bec",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/capture-public-pages.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "ab8f5e5d78ace804b1581db4c6bf45c06193034d590c5b5d3a050f386e5f42b1",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/debug-one.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "557283e2bf91c0cdd143d8f3dda4964c7b3632dffdcce3779a369ee5ff919129",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/faq/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "32acb2d9b2a4038b1f494837e9bb3f01d282db79a4e160fcd1b5e8bcef6e1951",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/final-launch-capture.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "a81396c45c0efa2b113967c1e617a2f796d49211a82b740e2432c0de462a70e9",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/final-launch-qa-and-capture.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "5a8e73b44dcd725ea091e4283401b14d91abbffb8413b8ccbc13066dc5c8f268",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/final-launch-qa.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "4e1e6baebc1c6cc5b930697da0d1fc75a8c8402cf78576918aabb59fb6e58f9c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "8fb304ff840e4651e9a1155cb30e1a869b31f69d70260091f73eece617431ddc",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/link-list.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "0486cdb089d79bf9bfd3b2f1abe883ce656304cce9589a7e2212d2d935ef28cb",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/netlify.toml",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "a85b827e5d2144df3b2cf7d07a249fff3814f58f9a5b86f9ea6e4d9921b8ff18",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/owner/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "3f35c8d82f077ef46ce955217ab61b1a1fbeefd743bad5d481247b677e5d299d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/owner/owner.css",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "49421a390c75e246298c7dc1dabb68f3ea05b3855945baa68581b1248eb3832f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/owner/owner.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "3abe82b9eedb2a00e815c21345e4b2d4b2ef613c66f14861a76a462a56b93d94",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/owner/privacy/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "694fa7beaa71f84fba45866434de31c08f232bbb63019a0d4e1df75397fa1ba2",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/website/package-lock.json",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "a02c3359f004e2e7e0e613a9d7fe68719d6d52c216150c1444bbc69b01d87b8c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/package.json",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "e74926508dd76695e200d8152b5b445bc7f70a06639bd74bc322252c80676565",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/public/robots.txt",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "33db12d8b702f853961e96cfff49ebdcd42835fdfbd555b2845abb41a390d575",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/public/site.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "fdb7e331af698d79fd57f31b728f02b35876e6dd836038cc482f7a6a0b1cefb6",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/public/sitemap.xml",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "2a281d442591c8ecabf1bf6b15ecf0b4dea743095ec4097ff4f35797ecf649d6",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/build-keep-borderlands-artifact-lettering-proof.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "f4d9162b946626f0242d5208efa50cdcbac9560d97300afc5d7363e84c78181c",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/build-keep-borderlands-diegetic-typeset-proof.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "9a02b24640d3a3ca7139b3b0b6cfa6da255950204e86c39578ad1b7196c7cc99",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/build-keep-borderlands-handwritten-notice-proof.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "0f85e2d7ed75051737012717271590150dc3fee6913eb6d625528890d2cd6e14",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/build-keep-borderlands-lettered-art-proof.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "752c3dcddcb63408dd9e6d9a7d094ccf5b7bc637d93f8e10002a61489553ad9a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/build-keep-borderlands-pdf-draft.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "3fbed5f6ca28c7d19552d2da040da9567655dbaf2790f590850672bed9179577",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/build-keep-borderlands-two-page-road-writ-pdf.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "4eb8b68f974d7f60c8f9b517cb7bc47857c3872f4475aa1722da70177bf55ad3",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/campaign-alignment-qa-and-capture.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "cc410f10360879624308695a3c00ffa04fff2f94e37892e7656b5a627efa1bb0",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/campaign-offers.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "e666dd0577c13bab326e3c4dd864f81cb927594587042d02ae739088cbe15806",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/check-campaign-image-mapping.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "a6078e8fa06ab34ded029e530ee43b9f7a7567a4a8d0941e43b6a9c530c45291",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/check-social-image-mapping.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "9ccdce7f036b61fae2fd38fcb842279a025e24f30a0a04b2a7e7efaaa47abe03",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/final-campaign-corrections-qa-and-capture.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "9bdbd9a1e68dbe9e47a9e7cceaa266aab0623c8c49082dd2df1bef4e47daaa9e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/live-production-qa.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "6bc49e0e6cb142b57710cfefc2fec1c1887cb70d4fcae8a0f2d5b6f31b3324c8",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/owner-authorize-gmail.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "e232b26e899f25707d6c6dffa821c4e4dde15aa407747028c04ee4274f72b43a",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/website/scripts/owner-backup.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "dba01846f51120cbcf3e1edbd2dfbe2ac19d2254933fdafa7b7b83175ff90ae6",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/owner-download-backup.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "b3db832879cbf36dfffbbbe20c28a9d898d4ce528c0e2811f983126f6d3fc8fa",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/owner-local.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "b93562f45165e182fbd18b0a305352c0743fb575d203ec1fd68de0fa0c58e219",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/owner-public-config.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "4922cac2fb11e2a285cd9c2fa7b7790f8bb23ff8c47d9d26ade46248a4221f0a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/owner-simulation.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "de0199108ea2f2ecb8495884488b15031bb7923316d551ce0bc159c9e603275b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/package-netlify-zip.ps1",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "990c613e441c87eb474a800147147fdf633eb663e243584c541704b51fd35734",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/scripts/prepare-motion-spike-assets.py",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "7695191da085b857f30363ea2fe78fe8f65660c67a9c2e6b9b5761f9a308a812",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/start/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "523b75cd5e9a54f74a89edc67e0626fe49cc1512da69d440c7ef9c18c4b57428",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/start/thanks/index.html",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "670971ef290eb74383783ff2dadaa831cd7185161f48af76935991d2e7982e05",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/supabase/config.toml",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "d0eed808d123a53fd9049a25dca7fe4dff37219ca3a6f6b80c13d374848e7fd0",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/supabase/functions/_shared/backup.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "78bb29ad91631b85ead6fe1c5e29f2cb657f18cdc1830c16ec7f5b221da88fb9",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/supabase/functions/_shared/http.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "cdd0acbe059e2390b0afec1eeb2568070142107796396d1fa6a0da5edcabaf72",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/supabase/functions/_shared/ledger.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "82b98e77585acc34cdf3d857e36abf3c5f05541868da903a8328709f348f0382",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/supabase/functions/_shared/receipts.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "4a9407798acb56cec21b59eae65ce322cbf9f90dc11ed50aefb905124fd9a530",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/supabase/functions/_shared/service.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "4cab415ae0d7c8a45045d2fe90e7359bc242e1b5fde55f6540863d380dfa36d1",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/supabase/functions/_shared/store.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "1a39da0edf9abce7b17d56219819a6bcb4219f470ba99bc2cba4cd3356346e20",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/supabase/functions/_shared/stripe.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "424bb9f54f7e602d33bcfc7d09ac591bf86ff0c32cf5a057fcad47efd4925d2f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/supabase/functions/owner-api/index.ts",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "04b5d709b4aebb45146890b844cc9069560fdf00bb5ee96eb8d8efa4d429e2b7",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/supabase/migrations/202609040001_owner_panel.sql",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "954c08b6c5682a52139a218e4321884e586ecf175d39a20aa42c385dfb973c1f",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/templates/testimonial-intake-form.md",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "f9490229327cc6978be946353d200761dbfcf8f408fc64153cbcf5c702a1064d",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/templates/testimonial-permission-checklist.md",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "f75cd15152cbcfd43d37422ba50acd8bfb10dbfb66e1397729d78b46301c443b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/templates/testimonial-request-message.md",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "c72d5c6794e9be87a1b738d0808a751486006f568a4e2c7a2b91fb5ee5b53119",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/templates/weekly-lead-review.md",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "760ba70d1ab74769b34cbbd658c60a9193e3fb212c32a30220ede4879865216a",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/tests/owner-database.test.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "4b3c317f4e12294e6f3d1247594224ace5ef462709504062d4e19ea17561dba4",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/tests/owner-draft-import.test.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "4dba5e2b099f3829f05f76777d3c2d7fc51e8b4631298205524d3a5bbdb9b67e",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/tests/owner-empty-backup.test.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "85c089a21ccfef0416854bd6bc32b91325cf0f17539e7923dd95d3573388c192",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/tests/owner-gmail-auth.test.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "69d307b6158c3d3ad61af41e75954725ad80ee3b6b6ad8c63d5caae16ae691ca",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/website/tests/owner-local-privacy.test.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "a9d86fb078775db77a6ae97007d6aaf300f83385daa3325e45012bf904d66a63",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/tests/owner-panel.test.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "57d633332988b3083a36db040fb646936ad254ba58074c479631c77046001132",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/website/tests/owner-receipts.test.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "109e003ce6fb4604ac91d1e5c2937eb3e4d58fdaae544f4de02b034f08935bbb",
+      "modified_for_publication": true
+    },
+    {
+      "path": "components/website/tests/owner-roster-compat.test.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "5750c3cf561a739b4e34a71ef1429e3a41666e97eb1417fb27090d2723c3e495",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/tests/owner-service.test.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "94a15a1ce4cf57328727027af558c330615b2852c3d5127132ebe256d74d1199",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/tests/owner-stripe.test.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "c41ead5dd7a4f18775ef385b5dd4bccb94de9354eedd194c1fe861e95a139a54",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/tests/owner-tracking.test.mjs",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "9fe15292f8f6216314982b771960c6a49aa62b8faab84322ac484a9f02a37a0b",
+      "modified_for_publication": false
+    },
+    {
+      "path": "components/website/vite.config.js",
+      "component": "website",
+      "source_commit": "cb75f13e8c14a91852247a76100d805916b13658",
+      "sha256": "1fd9f3a618b0112f89439ed5ea1554737681b76c0854c32942c210ed57039b30",
+      "modified_for_publication": false
+    },
+    {
+      "path": "notes/STATE.md",
+      "component": "collection",
+      "origin": "publication-documentation-or-example",
+      "sha256": "55f9228007dc951f2da9ae646f4b08a45a0d068fc21976c281f3561711df196e",
+      "modified_for_publication": true
+    },
+    {
+      "path": "NOTICE.md",
+      "component": "collection",
+      "origin": "publication-documentation-or-example",
+      "sha256": "dbebb9976ee42ecc9fd22b8e041212ff2588376a90c21ddcb1357f71602604cd"
+    },
+    {
+      "path": "PROJECTS.md",
+      "component": "collection",
+      "origin": "publication-documentation-or-example",
+      "sha256": "d810f29db58d9e72f96ddf597e9af5e074b75d7206d260ee6a53e45db6fa84f9"
+    },
+    {
+      "path": "README.md",
+      "component": "collection",
+      "origin": "publication-documentation-or-example",
+      "sha256": "ff95ea2c45b3b576e35038f685d4afc7fb2265e2aefba41bc09b92181f32c565"
+    },
+    {
+      "path": "VERIFYING.md",
+      "component": "collection",
+      "origin": "publication-documentation-or-example",
+      "sha256": "24265eca7371f91561e55751012f3745882d2ea773b913dd684823ac2caed970",
+      "modified_for_publication": true
+    }
+  ],
+  "source_revisions_are_base_commits": true,
+  "publication_note": "Fresh public source snapshot. May include working-tree changes and documented adaptations. Private history, personal records and restricted data are excluded."
+}

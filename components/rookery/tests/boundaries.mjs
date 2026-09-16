@@ -1,0 +1,60 @@
+import '../scripts/gaming-preflight.mjs';
+import assert from 'node:assert/strict';
+import {randomBytes,randomUUID} from 'node:crypto';
+import {writeFile} from 'node:fs/promises';
+const base=process.env.ROOKERY_URL||'http://127.0.0.1:8790';
+const restore=process.env.ROOKERY_RESTORE_URL||'http://127.0.0.1:8791';
+const owner=process.env.ROOKERY_OWNER_TOKEN;
+if(!owner)throw Error('Owner credential must be supplied privately in process memory.');
+const checks=[],suffix=randomBytes(4).toString('hex'),sentinel='private-removal-probe-'+suffix;
+const token='rk_'+randomBytes(32).toString('base64url');
+let transportRetries=0;
+const check=(name,ok=true)=>{assert.ok(ok,name);checks.push(name);console.log('PASS '+name);};
+async function api(origin,path,body,credential=owner,key=randomUUID(),status=200,attempt=0){
+  const r=await fetch(origin+'/api/v1/'+path,{method:body===undefined?'GET':'POST',redirect:'error',headers:{'CF-Connecting-IP':'local-boundary-'+suffix,...(body===undefined?{}:{'Content-Type':'application/json','Idempotency-Key':key}),...(credential?{Authorization:'Bearer '+credential}:{})},...(body===undefined?{}:{body:JSON.stringify(body)})});
+  const text=await r.text();if(r.status===503&&text.startsWith('Your worker restarted mid-request.')&&attempt<2){transportRetries++;return api(origin,path,body,credential,key,status,attempt+1);}assert.equal(r.status,status,`${path}: ${text.slice(0,300)}`);return JSON.parse(text);
+}
+const profile=await api(base,'register',{name:'qa-remove-'+suffix,description:sentinel,credential:token,label:'test',source:sentinel,public_data_acknowledged:true},'',randomUUID(),201);
+const offer=await api(base,'entries',{kind:'offer',title:sentinel,body:sentinel+' public test only.',inputs:sentinel,limitations:sentinel,pricing:sentinel,tags:['testing']},token,randomUUID(),201);
+const closed=await api(base,`entries/${offer.id}/resolution`,{outcome:sentinel+' provider self-report.',status:'resolved'},token);
+check('Provider offer closure is not requester confirmation',closed.confirmed_by===null);
+await api(base,'owner/moderate',{target:'entry',id:offer.id,action:'hide'});
+await api(base,'entries/'+offer.id,undefined,'','',404);check('Moderation hides public entry');
+await api(base,'owner/moderate',{target:'entry',id:offer.id,action:'restore'});
+await api(base,'entries/'+offer.id,undefined,'');check('Moderation restores visible entry');
+await api(base,'owner/moderate',{target:'account',id:profile.account.id,action:'suspend'});
+await api(base,'me',undefined,token,'',401);check('Suspension prevents account access');
+await api(base,'owner/moderate',{target:'account',id:profile.account.id,action:'restore'});
+const removeKey=randomUUID();const removed=await api(base,'remove',{target:'account',id:profile.account.id},token,removeKey);
+const replay=await api(base,'remove',{target:'account',id:profile.account.id},token,removeKey);
+check('Account removal retries after access is revoked',JSON.stringify(removed)===JSON.stringify(replay));
+await api(base,'me',undefined,token,'',401);
+await api(base,'entries/'+offer.id,undefined,'','',404);check('Removed profile and authored entry are inaccessible');
+await api(base,'register',{name:'qa-remove-'+suffix,description:sentinel,credential:token,label:'test',source:sentinel,public_data_acknowledged:true},'',randomUUID(),410);check('Removed registration cannot replay old profile');
+const before=await api(base,'owner/dashboard');
+let backup;
+try{
+  await api(base,'owner/controls',{registration_open:false,writes_open:false});
+  backup=await api(base,'owner/export');
+  check('Removal scrubs authored fields and mutation receipts',!JSON.stringify(backup).includes(sentinel));
+  check('Owner export fits its restore contract',Buffer.byteLength(JSON.stringify({confirm_empty_restore:true,backup}))<2_000_000);
+}finally{await api(base,'owner/controls',{registration_open:before.status.registration_open,writes_open:before.status.writes_open});}
+await api(restore,'owner/restore',{confirm_empty_restore:true,backup},token,randomUUID(),403);check('Restore rejects an ordinary credential');
+const invalid=structuredClone(backup);invalid.tables.unknown_table=[];
+await api(restore,'owner/restore',{confirm_empty_restore:true,backup:invalid},owner,randomUUID(),400);check('Restore rejects unknown tables');
+const invalidColumn=structuredClone(backup);invalidColumn.tables.accounts[0].unexpected='bad';
+await api(restore,'owner/restore',{confirm_empty_restore:true,backup:invalidColumn},owner,randomUUID(),400);check('Restore rejects unknown columns');
+const restoreKey=randomUUID(),body={confirm_empty_restore:true,backup};
+const [first,again]=await Promise.all([api(restore,'owner/restore',body,owner,restoreKey),api(restore,'owner/restore',body,owner,restoreKey)]);
+check('Concurrent restore retries preserve one receipt',JSON.stringify(first)===JSON.stringify(again));
+const status=await api(restore,'status',undefined,'');check('Restored service keeps posting and registration paused',!status.writes_open&&!status.registration_open);
+const imported=await api(restore,'owner/export');
+const sorted=rows=>rows.map(r=>JSON.stringify(Object.fromEntries(Object.entries(r).sort()))).sort();
+for(const table of ['accounts','credentials','entries','replies','follows','reports','host_cycles','introductions'])assert.deepEqual(sorted(imported.tables[table]),sorted(backup.tables[table]),table);
+for(const table of ['events','mutations']){const actual=new Set(sorted(imported.tables[table]));for(const row of sorted(backup.tables[table]))assert.ok(actual.has(row),table+' row retained');}
+check('Runtime restore preserves records, credentials, discussion and audit history');
+await api(restore,'owner/restore',body,owner,randomUUID(),409);check('Populated destination cannot be overwritten');
+const state=await api(base,'search?limit=50',undefined,'');const restored=await api(restore,'search?limit=50',undefined,'');
+check('Restored public discovery matches source',JSON.stringify(state)===JSON.stringify(restored));
+await writeFile('work/boundary-evidence.json',JSON.stringify({time:new Date().toISOString(),base,restore,checks,transportRetries,source_entries:state.entries.length,backup_bytes:Buffer.byteLength(JSON.stringify(backup)),restored_posting_paused:true},null,2));
+console.log(`${checks.length} boundary and runtime-recovery checks passed.`);

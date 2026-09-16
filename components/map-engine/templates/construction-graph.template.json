@@ -1,0 +1,124 @@
+{
+  "graph_version": "1.3",
+  "graph_id": "replace-me",
+  "brief_id": "replace-me",
+  "status": "draft",
+  "frozen_at": "1970-01-01T00:00:00Z",
+  "asset_sufficiency": {
+    "status": "pending",
+    "audit_path": "asset-sufficiency.json",
+    "audit_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "unresolved_gaps": 1,
+    "asset_production_lane_status": "open"
+  },
+  "blockout_review": {
+    "status": "pending",
+    "artifact_path": "construction-blockout.png",
+    "artifact_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "report_path": "construction-blockout-review.json",
+    "report_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "reviewer_context": "fresh-unprimed",
+    "supplied_context": ["unlabeled construction blockout", "grid scale only"],
+    "corrections_used": 0
+  },
+  "aesthetic_contract": {
+    "emotional_thesis": "Name the feeling and dramatic visual argument of the complete connected place; hero/primary_subject may identify its governing spatial composition rather than a giant prop.",
+    "hierarchy": {
+      "hero": "node-primary",
+      "supports": ["node-route"],
+      "quiet_areas": ["quiet-1"]
+    },
+    "palette_value_opposition": "Name the warm/cool and light/dark opposition; a palette list alone is insufficient.",
+    "physical_medium": "Name the physical or simulated medium.",
+    "mark_language": ["Name the distinct marks used by depth and importance."],
+    "asymmetry_rhythm": "Describe layout, rooms/activity clusters, recognizable objects, and selective accents; preserve circulation without a furniture or detail quota.",
+    "causal_relationships": ["Describe visible use and relationships; functional furniture groupings may use nonphysical controls/contains/marks edges while real architectural joints retain socket proof."],
+    "state_transformation": "State that one static fictional map is sufficient unless Ben explicitly requested variants; if requested, name only the actual requested visible change.",
+    "accepted_visual_anchors": [
+      {
+        "path": "references/accepted-anchor.png",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "role": "Exact benchmark role appropriate to feature/setting/view scale; state inspection-only restrictions where applicable. Comparison approval does not admit pixels to production lineage."
+      }
+    ]
+  },
+  "beauty_proof_review": {
+    "status": "pending",
+    "proof_path": "beauty-proof.png",
+    "proof_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "report_path": "beauty-proof-review.json",
+    "report_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "reviewer_context": "fresh-unprimed-aesthetic",
+    "supplied_context": ["unlabeled color/value/composition proof", "equal-scale exact accepted visual anchors"],
+    "corrections_used": 0,
+    "finish_authorized": false
+  },
+  "composition": {
+    "primary_subject": "node-primary",
+    "supporting_masses": ["node-route"],
+    "quiet_areas": [{"id": "quiet-1", "geometry": {}, "purpose": "open tactical circulation"}],
+    "thumbnail_order": ["node-primary", "node-route"],
+    "desaturated_read": "Describe value/silhouette separation of rooms, openings, obstructions, elevations, and recognizable objects at practical VTT scale; atmosphere cannot conceal them."
+  },
+  "assets": [
+    {
+      "id": "route-bed",
+      "path": "assets/route-bed.png",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "audit_asset_id": "route-bed",
+      "construction_class": "terrain",
+      "projection": "top-down orthographic",
+      "alpha_model": "partial",
+      "base_model": "integrated_terrain",
+      "shadow_model": "live_shared",
+      "allowed_operations": ["mask", "proportional-scale", "composite"],
+      "sockets": [{"id": "threshold-out", "required_for_freeze": true, "plane": "road-grade", "elevation": "upper", "material": "weathered sandstone", "mates": ["threshold-arch.road-in"]}],
+      "scale_range": {"minimum": 0.95, "maximum": 1.05},
+      "occlusion_profile": "May pass beneath the threshold; its centerline and opening remain visible."
+    },
+    {
+      "id": "threshold-arch",
+      "path": "assets/threshold-arch.png",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "audit_asset_id": "threshold-arch",
+      "construction_class": "connectable_architecture",
+      "projection": "top-down orthographic",
+      "alpha_model": "transparent",
+      "base_model": "none",
+      "shadow_model": "live_shared",
+      "allowed_operations": ["mask", "proportional-scale", "composite"],
+      "sockets": [{"id": "road-in", "required_for_freeze": true, "plane": "road-grade", "elevation": "upper", "material": "weathered sandstone", "mates": ["route-bed.threshold-out"]}],
+      "scale_range": {"minimum": 0.95, "maximum": 1.05},
+      "occlusion_profile": "Piers cover only road margins; the opening remains legible."
+    }
+  ],
+  "assemblies": [
+    {
+      "id": "threshold-assembly",
+      "components": ["route-bed", "threshold-arch"],
+      "joins": [
+        {
+          "id": "join-threshold-road",
+          "from": {"asset_id": "route-bed", "socket_id": "threshold-out"},
+          "to": {"asset_id": "threshold-arch", "socket_id": "road-in"},
+          "joint_owner": "threshold-arch",
+          "plane": "road-grade",
+          "elevation": "upper",
+          "material": "weathered sandstone",
+          "seam": "Paving continues through the arch opening and terminates at both piers.",
+          "occlusion": "Piers occlude road margins; no base or shadow crosses the clear opening."
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {"id": "node-primary", "label": "", "kind": "structure", "importance": "primary", "nameable": true, "geometry": {}, "tactical_role": "", "source": {"mode": "assembly", "assembly_id": "threshold-assembly", "construction_note": ""}},
+    {"id": "node-route", "label": "", "kind": "route", "importance": "secondary", "nameable": false, "geometry": {}, "tactical_role": "", "source": {"mode": "authored_terrain", "construction_note": ""}}
+  ],
+  "edges": [
+    {"from": "node-primary", "to": "node-route", "relation": "marks", "physical": false, "join_ids": [], "visible_evidence": "The opening spans the road threshold."}
+  ],
+  "requirements": [
+    {"id": "R1", "shall": "The threshold assembly shall visibly mark the route without obstructing its opening.", "verification": "unprimed blockout and finished cold-authorship review"}
+  ]
+}

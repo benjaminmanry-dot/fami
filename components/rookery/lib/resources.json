@@ -1,0 +1,162 @@
+[
+  {
+    "id": "resource-sec-edgar",
+    "title": "SEC EDGAR developer data",
+    "body": "U.S. public-company filings, submissions, and XBRL facts\n\nLets an agent turn primary filings into a bounded research or verification answer with an auditable source.\n\nHost-curated resource. Documentation checked September 14, 2026; not a provider participating in The Rookery and not an independently tested endorsement.",
+    "tags": [
+      "data",
+      "filings"
+    ],
+    "inputs": "CIK, accession number, form type, issuer name, or SEC data endpoint query.",
+    "limitations": "SEC asks automated users to identify themselves with a declared User-Agent and limits requests to 10 per second; it can block non-compliant access.",
+    "pricing": "Public developer data; no paid price is stated in the cited developer guidance.",
+    "evidence": [
+      "https://www.sec.gov/about/developer-resources"
+    ],
+    "source_url": "https://www.sec.gov/about/developer-resources"
+  },
+  {
+    "id": "resource-open-meteo",
+    "title": "Open-Meteo Weather API",
+    "body": "Forecast and historical-weather data in JSON, CSV, and XLSX.\n\nSupports a concrete local planning, accessibility, travel, gardening, or event-weather help request without a proprietary data purchase.\n\nHost-curated resource. Documentation checked September 14, 2026; not a provider participating in The Rookery and not an independently tested endorsement.",
+    "tags": [
+      "weather",
+      "data"
+    ],
+    "inputs": "Latitude/longitude, time range, and requested weather variables.",
+    "limitations": "Its Open Access tier is for non-commercial use and is rate-limited (documented 10,000 daily, 5,000 hourly, and 600 per minute requests); attribution and its terms apply. Commercial use requires a subscription/key.",
+    "pricing": "Open Access is unpriced for its stated non-commercial use; commercial subscriptions are listed separately.",
+    "evidence": [
+      "https://open-meteo.com/en/docs"
+    ],
+    "source_url": "https://open-meteo.com/en/docs"
+  },
+  {
+    "id": "resource-openalex",
+    "title": "OpenAlex API",
+    "body": "Structured scholarly works, authors, institutions, sources, and citations.\n\nGives the exchange a reproducible research-evidence route rather than a generic web-search claim.\n\nHost-curated resource. Documentation checked September 14, 2026; not a provider participating in The Rookery and not an independently tested endorsement.",
+    "tags": [
+      "research",
+      "archives"
+    ],
+    "inputs": "Search strings and documented filters for entities such as works, authors, or sources.",
+    "limitations": "The basic API can be used without a key; a free key raises the daily limit. Documented rate and daily-budget limits still apply, and higher-volume plans are paid.",
+    "pricing": "Basic access is documented as free; paid plans exist for higher use.",
+    "evidence": [
+      "https://help.openalex.org/api/"
+    ],
+    "source_url": "https://help.openalex.org/api/"
+  },
+  {
+    "id": "resource-crossref-rest",
+    "title": "Crossref REST API",
+    "body": "DOI and publication metadata lookup.\n\nCan resolve citations and publication facts for a small evidence-check request with a sourceable identifier.\n\nHost-curated resource. Documentation checked September 14, 2026; not a provider participating in The Rookery and not an independently tested endorsement.",
+    "tags": [
+      "research",
+      "provenance"
+    ],
+    "inputs": "DOI, bibliographic title, author, funder, member, or filter query.",
+    "limitations": "Public access has documented rate pools; including a mailto contact identifies a polite pool. Metadata Plus has a different, higher access tier.",
+    "pricing": "Public REST metadata access is documented; Metadata Plus is a paid membership product.",
+    "evidence": [
+      "https://www.crossref.org/documentation/retrieve-metadata/rest-api/access-and-authentication/"
+    ],
+    "source_url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/access-and-authentication/"
+  },
+  {
+    "id": "resource-nominatim",
+    "title": "OpenStreetMap Nominatim public geocoder",
+    "body": "Geocoding and reverse geocoding from OpenStreetMap data.\n\nUseful for one-off local-resource, address-normalization, or route-planning help where bounded usage is enough.\n\nHost-curated resource. Documentation checked September 14, 2026; not a provider participating in The Rookery and not an independently tested endorsement.",
+    "tags": [
+      "maps",
+      "geocoding"
+    ],
+    "inputs": "A free-form or structured place/address query, or latitude/longitude.",
+    "limitations": "The public service has an absolute maximum of one request per second, requires an identifying User-Agent/Referer, forbids systematic bulk use, and offers no SLA.",
+    "pricing": "Public endpoint policy; no paid price is stated there. Production-scale use needs a separate provider or self-hosting decision.",
+    "evidence": [
+      "https://operations.osmfoundation.org/policies/nominatim/"
+    ],
+    "source_url": "https://operations.osmfoundation.org/policies/nominatim/"
+  },
+  {
+    "id": "resource-github-rest-read",
+    "title": "GitHub REST API public-read route",
+    "body": "Public repositories, issues, releases, commits, and documentation metadata.\n\nEnables a concrete read-only audit of open-source tools, changelogs, and issue histories before recommending help or implementation.\n\nHost-curated resource. Documentation checked September 14, 2026; not a provider participating in The Rookery and not an independently tested endorsement.",
+    "tags": [
+      "development",
+      "testing"
+    ],
+    "inputs": "Repository, issue, release, or user endpoint requests.",
+    "limitations": "Unauthenticated REST requests are limited to 60 per hour; authenticated requests have a larger documented limit but require an account/token. Any write action is outside this research route.",
+    "pricing": "Public-read REST access is available without authentication; no price is stated in the rate-limit documentation.",
+    "evidence": [
+      "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api"
+    ],
+    "source_url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api"
+  },
+  {
+    "id": "resource-us-census-geocoder",
+    "title": "U.S. Census Geocoding Services API",
+    "body": "U.S. address-to-coordinate and geography lookup using Census/TIGER data.\n\nA primary public source for small civic, address, constituency, and local-service research tasks.\n\nHost-curated resource. Documentation checked September 14, 2026; not a provider participating in The Rookery and not an independently tested endorsement.",
+    "tags": [
+      "geocoding",
+      "data"
+    ],
+    "inputs": "Single or batch U.S., Puerto Rico, or island-area addresses; geographic lookups also take coordinates.",
+    "limitations": "Coverage is jurisdiction-bound to the service's documented U.S. geographies; callers must follow the API's stated formats and benchmarks/vintages.",
+    "pricing": "The cited service documentation does not state an account requirement or price; neither is inferred here.",
+    "evidence": [
+      "https://geocoding.geo.census.gov/geocoder/Geocoding_Services_API.html"
+    ],
+    "source_url": "https://geocoding.geo.census.gov/geocoder/Geocoding_Services_API.html"
+  },
+  {
+    "id": "resource-nasa-apis",
+    "title": "NASA APIs",
+    "body": "Public NASA science, imagery, and mission-data services.\n\nProvides an identifiable, lawful data source for educational, creative, or science-explanation requests without claiming proprietary analysis.\n\nHost-curated resource. Documentation checked September 14, 2026; not a provider participating in The Rookery and not an independently tested endorsement.",
+    "tags": [
+      "science",
+      "data"
+    ],
+    "inputs": "Service-specific query parameters and an API key where required.",
+    "limitations": "The DEMO_KEY route is rate-limited to 30 requests per IP per hour and 50 per day; a personal key raises documented limits and requires signup.",
+    "pricing": "Public API documentation describes an exploration route; no price is stated in the authentication page.",
+    "evidence": [
+      "https://api.nasa.gov/assets/html/authentication.html"
+    ],
+    "source_url": "https://api.nasa.gov/assets/html/authentication.html"
+  },
+  {
+    "id": "resource-overpass-osm",
+    "title": "OpenStreetMap Overpass API",
+    "body": "Map-feature queries over OpenStreetMap data using Overpass QL or XML.\n\nCan answer narrowly bounded questions such as nearby amenities, accessibility features, trailheads, or public facilities from source map data.\n\nHost-curated resource. Documentation checked September 14, 2026; not a provider participating in The Rookery and not an independently tested endorsement.",
+    "tags": [
+      "maps",
+      "data"
+    ],
+    "inputs": "A bounded geographic query and feature predicates in Overpass QL/XML.",
+    "limitations": "The public service is for modest use, may reject or delay requests when overloaded, and its guidance discourages parallel/bulk querying; recurring production use needs a separate hosting/provider decision.",
+    "pricing": "Public endpoint guidance; no price is stated for the shared instance.",
+    "evidence": [
+      "https://wiki.openstreetmap.org/wiki/Overpass_API"
+    ],
+    "source_url": "https://wiki.openstreetmap.org/wiki/Overpass_API"
+  },
+  {
+    "id": "resource-cairn-x402-reference",
+    "title": "Cairn pay-then-claim protocol reference",
+    "body": "A public, implementation-level example of an agent-readable paid-question protocol using HTTP 402 and a public delivery record.\n\nA useful design and interoperability seed for an agent help exchange because it makes its request, payment, verification, and public-delivery assumptions explicit.\n\nHost-curated resource. Documentation checked September 14, 2026; not a provider participating in The Rookery and not an independently tested endorsement.",
+    "tags": [
+      "agents",
+      "protocols"
+    ],
+    "inputs": "A question of up to 400 characters plus, after payment, a Solana transaction signature; memoless claims also need a wallet signature.",
+    "limitations": "It is a seller's self-published protocol and its claims are not independent validation. It requires a financial transaction and a self-custody wallet/keypair, both outside the present assignment.",
+    "pricing": "The published 402 terms state minimums of 0.02 SOL or 1.5 USDC; no payment was attempted.",
+    "evidence": [
+      "https://cairnwake.com/protocol.html"
+    ],
+    "source_url": "https://cairnwake.com/protocol.html"
+  }
+]

@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://20fates.local/schemas/asset-sufficiency.v1.1.json",
+  "title": "20Fates Asset Sufficiency and Socket Audit v1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "audit_version",
+    "audit_id",
+    "recorded_at",
+    "status",
+    "scene_owner",
+    "scene_owner_accepts_final_construction",
+    "assemblies_in_scope",
+    "assets",
+    "unresolved_gaps",
+    "asset_production_lane"
+  ],
+  "properties": {
+    "audit_version": {"const": "1.1"},
+    "audit_id": {"type": "string", "minLength": 1},
+    "recorded_at": {"type": "string", "format": "date-time"},
+    "status": {"enum": ["draft", "blocked", "pass"]},
+    "scene_owner": {"type": "string", "minLength": 1},
+    "scene_owner_accepts_final_construction": {"type": "boolean"},
+    "assemblies_in_scope": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "required_function", "required_footprint", "elevations", "candidate_asset_ids", "status", "finding"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "required_function": {"type": "string", "minLength": 1},
+          "required_footprint": {"type": "string", "minLength": 1},
+          "elevations": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "candidate_asset_ids": {"type": "array", "items": {"type": "string"}},
+          "status": {"enum": ["sufficient", "gap", "resolved-by-lane"]},
+          "finding": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/asset"}
+    },
+    "unresolved_gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["assembly_id", "missing_function", "why_catalogue_fails"],
+        "properties": {
+          "assembly_id": {"type": "string"},
+          "missing_function": {"type": "string"},
+          "why_catalogue_fails": {"type": "string"}
+        }
+      }
+    },
+    "asset_production_lane": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "lane_id", "reason", "deliverables"],
+      "properties": {
+        "status": {"enum": ["not-required", "open", "completed"]},
+        "lane_id": {"type": "string"},
+        "reason": {"type": "string"},
+        "deliverables": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "function", "footprint", "elevation", "projection", "material", "lighting", "alpha_shadow", "sockets", "clean_margins", "output_class", "status"],
+            "properties": {
+              "id": {"type": "string", "minLength": 1},
+              "function": {"type": "string", "minLength": 1},
+              "footprint": {"type": "string", "minLength": 1},
+              "elevation": {"type": "string", "minLength": 1},
+              "projection": {"type": "string", "minLength": 1},
+              "material": {"type": "string", "minLength": 1},
+              "lighting": {"type": "string", "minLength": 1},
+              "alpha_shadow": {"type": "string", "minLength": 1},
+              "sockets": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+              "clean_margins": {"type": "string", "minLength": 1},
+              "output_class": {"enum": ["connector", "terminal", "transition", "shadowless_variant", "integrated_assembly"]},
+              "status": {"enum": ["requested", "delivered", "admitted", "rejected"]},
+              "path": {"type": "string"},
+              "sha256": {"$ref": "#/$defs/sha256"}
+            }
+          }
+        }
+      }
+    },
+    "pre_lane_audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"$ref": "#/$defs/sha256"}
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"},
+    "socket": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "required_for_freeze", "plane", "elevation", "material", "mates"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "required_for_freeze": {"type": "boolean"},
+        "plane": {"type": "string", "minLength": 1},
+        "elevation": {"type": "string", "minLength": 1},
+        "material": {"type": "string", "minLength": 1},
+        "mates": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "path", "sha256", "construction_class", "admission", "projection", "alpha_model", "base_model", "shadow_model", "allowed_operations", "sockets", "scale_range", "occlusion_profile", "finding"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "construction_class": {"enum": ["terrain", "connectable_architecture", "transition", "standalone_prop"]},
+        "admission": {"enum": ["admitted", "rejected"]},
+        "projection": {"type": "string", "minLength": 1},
+        "alpha_model": {"enum": ["opaque", "transparent", "partial"]},
+        "base_model": {"enum": ["none", "integrated_terrain", "self_contained", "plinth", "enclosing_silhouette"]},
+        "shadow_model": {"enum": ["none", "shadowless", "live_shared", "integrated_shared", "baked_ambient", "baked_directional"]},
+        "allowed_operations": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "sockets": {"type": "array", "items": {"$ref": "#/$defs/socket"}},
+        "scale_range": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["minimum", "maximum"],
+          "properties": {
+            "minimum": {"type": "number", "exclusiveMinimum": 0},
+            "maximum": {"type": "number", "exclusiveMinimum": 0}
+          }
+        },
+        "occlusion_profile": {"type": "string", "minLength": 1},
+        "finding": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

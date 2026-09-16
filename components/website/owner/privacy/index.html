@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <meta name="referrer" content="no-referrer" />
+  <title>Receipt tracking & privacy · 20Fates</title>
+  <link rel="stylesheet" href="/owner/owner.css" />
+</head>
+<body>
+  <main class="privacy-page">
+    <p class="eyebrow">20Fates · Private owner tool</p>
+    <h1>20Fates Receipt Tracking</h1>
+    <p class="section">This application helps Ben Manry track 20Fates sessions, agreed fees and payment receipts. It is for the business owner alone. Players do not connect their Google accounts or make payments through it.</p>
+    <p><a href="/owner/">Open the owner sign-in</a> · <a href="#privacy">Privacy policy</a></p>
+    <section id="privacy" class="section stack" aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Privacy policy</h2>
+      <p class="muted">Updated September 5, 2026</p>
+      <h3>Gmail access and use</h3>
+      <p>The owner may authorize read-only Gmail access to find Cash App and Venmo receipt emails. Google's permission permits reading the mailbox; the application limits its searches to provider receipt candidates and bounded dates. It cannot send, edit or delete email.</p>
+      <p>Receipt contents are processed to identify the provider, payer name, amount, transaction identifier, receipt date and authenticity. The ledger stores those extracted fields, the source email identifier and review status. Full email bodies are not stored in the ledger. Records support reconciliation of received money with recorded session fees.</p>
+      <h3>Storage and access</h3>
+      <p>Records and access credentials are held in private Supabase storage and server settings. Ledger access requires the designated owner's password and authenticator. Public website files contain no ledger records or Gmail credentials. Netlify hosts the application pages. Encrypted recovery copies may be held in the owner's private GitHub storage and local recovery files.</p>
+      <p>The application does not sell Google data, use it for advertising, or send it to AI services. Its use and transfer of Google data are limited to receipt tracking and recovery, consistent with the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      <h3>Retention and control</h3>
+      <p>Extracted receipts are retained as business ledger records under the owner's control. Scheduled GitHub backup artifacts, when enabled, expire after 30 days; separate local recovery copies are managed by the owner. Revoking access in <a href="https://myaccount.google.com/connections" rel="noreferrer">Google Account connections</a> stops future Gmail reads but does not erase existing ledger records or backups.</p>
+      <p>For questions or requests to access, correct or delete recorded information, contact Ben Manry at <a href="mailto:reviewer@example.invalid">reviewer@example.invalid</a>.</p>
+    </section>
+  </main>
+</body>
+</html>

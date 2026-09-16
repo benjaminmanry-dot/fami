@@ -1,0 +1,50 @@
+{
+  "contract": "public-offer-snapshot",
+  "version": "public-offer/1",
+  "owner": "20fates-website",
+  "source": {
+    "identity": "sha256:770ce55e9ea0d11fe1011caf0bae18b4bd579dc50b1c0723bd4fc8cd1186663f"
+  },
+  "freshness": {
+    "source_identity": "source.identity",
+    "offer_state": "current",
+    "consumer_observation": "fetched_at"
+  },
+  "visibility": "public",
+  "payload": {
+    "offers": [
+      {
+        "id": "open-table",
+        "slug": "open-table",
+        "title": "Open Table",
+        "status": "open",
+        "open_seats": 2,
+        "has_open_seats": true,
+        "schedule": {
+          "day": "Saturday",
+          "time": "4:00 PM",
+          "time_zone": "America/Chicago",
+          "label": "Saturday, 4:00 PM Central"
+        },
+        "price": "$40/week",
+        "canonical_url": "https://20fates.com/campaigns/open-table/"
+      },
+      {
+        "id": "epic-quests",
+        "slug": "epic-quests",
+        "title": "Epic Quests",
+        "status": "open",
+        "open_seats": 1,
+        "has_open_seats": true,
+        "schedule": {
+          "day": "Thursday / Saturday / Sunday",
+          "time": "Multiple times",
+          "time_zone": "America/Chicago",
+          "label": "Thursday 9:00 PM, Saturday 10:00 AM, and Sunday 9:00 PM Central"
+        },
+        "price": "$40/week",
+        "canonical_url": "https://20fates.com/campaigns/epic-quests/"
+      }
+    ]
+  }
+}

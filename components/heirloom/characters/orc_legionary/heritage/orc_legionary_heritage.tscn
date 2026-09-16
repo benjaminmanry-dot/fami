@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://characters/orc_legionary/heritage/orc_legionary_heritage.gd" id="1_script"]
+[ext_resource type="PackedScene" path="res://characters/orc_legionary/heritage/orc_legionary.glb" id="2_model"]
+
+[node name="HeritageOrcLegionary" type="Node3D"]
+script = ExtResource("1_script")
+
+[node name="Model" parent="." instance=ExtResource("2_model")]

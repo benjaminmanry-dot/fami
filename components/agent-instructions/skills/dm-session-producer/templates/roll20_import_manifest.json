@@ -1,0 +1,72 @@
+{
+  "id": "<campaign>-session-<NNN>",
+  "title": "<Session or Adventure Title>",
+  "session": "<NNN>",
+  "assets": {
+    "maps": [
+      {
+        "key": "<map-filename.png>",
+        "filename": "<map-filename.png>",
+        "required": true,
+        "purpose": "<scene or setup purpose>"
+      }
+    ],
+    "tokens": [
+      {
+        "key": "<token-filename.png>",
+        "filename": "<token-filename.png>",
+        "required": true,
+        "purpose": "<NPC, monster, object, or hazard purpose>"
+      }
+    ],
+    "handouts": [
+      {
+        "key": "<handout-filename.png>",
+        "filename": "<handout-filename.png>",
+        "required": false,
+        "purpose": "<reveal or clue purpose>"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "key": "<page-key>",
+      "name": "<Exact Roll20 Page Name>",
+      "width": 24,
+      "height": 16,
+      "grid": true,
+      "mapAsset": "<map-filename.png>",
+      "scene": "<scene purpose>",
+      "tokens": [
+        {
+          "character": "<character-key>",
+          "name": "<Visible Token Name>",
+          "x": 12,
+          "y": 8,
+          "size": 1,
+          "layer": "objects",
+          "bars": {
+            "hp": 100,
+            "ac": 18
+          }
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "key": "<character-key>",
+      "name": "<Exact Character Name>",
+      "tokenAsset": "<token-filename.png>",
+      "gmnotes": "<Compact stat reference or packet file pointer>"
+    }
+  ],
+  "handouts": [
+    {
+      "name": "<Exact Handout Name>",
+      "asset": "<optional-handout-filename.png>",
+      "notes": "<Player-facing handout text>",
+      "gmnotes": "<GM-only timing and handling notes>"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Find D&D Clients"
+  short_description: "Research qualified paid D&D prospects"
+  default_prompt: "Use $find-dnd-clients to research fresh, permissioned D&D prospects—including age-unknown and guardian-managed signals—and prepare an evidence-backed handoff to Ben."

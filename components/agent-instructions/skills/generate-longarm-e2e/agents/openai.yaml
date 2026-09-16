@@ -1,0 +1,4 @@
+interface:
+  display_name: "Generate Longarm Designs"
+  short_description: "Create coordinated continuous-line longarm DXFs"
+  default_prompt: "Use $generate-longarm-e2e to create a coordinated continuous-line computerized longarm quilting design with editable DXF handoff files."

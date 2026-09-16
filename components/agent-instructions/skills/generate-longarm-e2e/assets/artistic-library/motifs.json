@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "purpose": "Original curated motif metadata for professional longarm quilting art direction. Use these as assets and grammar, not as copied commercial patterns.",
+  "motifs": [
+    {
+      "id": "sakura-rosette",
+      "display_name": "Sakura Rosette",
+      "roles": ["focal", "corner", "block", "accent"],
+      "geographies": ["focal", "block", "corner", "triangle"],
+      "anchors": ["center", "petal-root", "echo-halo", "pearl-center"],
+      "density": 1.2,
+      "hierarchy": "primary",
+      "variants": ["center rosette", "corner fragment", "small triangle bloom", "echoed rosette"],
+      "entry_exit": "Enter at a petal root or pearl-center tangent; exit through an echo halo, leaf, or frame tangent.",
+      "misuse": "Do not scatter as independent flowers joined by long connector lines."
+    },
+    {
+      "id": "echoed-heart",
+      "display_name": "Echoed Heart",
+      "roles": ["support", "accent", "sashing", "border"],
+      "geographies": ["focal", "block", "border", "sashing", "corner"],
+      "anchors": ["frame", "sashing-rail", "scroll-base", "diamond-point"],
+      "density": 0.95,
+      "hierarchy": "secondary",
+      "variants": ["open heart", "double echo heart", "heart in scroll", "tiny sashing heart"],
+      "entry_exit": "Enter at lower cleft or side tangent; exit through echo or scroll base.",
+      "misuse": "Do not use as cartoon icon repetition."
+    },
+    {
+      "id": "pearl-chain",
+      "display_name": "Pearl Chain",
+      "roles": ["frame", "connector", "border", "sashing"],
+      "geographies": ["focal", "block", "border", "sashing", "corner", "triangle"],
+      "anchors": ["frame", "diamond-edge", "border-rail", "corner-turn", "medallion-axis"],
+      "density": 0.85,
+      "hierarchy": "tertiary",
+      "variants": ["uniform pearls", "graduated pearls", "oval pearls", "corner cluster"],
+      "entry_exit": "Travel pearl-to-pearl on a guide curve; pearls should visibly belong to a frame or rail.",
+      "misuse": "Do not use pearls to disguise random spacing."
+    },
+    {
+      "id": "flourish-scroll",
+      "display_name": "Flourish Scroll",
+      "roles": ["connector", "border", "corner", "support"],
+      "geographies": ["focal", "block", "border", "corner", "triangle"],
+      "anchors": ["spine", "corner-turn", "frame", "vine"],
+      "density": 1.0,
+      "hierarchy": "secondary",
+      "variants": ["single curl", "mirrored scroll pair", "scroll with pearl", "scroll with leaf"],
+      "entry_exit": "Use the scroll stem as the route; entry and exit should be tangent to spine or frame.",
+      "misuse": "Do not place isolated spirals in empty space."
+    },
+    {
+      "id": "leaf-sprig",
+      "display_name": "Leaf Sprig",
+      "roles": ["connector", "support", "sashing", "triangle"],
+      "geographies": ["focal", "block", "border", "sashing", "triangle", "corner"],
+      "anchors": ["vine", "diagonal", "frame", "sashing-rail"],
+      "density": 0.9,
+      "hierarchy": "tertiary",
+      "variants": ["single leaf", "double leaf", "leaf with echo", "leaf with pearl"],
+      "entry_exit": "Attach to a vine, diagonal, or frame; the stem is the route.",
+      "misuse": "Do not attach leaves to an unrelated straight travel line."
+    },
+    {
+      "id": "feather-plume",
+      "display_name": "Feather Plume",
+      "roles": ["triangle", "border", "support"],
+      "geographies": ["triangle", "border", "corner"],
+      "anchors": ["diagonal", "broad-edge", "triangle-point", "border-spine"],
+      "density": 1.05,
+      "hierarchy": "secondary",
+      "variants": ["open feather", "feather with echo", "partial plume", "feather with pearls"],
+      "entry_exit": "Route along a diagonal or border spine, tapering plumes toward the point.",
+      "misuse": "Do not crop a square feather into a triangle."
+    },
+    {
+      "id": "clamshell-arc",
+      "display_name": "Clamshell Arc",
+      "roles": ["fill", "triangle", "background"],
+      "geographies": ["triangle", "background", "border", "block"],
+      "anchors": ["baseline", "broad-edge", "fill-grid"],
+      "density": 0.8,
+      "hierarchy": "tertiary",
+      "variants": ["regular clamshell", "elongated clamshell", "bowed-edge clamshell"],
+      "entry_exit": "Travel along baselines or arc endpoints.",
+      "misuse": "Do not leave partial arcs dying at a boundary."
+    },
+    {
+      "id": "layered-border-frame",
+      "display_name": "Layered Border Frame",
+      "roles": ["frame", "border", "focal"],
+      "geographies": ["border", "focal", "block", "corner"],
+      "anchors": ["outer-rail", "inner-rail", "corner-turn", "pearl-band"],
+      "density": 1.1,
+      "hierarchy": "primary",
+      "variants": ["outer containment", "inner containment", "pearl band", "scroll-heavy wide border"],
+      "entry_exit": "Enter and exit on the border midline or a frame tangent; preserve same-plane chaining when repeated.",
+      "misuse": "Do not use a single rail as a complete border."
+    },
+    {
+      "id": "framed-diamond",
+      "display_name": "Framed Diamond",
+      "roles": ["frame", "focal", "medallion"],
+      "geographies": ["focal", "block"],
+      "anchors": ["diamond-edge", "diamond-point", "center", "pearl-band"],
+      "density": 1.0,
+      "hierarchy": "primary",
+      "variants": ["plain diamond", "pearl-edge diamond", "double diamond", "diamond with corner motifs"],
+      "entry_exit": "Enter at a diamond point or frame tangent; exit through the frame.",
+      "misuse": "Do not use a diamond frame without meaningful contents."
+    },
+    {
+      "id": "quiet-rail",
+      "display_name": "Quiet Rail",
+      "roles": ["sashing", "support", "connector"],
+      "geographies": ["sashing", "narrow-border", "background"],
+      "anchors": ["sashing-rail", "baseline", "border-rail"],
+      "density": 0.7,
+      "hierarchy": "support",
+      "variants": ["plain rail", "soft vine rail", "rail with tiny pearls", "rail with small hearts"],
+      "entry_exit": "Enter and exit on the same baseline for chained strips.",
+      "misuse": "Do not let quiet rails become empty exposed travel."
+    }
+  ]
+}

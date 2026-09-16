@@ -1,0 +1,27 @@
+{
+  "name": "20fates-familiar",
+  "version": "0.1.0",
+  "private": true,
+  "engines": { "node": ">=22.13.0" },
+  "description": "Local source for the 20Fates Discord Familiar and its preserved session-scribe duty.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "transcribe": "node transcribe.js",
+    "targets": "node list-targets.js",
+    "audition:dry-run": "node scripts/run-deepseek-audition.js --dry-run --max-usd 0.05 --max-attempts 13",
+    "check": "node --check bot.js && node --check shared-voice-session.js && node --check transcribe.js && node --check list-targets.js && node --check player-help.js && node --check vtt-character-bridge.js && node --check vtt-character-data.js && node --check offline-discord-transport.js && node --check deepseek-responder.js && node --check scripts/run-deepseek-audition.js && node --test tests/player-help.test.js tests/vtt-character-bridge.test.js tests/deterministic-character-interview.test.js tests/offline-discord-transport.test.js tests/bot-routing.test.js tests/deepseek-audition.test.js tests/scribe-capture.test.js tests/auto-record.test.js tests/shared-voice-session.test.js tests/runtime-lock.test.js"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.10.0",
+    "@discordjs/voice": "^0.19.2",
+    "discord.js": "^14.27.0",
+    "dotenv": "^16.4.7",
+    "ffmpeg-static": "^5.2.0",
+    "prism-media": "^1.3.5"
+  },
+  "overrides": {
+    "brace-expansion": "1.1.18",
+    "tar": "7.5.22"
+  }
+}

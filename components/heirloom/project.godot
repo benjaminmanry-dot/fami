@@ -1,0 +1,16 @@
+[application]
+
+config/name="Heirloom (Working Title)"
+run/main_scene="res://main.tscn"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+
+[rendering]
+
+textures/default_filters/use_nearest_mipmap_filter=false

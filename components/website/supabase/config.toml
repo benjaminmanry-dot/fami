@@ -1,0 +1,7 @@
+project_id = "20fates-owner-panel"
+
+# Webhooks use Stripe signatures; every owner action independently verifies
+# Supabase's signed JWT, fresh user identity and MFA. Cron/backup use distinct
+# limited-purpose secrets. This is not anonymous access to private records.
+[functions.owner-api]
+verify_jwt = false

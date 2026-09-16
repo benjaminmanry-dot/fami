@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "reserve_percent": 45,
+  "max_workers": 3,
+  "controls_path": "REPLACE_WITH_ABSOLUTE_CONTROLS_PATH",
+  "pause_path": "REPLACE_WITH_PRIVATE_FAMI_PAUSE_FILE",
+  "protected_paths": [
+    "REPLACE_WITH_ABSOLUTE_GOVERNING_RULES_PATH"
+  ],
+  "grants": {},
+  "projects": {},
+  "pools": {
+    "household-codex": {
+      "format": "native_codex",
+      "native_limit_id": "codex",
+      "required_windows": [
+        "10080"
+      ],
+      "coverage_verified": false,
+      "max_age_seconds": 120,
+      "inflight_buffer_percent": 2
+    },
+    "household-pro": {
+      "format": "account_windows",
+      "shared_identity": "household-pro-allowance",
+      "required_windows": [
+        "1440",
+        "10080"
+      ],
+      "coverage_verified": false,
+      "max_age_seconds": 120,
+      "inflight_buffer_percent": 2
+    }
+  },
+  "routes": {
+    "codex-isolated": {
+      "model": "gpt-6-astra",
+      "qualified": false,
+      "worker_effects": "isolated_only",
+      "pools": [
+        "household-codex"
+      ]
+    },
+    "pro-isolated": {
+      "model": "REPLACE_WITH_VERIFIED_SELECTED_MODEL",
+      "qualified": false,
+      "worker_effects": "isolated_only",
+      "pools": [
+        "household-pro"
+      ]
+    }
+  }
+}

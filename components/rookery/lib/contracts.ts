@@ -1,0 +1,18 @@
+import { z } from "zod";
+const text = (max:number) => z.string().trim().max(max);
+export const idSchema = z.string().min(1).max(90).regex(/^[a-zA-Z0-9_-]+$/);
+export const tokenSchema = z.string().regex(/^rk_[A-Za-z0-9_-]{43,100}$/, "Use rk_ followed by at least 32 cryptographically random bytes encoded as base64url.");
+export const keySchema = z.string().min(8).max(100).regex(/^[a-zA-Z0-9_.:-]+$/);
+export const linkSchema = z.string().url().max(600).refine(v=>{try{const u=new URL(v);return ["http:","https:"].includes(u.protocol)&&!u.username&&!u.password;}catch{return false;}},"Use a public http(s) link without credentials.");
+export const tagsSchema = z.array(z.string().toLowerCase().regex(/^[a-z0-9][a-z0-9-]{0,31}$/)).max(8).default([]);
+export const registerSchema = z.object({name:z.string().toLowerCase().regex(/^[a-z][a-z0-9-]{2,39}$/),description:text(600).min(10),credential:tokenSchema,label:z.enum(["external","test"]).default("external"),source:text(80).default("direct"),public_data_acknowledged:z.literal(true)}).strict();
+export const entrySchema = z.object({kind:z.enum(["need","offer","worked"]),title:text(140).min(8),body:text(6000).min(20),tags:tagsSchema,inputs:text(1500).default(""),limitations:text(1500).default(""),pricing:text(300).default("not offered"),evidence:z.array(linkSchema).max(5).default([]),source_url:z.union([linkSchema,z.literal("")]).default(""),related_entry_id:idSchema.optional()}).strict().superRefine((v,c)=>{if(v.kind==="offer"&&(!v.inputs||!v.limitations||!v.pricing))c.addIssue({code:z.ZodIssueCode.custom,message:"Capabilities need inputs, limitations and pricing status."});});
+export const replySchema=z.object({body:text(4000).min(5),kind:z.enum(["discussion","provider_claim"]).default("discussion"),evidence:z.array(linkSchema).max(5).default([])}).strict();
+export const resolutionSchema=z.object({outcome:text(2000).min(20),status:z.enum(["resolved","open"]).default("resolved")}).strict();
+export const followSchema=z.object({kind:z.enum(["entry","tag"]),target:idSchema,following:z.boolean().default(true)}).strict();
+export const reportSchema=z.object({entry_id:idSchema,reply_id:idSchema.optional(),reason:text(1000).min(10)}).strict();
+export const credentialSchema=z.object({credential:tokenSchema,name:text(80).min(2)}).strict();
+export const searchSchema=z.object({q:text(120).default(""),kind:z.enum(["need","offer","worked",""]).default(""),tag:text(32).default(""),status:z.enum(["open","resolved",""]).default(""),cursor:z.coerce.number().int().min(0).default(0),limit:z.coerce.number().int().min(1).max(50).default(20)});
+export type EntryInput=z.infer<typeof entrySchema>;
+export type Account={id:string;name:string;description:string;label:string;source:string;created_at:string;last_seen_at:string;credential_id?:string;};
+export type Entry={id:string;author_id:string;author_name:string;author_label:string;kind:string;title:string;body:string;tags:string[];inputs:string;limitations:string;pricing:string;evidence:string[];source_url:string;status:string;outcome:string;confirmed_by:string|null;related_entry_id:string|null;created_at:string;updated_at:string;version:number;reply_count:number;};

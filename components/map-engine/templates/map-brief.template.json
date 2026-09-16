@@ -1,0 +1,25 @@
+{
+  "brief_version": "1.0",
+  "brief_id": "replace-me",
+  "status": "draft",
+  "product": {"title": "", "adventure": "", "audience": "DM and players", "session_minutes": 240},
+  "structure_gate": {"status": "passed", "decision_by": "Ben", "evidence_path": "", "evidence_sha256": "0000000000000000000000000000000000000000000000000000000000000000"},
+  "provenance": [{"path": "", "sha256": "0000000000000000000000000000000000000000000000000000000000000000", "role": "source manuscript"}],
+  "grid": {"columns": 1, "rows": 1, "pixels_per_square": 70, "feet_per_square": 5},
+  "table_function": "",
+  "topology": {
+    "routes": [{"id": "route-1", "label": "", "geometry": {}, "elevation_id": "elevation-1", "connects_to": [], "minimum_clear_squares": 1}],
+    "elevation_bands": [{"id": "elevation-1", "label": "", "geometry": {}}],
+    "transitions": []
+  },
+  "player_start": [{"id": "start-1", "label": "", "geometry": {}}],
+  "exits": [{"id": "exit-1", "label": "", "geometry": {}}],
+  "pressures": [],
+  "interactables": [],
+  "objectives": [],
+  "states": [{"id": "static-map", "description": "One static fictional map; no transformation variant is requested unless Ben explicitly records one."}],
+  "must_preserve": [],
+  "nameable_features": [],
+  "unresolved_facts": [],
+  "handoff": {"destination": "20Fates Map Engine", "timing": "after Story Engine structure gate", "ben_gates_preserved": 2}
+}

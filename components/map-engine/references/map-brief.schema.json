@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://20fates.local/schemas/map-brief.v1.json",
+  "title": "20Fates Map Brief v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["brief_version", "brief_id", "status", "product", "structure_gate", "provenance", "grid", "table_function", "topology", "player_start", "exits", "pressures", "interactables", "objectives", "states", "must_preserve", "nameable_features", "unresolved_facts", "handoff"],
+  "properties": {
+    "brief_version": {"const": "1.0"},
+    "brief_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["draft", "frozen", "superseded"]},
+    "product": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "adventure", "audience", "session_minutes"],
+      "properties": {
+        "title": {"type": "string"},
+        "adventure": {"type": "string"},
+        "audience": {"type": "string"},
+        "session_minutes": {"type": "integer", "minimum": 1}
+      }
+    },
+    "structure_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "decision_by", "evidence_path", "evidence_sha256"],
+      "properties": {
+        "status": {"const": "passed"},
+        "decision_by": {"type": "string", "minLength": 1},
+        "evidence_path": {"type": "string", "minLength": 1},
+        "evidence_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "provenance": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/evidence"}},
+    "grid": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["columns", "rows", "pixels_per_square", "feet_per_square"],
+      "properties": {
+        "columns": {"type": "integer", "minimum": 1},
+        "rows": {"type": "integer", "minimum": 1},
+        "pixels_per_square": {"type": "integer", "minimum": 1},
+        "feet_per_square": {"type": "number", "exclusiveMinimum": 0}
+      }
+    },
+    "table_function": {"type": "string", "minLength": 1},
+    "topology": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["routes", "elevation_bands", "transitions"],
+      "properties": {
+        "routes": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/route"}},
+        "elevation_bands": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/namedGeometry"}},
+        "transitions": {"type": "array", "items": {"$ref": "#/$defs/transition"}}
+      }
+    },
+    "player_start": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/namedGeometry"}},
+    "exits": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/namedGeometry"}},
+    "pressures": {"type": "array", "items": {"$ref": "#/$defs/namedGeometry"}},
+    "interactables": {"type": "array", "items": {"$ref": "#/$defs/namedGeometry"}},
+    "objectives": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "states": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["id", "description"], "properties": {"id": {"type": "string"}, "description": {"type": "string"}}, "additionalProperties": true}},
+    "must_preserve": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "nameable_features": {"type": "array", "items": {"type": "object", "required": ["id", "label", "visible"], "properties": {"id": {"type": "string"}, "label": {"type": "string"}, "visible": {"type": "boolean"}}, "additionalProperties": true}},
+    "unresolved_facts": {"type": "array", "items": {"type": "string"}},
+    "handoff": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["destination", "timing", "ben_gates_preserved"],
+      "properties": {
+        "destination": {"const": "20Fates Map Engine"},
+        "timing": {"const": "after Story Engine structure gate"},
+        "ben_gates_preserved": {"const": 2}
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"},
+    "evidence": {"type": "object", "required": ["path", "sha256", "role"], "properties": {"path": {"type": "string"}, "sha256": {"$ref": "#/$defs/sha256"}, "role": {"type": "string"}}, "additionalProperties": true},
+    "namedGeometry": {"type": "object", "required": ["id", "label", "geometry"], "properties": {"id": {"type": "string"}, "label": {"type": "string"}, "geometry": {"type": ["object", "array"]}}, "additionalProperties": true},
+    "route": {"allOf": [{"$ref": "#/$defs/namedGeometry"}, {"type": "object", "required": ["elevation_id", "connects_to", "minimum_clear_squares"], "properties": {"elevation_id": {"type": "string"}, "connects_to": {"type": "array", "items": {"type": "string"}}, "minimum_clear_squares": {"type": "number", "minimum": 0}}}]},
+    "transition": {"type": "object", "required": ["id", "from_elevation", "to_elevation", "geometry", "minimum_clear_squares"], "properties": {"id": {"type": "string"}, "from_elevation": {"type": "string"}, "to_elevation": {"type": "string"}, "geometry": {"type": ["object", "array"]}, "minimum_clear_squares": {"type": "number", "minimum": 0}}, "additionalProperties": true}
+  }
+}

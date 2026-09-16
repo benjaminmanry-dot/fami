@@ -1,0 +1,32 @@
+{
+  "name": "is-chrome-enabled-in-this-conversation",
+  "version": "1.0.0",
+  "description": "20Fates emergency static site build for Netlify",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "check:offers": "node scripts/campaign-offers.js",
+    "owner:dev": "node scripts/owner-local.mjs",
+    "owner:test": "node --test tests/owner-*.test.mjs",
+    "owner:restore-check": "node scripts/owner-backup.mjs",
+    "preview": "vite preview",
+    "zip:netlify": "powershell -ExecutionPolicy Bypass -File scripts/package-netlify-zip.ps1"
+  },
+  "keywords": [
+    "20fates",
+    "static-site",
+    "netlify"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@supabase/supabase-js": "2.115.0",
+    "playwright": "^1.54.2",
+    "stripe": "22.6.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.8",
+    "vite": "^8.0.16"
+  }
+}

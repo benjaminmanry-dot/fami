@@ -1,0 +1,8 @@
+{
+  "name": "clearshift",
+  "version": "3.1.1",
+  "private": true,
+  "description": "Original offline musical placement puzzle",
+  "scripts": {"start":"node server.cjs","test":"node --test tests/sweep-engine.test.cjs tests/audio-v3.test.cjs && node tests/package-audio-check.cjs","test:browser":"node tests/browser-check.cjs"},
+  "engines": {"node":">=18"}
+}

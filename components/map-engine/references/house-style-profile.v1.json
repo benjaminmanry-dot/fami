@@ -1,0 +1,129 @@
+{
+  "profile_version": "1.2.0",
+  "profile_id": "20fates-professional-map-house-style",
+  "status": "evidence-backed-prototype",
+  "authority": "Ben's Map Engine decisions through 2026-09-11 and exact artifacts; preserve each anchor's comparison role and source-admission boundary; current outcome-led workflow supersedes procedural prescriptions",
+  "anchors": [
+    {
+      "id": "hyrex-h1-h2-v8-paired-medium-pass",
+      "path": "C:/Ambitions/king-in-the-cairns/side-adventures/maps/professional-map-pipeline/lower-ascent/renders/mythic-print-v8-paired-medium-pass/lower-ascent-70ppi.png",
+      "sha256": "0139ABD443BCDFD46BCE3A9873C187C5664313F8B6E71C2AA3C05A1627FDEE6D",
+      "role": "Hyrex house-medium and paired-room anchor; accepted sparse ritual/infernal composition, not a furnished-interior richness ceiling",
+      "binding_basis": "named as the approved H1/H2 anchor by the Road V4 visual prebuild contract"
+    },
+    {
+      "id": "hyrex-h3-corrected-refinish",
+      "path": "C:/Ambitions/king-in-the-cairns/.worktrees/whole-complex-pilot/side-adventures/maps/professional-map-pipeline/reliquary/runtime/reliquary-refinish-20260823-180650-524-f1d26454/h3-refinish-intact-70ppi.png",
+      "sha256": "5758E45509A5051F4A86C8397661DC437D9EF14D9890AEF80025BF769EB2E810",
+      "role": "corrected Hyrex construction and medium anchor",
+      "binding_basis": "named as corrected-H3 anchor by the Road V4 visual prebuild contract"
+    },
+    {
+      "id": "nine-bowls-v4-c",
+      "path": "C:/Users/developer/Documents/Codex/2026-06-03/important-reset-we-are-pivoting-away/campaigns/thrones-of-the-djinni-lords/maps/map-nine-bowls-player-36x28-70ppi.png",
+      "sha256": "6208CBFBD57BB6AC610493466A47603AC068AEB2EB5D192265772B56DD825988",
+      "role": "accepted Calimshan palette and authored-asset transfer comparator",
+      "binding_basis": "Road V4 visual prebuild contract"
+    },
+    {
+      "id": "cultists-lair-grimmutterings-inspection-only",
+      "path": "C:/Ambitions/hq/notes/codex/map-inspiration/2026-09-06-cultists-lair.png",
+      "sha256": "2F4E42946A709B931F1022BAC583B18F65FB3C834D2A546F959B1FE7341BEB90",
+      "role": "Inspection/reference-only benchmark for complete-room composition, recognizable furniture, coherent illustrative edges, value clarity, and purposeful richness at practical view scale; visible GRIMMUTTERINGS attribution retained",
+      "binding_basis": "Ben's September 6 inspiration and map-guidance commission; provenance in C:/Ambitions/hq/notes/codex/map-inspiration/2026-09-06-cultists-lair.md. Creator identity, reuse license, and exact software provenance are unverified. Not owned inventory or an admitted production source: no pixel extraction, generation reference, compositing, layout copying, or redistribution. No universal palette or pipeline acceptance is implied."
+    }
+  ],
+  "material_floor_sources": [
+    {
+      "id": "road-cycle-04-sunlit-sandstone",
+      "path": "C:/Users/developer/Documents/Codex/2026-08-27/20fates-map-engine/work/twentyfates-map-engine/forward-tests/road-v4-c-v1.1/east-orthographic-reauthorship-04/assets/materials/sunlit-sandstone.png",
+      "sha256": "E96C541D05CFE3DD93DA8223EC1E2629FCF0BE20D9EB026991326B1BB7E19190",
+      "role": "background-material quality floor"
+    },
+    {
+      "id": "road-cycle-04-quiet-cream-paving",
+      "path": "C:/Users/developer/Documents/Codex/2026-08-27/20fates-map-engine/work/twentyfates-map-engine/forward-tests/road-v4-c-v1.1/east-orthographic-reauthorship-04/assets/materials/quiet-cream-paving.png",
+      "sha256": "3335868E7B10595F3C0831D07281334107E0BDE0F701711B35B64B22ED9C2AB4",
+      "role": "background-material quality floor"
+    },
+    {
+      "id": "road-cycle-04-turquoise-lapis-mosaic",
+      "path": "C:/Users/developer/Documents/Codex/2026-08-27/20fates-map-engine/work/twentyfates-map-engine/forward-tests/road-v4-c-v1.1/east-orthographic-reauthorship-04/assets/materials/turquoise-lapis-mosaic.png",
+      "sha256": "E371AFB9BA724D67EEF8BBD02CCCD09BC62AE110086FA78BA80F0AA59C2C2FD8",
+      "role": "clearest background-material quality floor"
+    },
+    {
+      "id": "road-cycle-04-damaged-sandstone",
+      "path": "C:/Users/developer/Documents/Codex/2026-08-27/20fates-map-engine/work/twentyfates-map-engine/forward-tests/road-v4-c-v1.1/east-orthographic-reauthorship-04/assets/materials/damaged-sandstone.png",
+      "sha256": "309F42801834BDBF68A645D58AF24AF4FA72DD6ED526AC33072A4991532A01BF",
+      "role": "background-material quality floor"
+    }
+  ],
+  "medium": {
+    "name": "vivid retro pop-art with mythic physical print character",
+    "construction": [
+      "broad material masses and legible room/object silhouettes before local detail",
+      "opaque gouache-like color with dry mineral scumble",
+      "selective ink, hatching, stipple, coarse print grain, and mild registration drift",
+      "hand-cut edges and fitted physical joins",
+      "coherent shared contact and cast shadows under the scene's declared lighting; warm northwest light is an anchor-specific choice"
+    ],
+    "code_boundary": "Authored raster, drawn/inked assets, and capable native 3D construction may serve the medium with exact source admission and lineage. Intentional illustrative outlines are allowed. Crude primitive substitutes, repeated monoline seams, random scratches, and noise passed off as authored material finish are not. A software switch is not evidence of improved quality."
+  },
+  "palette": {
+    "default_roles": {
+      "light_mass": "warm limestone, bone, or scene-native pale material",
+      "field": "scene-native earth or floor hue kept quieter than the primary mass",
+      "cool_structure": "restrained turquoise, lapis, verdigris, or setting-equivalent cool mineral",
+      "warm_accent": "ochre, saffron, madder, rust, or setting-equivalent warm accent",
+      "metal": "aged brass or setting-native oxidized metal",
+      "fracture": "charcoal, deep plum, or another low-chroma structural dark"
+    },
+    "road_binding": ["bright Calimshan limestone", "ochre/saffron light", "restrained turquoise/lapis remnants", "aged brass", "madder-brown silt", "charcoal fracture accents"],
+    "rule": "Palette describes scene-native material roles, never flat color bands or color-only elevation. Select anchors by feature, setting, medium, and practical viewing scale; do not blend every anchor palette or impose Cultist's Lair green/gold. Prior acceptance is not a ceiling for a newly named quality target."
+  },
+  "hierarchy": {
+    "primary": "one governing place or spatial composition within a connected map; a dominant object is optional",
+    "supporting": "scene-appropriate rooms and activity clusters whose furniture, work, storage, access, and outputs make use recognizable while preserving circulation",
+    "tertiary": "recognizable objects and selective accents; keyed interactables match the manuscript, incidental dressing need not create a keyed interaction",
+    "quiet": "intentional low-contrast playable space with enough material identity for the scene; purposeful empty or monumental rooms remain valid without a prop or event quota",
+    "tests": ["layout, rooms/activity clusters, objects, then accents read at their relevant scales", "hierarchy survives desaturation", "detail and sharpness are distributed unequally", "room detail preserves connected routes, sightlines, thresholds, and complete-map composition"]
+  },
+  "quiet_space_rules": [
+    "keep circulation visibly open",
+    "use selective wear, repair, or edge-born detail where it supports the place; do not require an invented cause for every mark",
+    "concentrate contrast around useful reading and activity; quiet space is not generic blankness and richness is not uniform distress",
+    "do not fill quiet space with ornament, glyphs, or repeated texture cadence"
+  ],
+  "prohibited_tells": [
+    "rigid or faceted primitive finish that contradicts the declared material and medium",
+    "resin sheen or sprayed microdetail",
+    "automatic vines, roots, veins, wire, lightning, or all-over cracks",
+    "pseudo-writing, improvised heraldry, barcode cadence, or UI-like marks",
+    "repeated monoline seams, primitive substitute masonry, random scratches, or noise-authored finish; not intentional illustrative outlines",
+    "isolated room plates used as scene cards without coherent whole-map routes, construction, and inhabited relationships",
+    "floating props, decal halos, inconsistent projection, stretched rasters, or repeated defects",
+    "equal-detail collage, uniform distress, isolated intricate objects without room-level use, or detail soup",
+    "rejected, contaminated, or inspection-only candidate/benchmark pixels entering production lineage"
+  ],
+  "scale_gates": {
+    "thumbnail": "primary system, starts/exits, and elevation order read immediately",
+    "mid": "at practical VTT scale, room/activity groups and object functions read without labels; boundaries, openings, obstructions, and elevation separate through silhouette/material/value rather than darkness, glow, or texture alone",
+    "native": "joins, edges, shadows, projection, authored texture, and repeated defects pass full-resolution inspection"
+  },
+  "severity_calibration": {
+    "hard_blockers": "Spatial misinformation, corrupt lineage, wrong-candidate identity, and owner-rejected global medium/composition failures remain non-compensating.",
+    "soft_advisory": "A small plausible age, settlement, or handmade irregularity with preserved spatial meaning can be recorded as advisory through ordinary craft judgment; an existing exact Ben disposition remains controlling and cannot be reinterpreted.",
+    "road_cycle_04_boundary": "The Road composite remains rejected/unreleased lineage; these source materials are quality references, not permission to reuse the rejected composite or its oblique arches. Component PASSes, valid hashes, and a usable-tonight disposition never establish owner professional-quality acceptance."
+  },
+  "evidence_files": [
+    "C:/Ambitions/king-in-the-cairns/side-adventures/maps/professional-map-pipeline/house-style-gate.md",
+    "C:/Ambitions/king-in-the-cairns/side-adventures/maps/professional-map-pipeline/paired-room-medium-pass.md",
+    "C:/Ambitions/king-in-the-cairns/notes/codex/2026-08-15-paired-room-medium-pass.md",
+    "C:/Ambitions/king-in-the-cairns/notes/codex/2026-08-17-choir-vault-composition-reset.md",
+    "C:/Ambitions/king-in-the-cairns/notes/codex/2026-08-17-choir-vault-clean-room-rebuild.md",
+    "C:/Users/developer/Documents/Codex/2026-06-03/important-reset-we-are-pivoting-away/campaigns/thrones-of-the-djinni-lords/prep/2026-08-26/production/qa/maps/road-v4-visual-prebuild-contract.md",
+    "C:/Ambitions/hq/notes/codex/map-inspiration/2026-09-06-cultists-lair.md",
+    "C:/Ambitions/20fates-map-engine/notes/codex/2026-09-06-room-composition-legibility.md"
+  ]
+}

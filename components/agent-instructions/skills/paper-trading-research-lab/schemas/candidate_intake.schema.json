@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Paper-Trading Candidate Intake",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "candidate_id",
+    "edge_family",
+    "hypothesis",
+    "edge_rationale",
+    "exploratory_budget",
+    "fastest_falsification_test",
+    "non_promotable_until_full_strategy_card"
+  ],
+  "properties": {
+    "candidate_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "edge_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "hypothesis": {
+      "type": "string",
+      "minLength": 10
+    },
+    "edge_rationale": {
+      "type": "string",
+      "minLength": 10
+    },
+    "market_universe_fit": {
+      "type": "string"
+    },
+    "data_required": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "known_blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "exploratory_budget": {
+      "type": "object",
+      "required": [
+        "max_variants",
+        "max_timebox"
+      ],
+      "properties": {
+        "max_variants": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "max_timebox": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "fastest_falsification_test": {
+      "type": "string",
+      "minLength": 1
+    },
+    "expected_promotion_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "full strategy_card.json",
+        "trial ledger",
+        "out-of-sample validation",
+        "negative controls",
+        "simulation integrity before paper promotion"
+      ]
+    },
+    "non_promotable_until_full_strategy_card": {
+      "type": "boolean",
+      "const": true
+    }
+  }
+}

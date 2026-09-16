@@ -1,0 +1,74 @@
+{
+  "audit_version": "1.1",
+  "audit_id": "replace-me",
+  "recorded_at": "1970-01-01T00:00:00Z",
+  "status": "draft",
+  "scene_owner": "replace-me",
+  "scene_owner_accepts_final_construction": true,
+  "assemblies_in_scope": [
+    {
+      "id": "assembly-primary",
+      "required_function": "Describe the physical construction and room/activity use it must support, including recognizable furniture/work/storage/access where needed.",
+      "required_footprint": "Describe route, opening, landing, and boundary footprint in grid coordinates.",
+      "elevations": ["lower", "upper"],
+      "candidate_asset_ids": ["asset-a", "asset-b"],
+      "status": "gap",
+      "finding": "State whether the assets support coherent room use as well as continuous construction without stacked sprites, duplicate bases, conflicting shadows, or floating joints. Loose furnishings need functional grouping, not invented architectural sockets."
+    }
+  ],
+  "assets": [
+    {
+      "id": "asset-a",
+      "path": "replace/me.png",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "construction_class": "connectable_architecture",
+      "admission": "admitted",
+      "projection": "top-down orthographic",
+      "alpha_model": "transparent",
+      "base_model": "none",
+      "shadow_model": "shadowless",
+      "allowed_operations": ["mask", "proportional-scale", "composite"],
+      "sockets": [
+        {
+          "id": "east-end",
+          "required_for_freeze": true,
+          "plane": "upper-road-grade",
+          "elevation": "upper",
+          "material": "weathered sandstone",
+          "mates": ["asset-b.west-end"]
+        }
+      ],
+      "scale_range": {"minimum": 0.95, "maximum": 1.05},
+      "occlusion_profile": "Describe what this piece may cover and what must remain visible.",
+      "finding": "Record bases, baked shadows, clean margins, and any reason this classification is unsafe."
+    }
+  ],
+  "unresolved_gaps": [
+    {
+      "assembly_id": "assembly-primary",
+      "missing_function": "connector, terminal, transition, shadowless variant, or integrated assembly",
+      "why_catalogue_fails": "Name the missing recognizable use/relationship or collision, base, shadow, socket, scale, or occlusion conflict; request only necessary authorized asset work."
+    }
+  ],
+  "asset_production_lane": {
+    "status": "open",
+    "lane_id": "asset-lane-01",
+    "reason": "Smallest coherent set needed to close the listed gaps; the number of pieces is not artificially capped.",
+    "deliverables": [
+      {
+        "id": "deliverable-01",
+        "function": "Exact construction function",
+        "footprint": "Grid-coordinate footprint and clean working margin",
+        "elevation": "Named elevation and grade",
+        "projection": "Top-down orthographic at the map camera",
+        "material": "Exact shared material",
+        "lighting": "Shared light direction and depth treatment",
+        "alpha_shadow": "Transparent with no baked directional shadow",
+        "sockets": ["asset-a.east-end", "asset-b.west-end"],
+        "clean_margins": "No plinth, enclosing silhouette, clipped shadow, or adjacent finished terrain.",
+        "output_class": "connector",
+        "status": "requested"
+      }
+    ]
+  }
+}

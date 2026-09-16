@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#181d36"><meta name="description" content="Clearshift. Paint the next beat. An original musical placement puzzle.">
+<title>Clearshift — Street Mix</title><link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="display.css"><link rel="stylesheet" href="districts.css"><link rel="preload" as="image" href="assets/rooftop.png">
+<script defer src="js/engine.js"></script><script defer src="js/progression.js"></script><script defer src="js/sweep-engine.js"></script><script defer src="js/audio.js"></script><script defer src="js/app.js"></script>
+</head><body data-scene="0">
+<div id="murals" aria-hidden="true"><div class="mural active" data-art="0"></div><div class="mural" data-art="1"></div><div class="mural" data-art="2"></div><div class="mural" data-art="3"></div><div class="mural" data-art="4"></div><div class="mural" data-art="5"></div><div class="mural" data-art="6"></div><div class="mural" data-art="7"></div><div class="mural" data-art="8"></div></div>
+<div class="vignette" aria-hidden="true"></div><canvas id="paint-fx" aria-hidden="true"></canvas>
+<div class="shell"><header>
+<button id="home-button" class="wordmark" aria-label="Clearshift home">clearshift<span>↗</span></button>
+<span class="edition">SIDE C <i>/</i> CUT IT LOOSE</span>
+<nav aria-label="Game controls"><button id="sound-button" class="icon-button" aria-label="Music and settings" title="Music and settings">♫</button><button id="help-button" class="icon-button" aria-label="How to play">?</button><button id="pause-button" class="icon-button" aria-label="Pause game" title="Pause (Space)">Ⅱ</button></nav>
+</header>
+<main class="game-layout" id="game"><section class="play-area" aria-label="Play area">
+<div class="board-heading"><div><span class="eyebrow" id="chapter-label">01 / 09 DISTRICTS</span><h1 id="scene-heading">Rooftop Radio</h1></div><div class="mobile-score"><span>SCORE</span><strong id="score-mobile">0</strong></div></div>
+<div class="tutorial-banner" id="tutorial-banner" hidden><strong id="tutorial-step"></strong><span id="tutorial-copy"></span></div>
+<div class="board-frame" id="board-frame"><div class="board" id="board" role="grid" aria-label="Puzzle board, 8 rows by 8 columns"></div><div id="sweep-bar" aria-hidden="true"><i></i><span>PLAY</span></div><div id="burst-label" aria-hidden="true"></div></div>
+<div class="board-message"><span id="board-hint">Choose a shape. Paint a full line.</span><button class="text-button" id="cancel-button" hidden>Cancel</button></div>
+<div class="tray" id="tray" role="group" aria-label="Three offered shapes"></div>
+<div class="placement-actions" id="placement-actions" hidden><button id="commit-button" class="primary-button">Place paint <span>↵</span></button></div>
+<div class="tray-caption"><span id="tray-caption">THREE SHAPES. YOUR NEXT PHRASE.</span><span id="tray-count">3 / 3</span></div>
+</section>
+<aside class="side-rail" aria-label="Run and music">
+<section class="score-panel"><span class="eyebrow">YOUR SESSION</span><div id="score" class="score">0</div><p><span><b id="line-count">0</b> lines</span><span>Best <b id="best-score">0</b></span></p><div class="chapter-progress"><i id="chapter-progress"></i></div><small id="chapter-next">After Hours at 500</small></section>
+<section class="flow-panel"><div><span class="eyebrow">FLOW</span><strong id="flow-value">1/8</strong></div><div class="flow-identity"><b id="flow-name">Pocket</b><span id="flow-multiplier">×1 sweep score</span></div><div class="flow-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="flow-progress" aria-hidden="true"><i id="flow-progress"></i></div><p id="flow-copy">Fill lines. Feed the sweep.</p></section>
+<section class="shift-panel" id="shift-panel"><div class="shift-heading"><h2>SHIFT<span>↗</span></h2><span id="shift-state">UNCHARGED</span></div><p id="shift-copy">Complete a line to earn a Shift.<br>Use an offered shape to lift paint.</p><button id="shift-button" class="shift-button" disabled>Earn a Shift <span>↗</span></button><div class="stencil-key"><span>■ Paint moves</span><span>□ Gaps stay open</span></div></section>
+<section class="track-panel" aria-label="Now playing"><div class="record" aria-hidden="true"><i></i></div><div><span class="eyebrow">ORIGINAL SOUNDTRACK</span><h2 id="track-title">Neon Scrawl</h2><p id="track-copy">Sound starts when you play</p></div></section>
+<div class="rail-footer"><div><button id="district-button" class="text-button">Your route · 1/9</button><button id="restart-button" class="text-button">New run ↻</button></div><span id="save-status">Saved on this device</span></div>
+</aside></main>
+<footer><a href="listening-room.html">Hear Cut It Loose ↗</a><a href="http://127.0.0.1:4180" target="_blank" rel="noopener">Previous build ↗</a></footer></div>
+<dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+<div id="announcer" class="sr-only" aria-live="polite" role="status"></div><noscript>Enable JavaScript to play Clearshift.</noscript>
+</body></html>

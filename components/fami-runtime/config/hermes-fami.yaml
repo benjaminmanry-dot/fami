@@ -1,0 +1,25 @@
+model:
+  default: gpt-6-astra
+  provider: openai-codex
+agent:
+  reasoning_effort: medium
+  max_turns: 8
+terminal:
+  backend: docker
+  cwd: /workspace
+  docker_image: python@sha256:78387bc3881b8273120a12ebe6c1ab22b018ccc2c9adf565ae1ac9b536e184ea
+  docker_network: false
+  docker_mount_cwd_to_workspace: true
+  docker_run_as_host_user: true
+  docker_forward_env: []
+  docker_volumes: []
+  container_persistent: false
+  container_cpu: 2
+  container_memory: 2048
+  lifetime_seconds: 300
+mcp_servers: {}
+skills:
+  write_approval: true
+auxiliary:
+  background_review:
+    enabled: false

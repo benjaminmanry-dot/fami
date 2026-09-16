@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8d8e9" />
+    <meta name="description" content="Lilith's offline-first 2024 D&D character sheet and Roll20 roll console." />
+    <title>Lilith • Iridescent Rampage</title>
+    <link rel="stylesheet" href="lilith.css?v=composition-4c" />
+  </head>
+  <body>
+    <div class="page-glow" aria-hidden="true"></div>
+    <div class="ornament-layer" aria-hidden="true"></div>
+
+    <div class="sheet-shell" id="sheet-shell">
+      <header class="topbar">
+        <div class="brand-lockup" aria-label="Lilith character sheet">
+          <span class="brand-gem">✦</span>
+          <div>
+            <strong>Lilith</strong>
+            <span>iridescent rampage</span>
+          </div>
+        </div>
+
+        <nav class="tab-list" aria-label="Character sheet sections">
+          <button class="tab-button active" data-tab="overview" type="button">Overview</button>
+          <button class="tab-button" data-tab="combat" type="button">Combat</button>
+          <button class="tab-button" data-tab="features" type="button">Features</button>
+          <button class="tab-button" data-tab="inventory" type="button">Inventory</button>
+          <button class="tab-button" data-tab="journal" type="button">Journal</button>
+        </nav>
+
+        <div class="connection-pill" id="connection-pill" role="status">
+          <span class="connection-dot"></span>
+          <span id="connection-label">Offline sheet ready</span>
+        </div>
+      </header>
+
+      <aside class="portrait-rail">
+        <div class="portrait-frame">
+          <div class="portrait-halo" aria-hidden="true"></div>
+          <img src="assets/lilith-portrait.png" alt="Lilith, an iridescent pink slime adventurer adorned with jewels and alchemy bottles" />
+          <div class="portrait-caption">
+            <span>sweet as spun sugar</span>
+            <strong>Lilith</strong>
+            <small>tough as crystal</small>
+          </div>
+        </div>
+
+        <div class="identity-tags" aria-label="Character identity">
+          <span>Cubeling</span>
+          <span>Berserker</span>
+          <span>Experiment</span>
+        </div>
+
+        <section class="mini-panel quick-vitals" aria-labelledby="quick-vitals-title">
+          <div class="panel-heading compact">
+            <div>
+              <span class="eyebrow">At a glance</span>
+              <h2 id="quick-vitals-title">Crystal core</h2>
+            </div>
+          </div>
+          <div class="quick-vital-row">
+            <span>Armor class</span>
+            <strong id="rail-ac">17</strong>
+          </div>
+          <div class="quick-vital-row">
+            <span>Speed</span>
+            <strong id="rail-speed">40 ft</strong>
+          </div>
+          <div class="quick-vital-row">
+            <span>Proficiency</span>
+            <strong id="rail-prof">+3</strong>
+          </div>
+        </section>
+
+        <section class="mini-panel save-tools" aria-labelledby="save-tools-title">
+          <div class="panel-heading compact">
+            <div>
+              <span class="eyebrow">Portable & private</span>
+              <h2 id="save-tools-title">Sheet tools</h2>
+            </div>
+          </div>
+          <div class="tool-grid">
+            <button type="button" class="soft-button" id="export-button">Export backup</button>
+            <label class="soft-button file-button" for="import-file">Import backup</label>
+            <input id="import-file" type="file" accept="application/json,.json" />
+          </div>
+          <p class="microcopy">Changes save automatically on this computer.</p>
+        </section>
+      </aside>
+
+      <main class="main-stage">
+        <section class="character-banner" aria-labelledby="character-name">
+          <div class="banner-copy">
+            <span class="eyebrow">2024 • D&D fifth edition</span>
+            <h1 id="character-name">Lilith</h1>
+            <p id="character-subtitle">Level 6 Berserker Barbarian • Cubeling • Chaotic Good</p>
+          </div>
+          <blockquote>“A little sparkle, a little violence, and then snacks.”</blockquote>
+        </section>
+
+        <section class="roll-console" aria-label="Roll settings">
+          <div class="roll-mode" role="group" aria-label="Roll mode">
+            <span class="control-label">Roll mode</span>
+            <button class="mode-button active" data-mode="normal" type="button">Normal</button>
+            <button class="mode-button" data-mode="advantage" type="button">Advantage</button>
+            <button class="mode-button" data-mode="disadvantage" type="button">Disadvantage</button>
+          </div>
+          <label class="toggle-control">
+            <input id="whisper-toggle" type="checkbox" />
+            <span class="toggle-track"><span></span></span>
+            <span>Whisper to GM</span>
+          </label>
+          <button class="primary-button" id="test-roll-button" type="button">
+            <span>✦</span> Test connection
+          </button>
+        </section>
+
+        <section id="tab-content" class="tab-content" aria-live="polite"></section>
+      </main>
+
+      <aside class="resource-dock" aria-label="Live character resources">
+        <section class="dock-card hp-card">
+          <div class="panel-heading compact">
+            <div>
+              <span class="eyebrow">Live total</span>
+              <h2>Hit points</h2>
+            </div>
+          </div>
+          <div class="hp-orb">
+            <span id="hp-current">60</span>
+            <small>/ <span id="hp-max">77</span></small>
+          </div>
+          <div class="hp-bar" aria-label="Current hit points"><span id="hp-fill"></span></div>
+          <div class="hp-controls">
+            <button type="button" data-hp="-1" aria-label="Subtract one hit point">−</button>
+            <button type="button" data-hp="-5" aria-label="Subtract five hit points">−5</button>
+            <button type="button" data-hp="5" aria-label="Add five hit points">+5</button>
+            <button type="button" data-hp="1" aria-label="Add one hit point">+</button>
+          </div>
+          <label class="temp-hp-field">Temporary HP <input id="temp-hp-input" type="number" min="0" value="0" /></label>
+        </section>
+
+        <section class="dock-card" aria-labelledby="resources-title">
+          <div class="panel-heading compact">
+            <div>
+              <span class="eyebrow">Spend & restore</span>
+              <h2 id="resources-title">Resources</h2>
+            </div>
+          </div>
+          <div id="resource-list" class="resource-list"></div>
+        </section>
+
+        <section class="dock-card rest-card" aria-labelledby="rest-title">
+          <div class="panel-heading compact">
+            <div>
+              <span class="eyebrow">Reset the sparkle</span>
+              <h2 id="rest-title">Rest</h2>
+            </div>
+          </div>
+          <div class="rest-buttons">
+            <button type="button" id="short-rest-button">Short rest</button>
+            <button type="button" id="long-rest-button">Long rest</button>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <dialog id="item-dialog" class="sheet-dialog">
+      <form method="dialog" id="item-form">
+        <div class="dialog-heading">
+          <div>
+            <span class="eyebrow">Inventory</span>
+            <h2>Add an item</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Close">×</button>
+        </div>
+        <label>Item name <input name="name" required placeholder="Crystal cupcake tin" /></label>
+        <div class="dialog-grid">
+          <label>Quantity <input name="quantity" type="number" min="0" value="1" /></label>
+          <label>Weight <input name="weight" type="number" min="0" step="0.1" value="0" /></label>
+          <label>Category
+            <select name="category">
+              <option>Gear</option>
+              <option>Weapon</option>
+              <option>Armor</option>
+              <option>Consumable</option>
+              <option>Tool</option>
+              <option>Treasure</option>
+            </select>
+          </label>
+        </div>
+        <label>Notes <textarea name="notes" rows="3" placeholder="What makes it special?"></textarea></label>
+        <label class="check-line"><input name="equipped" type="checkbox" /> Equipped</label>
+        <div class="dialog-actions">
+          <button class="soft-button" value="cancel" type="button" id="cancel-item-button">Cancel</button>
+          <button class="primary-button" value="default" type="submit">Add to pack</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="roll-serializer.js?v=arch-1"></script>
+    <script src="lilith.js?v=arch-1"></script>
+  </body>
+</html>

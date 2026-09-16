@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ben D&D Voice"
+  short_description: "Draft D&D essays in Ben's table-worn voice"
+  default_prompt: "Use $ben-dnd-voice to draft a practical D&D advice essay in my voice."

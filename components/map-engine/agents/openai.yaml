@@ -1,0 +1,4 @@
+interface:
+  display_name: "20Fates Map Engine"
+  short_description: "Build construction- and beauty-gated 20Fates maps"
+  default_prompt: "Use $twentyfates-map-engine to turn this approved encounter structure into one hash-verified map candidate that independently passes construction and beauty."

@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Bardsong — Campaign DJ</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-block">
+        <div class="brand-mark" aria-hidden="true"><span>♪</span></div>
+        <div>
+          <p class="eyebrow">20Fates table tools</p>
+          <h1>Bardsong</h1>
+        </div>
+      </div>
+      <div class="status-cluster">
+        <span id="server-status" class="status-pill good"><span class="status-dot"></span>Local server</span>
+        <span id="discord-status" class="status-pill off"><span class="status-dot"></span>Discord disconnected</span>
+        <span id="listener-status" class="status-pill off"><span class="status-dot"></span>Microphone off</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="now-panel panel" aria-labelledby="now-title">
+        <div class="now-copy">
+          <p class="eyebrow" id="now-title">Current cue</p>
+          <div class="scene-line">
+            <h2 id="current-scene">Quiet</h2>
+            <span id="director-mode" class="mode-badge">Auto ready</span>
+          </div>
+          <p id="director-reason" class="reason">Waiting for a clear scene cue.</p>
+          <div class="playing-grid">
+            <div class="playing-item">
+              <span class="playing-label">Music</span>
+              <strong id="current-music">None</strong>
+            </div>
+            <div class="playing-item">
+              <span class="playing-label">Ambience</span>
+              <strong id="current-ambience">None</strong>
+            </div>
+          </div>
+        </div>
+        <div class="master-controls">
+          <button id="start-dj" class="button primary">Start local monitor</button>
+          <button id="mute-now" class="button danger" disabled>Mute now</button>
+          <button id="stop-dj" class="button ghost" disabled>Stop all</button>
+        </div>
+      </section>
+
+      <div id="alert" class="alert hidden" role="status" aria-live="polite"></div>
+
+      <div class="workspace-grid">
+        <div class="main-column">
+          <section class="panel scene-panel" aria-labelledby="scene-heading">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Manual direction</p>
+                <h3 id="scene-heading">Choose a scene</h3>
+              </div>
+              <div class="inline-actions">
+                <button id="hold-button" class="button small ghost">Hold current</button>
+                <button id="resume-button" class="button small secondary">Resume auto</button>
+              </div>
+            </div>
+            <p class="section-note">A manual scene stays held until you resume automatic changes.</p>
+            <div id="scene-grid" class="scene-grid"></div>
+          </section>
+
+          <section class="panel listener-panel" aria-labelledby="listener-heading">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Scene listener</p>
+                <h3 id="listener-heading">Local speech cues</h3>
+              </div>
+              <div class="inline-actions">
+                <button id="start-listening" class="button small secondary">Start microphone</button>
+                <button id="stop-listening" class="button small ghost" disabled>Stop listening</button>
+              </div>
+            </div>
+            <div class="privacy-note">
+              <span class="privacy-icon" aria-hidden="true">⌂</span>
+              <div>
+                <strong>Stays on this PC</strong>
+                <p>Speech is processed by the local model. Bardsong does not save audio or transcripts or send them to a cloud service.</p>
+              </div>
+            </div>
+            <div id="asr-not-ready" class="setup-note hidden">
+              Local speech is optional and not prepared yet. Run <code>Setup Bardsong.cmd</code> once while online; manual cues and audio still work now.
+            </div>
+            <form id="cue-form" class="cue-form">
+              <label for="cue-input">Test or enter a narration cue</label>
+              <div class="cue-row">
+                <input id="cue-input" autocomplete="off" placeholder="The road climbs into an ancient forest…">
+                <button class="button primary" type="submit">Send cue</button>
+              </div>
+            </form>
+            <div class="heard-block">
+              <div class="heard-header">
+                <span>Recent cues (memory only)</span>
+                <button id="clear-cues" class="text-button">Clear</button>
+              </div>
+              <ol id="cue-history" class="cue-history">
+                <li class="empty-state">Nothing heard yet.</li>
+              </ol>
+            </div>
+            <details class="fixture-tool">
+              <summary>Test local speech with an owned recording</summary>
+              <p>Choose a short audio file. It is decoded in this browser, transcribed locally, and immediately discarded.</p>
+              <input id="speech-fixture" type="file" accept="audio/*">
+            </details>
+          </section>
+        </div>
+
+        <aside class="side-column">
+          <section class="panel discord-panel" aria-labelledby="discord-heading">
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">Online table output</p>
+                <h3 id="discord-heading">Discord voice</h3>
+              </div>
+              <span id="discord-mini-status" class="tiny-status">Disconnected</span>
+            </div>
+            <p id="discord-target" class="discord-target">Familiar shares one saved Sigil voice target with Bardsong and the session scribe.</p>
+            <div class="discord-actions">
+              <button id="connect-discord" class="button secondary">Connect Familiar audio</button>
+              <button id="disconnect-discord" class="button ghost" disabled>Stop DJ output</button>
+            </div>
+            <div class="dm-listener-row">
+              <div>
+                <strong>Listen to configured DM</strong>
+                <small>Off until explicitly started; never subscribes to other participants.</small>
+              </div>
+              <button id="toggle-dm-listener" class="button small ghost" disabled>Start</button>
+            </div>
+            <div class="runtime-stop-row">
+              <div>
+                <strong>End tonight cleanly</strong>
+                <small>Finalizes any active scribe capture, leaves voice, and closes Familiar.</small>
+              </div>
+              <button id="shutdown-runtime" class="button small ghost">Shut down tonight</button>
+            </div>
+          </section>
+
+          <section class="panel mixer-panel" aria-labelledby="mixer-heading">
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">Sound</p>
+                <h3 id="mixer-heading">Mixer</h3>
+              </div>
+              <span id="audio-state" class="tiny-status">Audio idle</span>
+            </div>
+            <label class="slider-row" for="music-volume">
+              <span><strong>Music</strong><output id="music-output">58%</output></span>
+              <input id="music-volume" type="range" min="0" max="100" value="58">
+            </label>
+            <label class="slider-row" for="ambience-volume">
+              <span><strong>Ambience</strong><output id="ambience-output">34%</output></span>
+              <input id="ambience-volume" type="range" min="0" max="100" value="34">
+            </label>
+            <label class="slider-row" for="transition-time">
+              <span><strong>Crossfade</strong><output id="transition-output">3.5s</output></span>
+              <input id="transition-time" type="range" min="0.5" max="10" step="0.5" value="3.5">
+            </label>
+            <label class="toggle-row">
+              <span>
+                <strong>Use unreviewed music</strong>
+                <small>Off by default</small>
+              </span>
+              <input id="allow-unreviewed" type="checkbox" role="switch">
+            </label>
+          </section>
+
+          <section class="panel decision-panel" aria-labelledby="decision-heading">
+            <p class="eyebrow">Why this cue?</p>
+            <h3 id="decision-heading">Listener decision</h3>
+            <div class="meter" aria-hidden="true"><span id="confidence-meter"></span></div>
+            <p id="decision-copy" class="decision-copy">No scene language yet.</p>
+          </section>
+
+          <section class="panel activity-panel" aria-labelledby="activity-heading">
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">Session</p>
+                <h3 id="activity-heading">Activity</h3>
+              </div>
+              <button id="clear-activity" class="text-button">Clear</button>
+            </div>
+            <ol id="activity-log" class="activity-log"></ol>
+          </section>
+        </aside>
+      </div>
+
+      <section class="panel library-panel" aria-labelledby="library-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Your sound palette</p>
+            <h3 id="library-heading">Audio library</h3>
+          </div>
+          <div class="inline-actions wrap">
+            <label class="button small secondary file-button">Import audio<input id="track-import" type="file" accept="audio/*" multiple></label>
+            <button id="export-settings" class="button small ghost">Export settings</button>
+            <label class="button small ghost file-button">Restore settings<input id="restore-settings" type="file" accept="application/json"></label>
+          </div>
+        </div>
+        <p class="section-note">Only accepted music and project ambience play automatically. Imported tracks begin as unreviewed; assign a scene and mark them accepted when ready.</p>
+        <div class="library-filters" role="group" aria-label="Library filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="music">Music</button>
+          <button class="filter" data-filter="ambience">Ambience</button>
+        </div>
+        <div id="library-list" class="library-list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Bardsong runs at 127.0.0.1 and has no account or cloud backend.</span>
+      <span>Use Shut down tonight when the session is over.</span>
+    </footer>
+  </div>
+
+  <template id="scene-button-template">
+    <button class="scene-button" type="button">
+      <span class="scene-name"></span>
+      <span class="scene-note"></span>
+    </button>
+  </template>
+
+  <template id="track-template">
+    <article class="track-card">
+      <div class="track-summary">
+        <button class="preview-button" type="button" aria-label="Preview track">▶</button>
+        <div class="track-title-block">
+          <strong class="track-name"></strong>
+          <span class="track-note"></span>
+        </div>
+        <select class="track-kind" aria-label="Track type">
+          <option value="music">Music</option>
+          <option value="ambience">Ambience</option>
+        </select>
+        <select class="track-status" aria-label="Review status">
+          <option value="accepted">Accepted</option>
+          <option value="project-asset">Project ambience</option>
+          <option value="unreviewed">Unreviewed</option>
+          <option value="rejected">Rejected</option>
+        </select>
+      </div>
+      <div class="track-scenes" role="group" aria-label="Automatic scene assignments"></div>
+      <p class="track-error hidden"></p>
+    </article>
+  </template>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

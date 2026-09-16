@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Paper-Trading Trial Ledger Entry",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "timestamp",
+    "strategy_id",
+    "edge_family",
+    "base_rate_prior_score",
+    "discovery_budget",
+    "data_version",
+    "universe_version",
+    "parameter_set",
+    "trial_family",
+    "train_period",
+    "validation_period",
+    "test_period",
+    "number_of_trials_so_far",
+    "promotion_status"
+  ],
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "minLength": 1
+    },
+    "strategy_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "hypothesis_id": {
+      "type": "string"
+    },
+    "edge_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "base_rate_prior_score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 27
+    },
+    "discovery_budget": {
+      "type": "object"
+    },
+    "git_commit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "data_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "universe_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parameter_set": {
+      "type": "object"
+    },
+    "trial_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "train_period": {
+      "type": "string",
+      "minLength": 1
+    },
+    "validation_period": {
+      "type": "string",
+      "minLength": 1
+    },
+    "test_period": {
+      "type": "string",
+      "minLength": 1
+    },
+    "number_of_trials_so_far": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "in_sample_metrics": {
+      "type": "object"
+    },
+    "out_of_sample_metrics": {
+      "type": "object"
+    },
+    "negative_control_results": {
+      "type": "object"
+    },
+    "simulation_integrity_summary": {
+      "type": "object"
+    },
+    "friction_capacity_summary": {
+      "type": "object"
+    },
+    "portfolio_contribution_summary": {
+      "type": "object"
+    },
+    "promotion_status": {
+      "type": "string",
+      "enum": [
+        "reject",
+        "research_more",
+        "paper_trade",
+        "pause",
+        "promote_to_review"
+      ]
+    },
+    "rejection_reason": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Engine"
+  short_description: "Build polished bounded D&D adventures"
+  default_prompt: "Use $story-engine to produce this bounded adventure through its two approval gates."
