@@ -48,3 +48,13 @@ The image, result and dispatch integration tests are distinct checks with instal
 No full fourteen-component build, live Discord recording/playback, live financial action, cloud deployment, external-agent mutation test, or audiovisual acceptance test was run for this release. Missing private configuration, licensed catalogue data and media prevent a complete distribution for some components. Historical private acceptance records are not substituted for fresh public-snapshot results.
 
 Secret scanning and review reduce publication risk; they are not proof that arbitrary future additions are safe. The public repository starts with new history and contains no inherited private commit history. Source file identities are recorded in [SOURCE-MANIFEST.json](SOURCE-MANIFEST.json).
+
+## Exact restoration
+
+A fresh clone restored all 618 manifest files with matching hashes when Git's line-ending conversion was disabled. Windows `core.autocrlf=true` can legitimately change working-copy line endings and therefore raw file hashes. For a byte-for-byte source comparison use:
+
+```sh
+git clone -c core.autocrlf=false https://github.com/benjaminmanry-dot/fami.git
+```
+
+The manifest excludes itself. Later documentation edits refresh its hashes without changing the preserved source implementation.
